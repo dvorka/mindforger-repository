@@ -1,13 +1,13 @@
 # MindForger Repository
 
-This is an initial repository image of [MindForger](https://github.com/dvorka/mindforger) 
-thinking notebook and Markdown IDE.
+![MindForger](memory/mindforger/mindforger.png)
 
-To open repository with MindForger run the following command from this directory:
+This is an initial repository image of [MindForger](https://github.com/dvorka/mindforger) -
+thinking notebook and Markdown IDE:
 
-```sh
-mindforger .
-```
+* [user documentation](memory/mindforger/user-documentation.md)
+* [developer documentation](memory/mindforger/developer-documentation.md)
+* [history](memory/mindforger/history.md)
 
 The repository is kept separate from MindForger source code to
 distinquish changes to the application source code and repository
@@ -16,7 +16,13 @@ the application and it's default data.
 
 * `memory/`
     * Notebooks with MindForger **documentation**
-* `mind/`
-    * meta information and indices used by mind processes
+* `stencils/`
+    * basic set of Notebook and Note stencils
 * `limbo/`
     * place with no space and time where forgotten knowledge resides
+
+To open repository with MindForger run the following command in this directory:
+
+```sh
+mindforger .
+```
