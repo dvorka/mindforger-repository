@@ -60,7 +60,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 42; read: 2018-05-17 09:46:11; revision: 11; modified: 2018-05-17 09:46:11; -->
+## Build on Debian<!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 42; read: 2018-05-17 09:46:11; revision: 11; modified: 2018-05-17 09:46:11; -->
 Build MindForger on Debian Stretch or later.
 
 Install build tools:
