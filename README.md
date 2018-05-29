@@ -2,8 +2,8 @@
 
 ![MindForger](memory/mindforger/mindforger.png)
 
-This is initial repository image of 
-[MindForger](https://github.com/dvorka/mindforger) - thinking notebook 
+This is initial repository image of
+[MindForger](https://github.com/dvorka/mindforger) - thinking notebook
 and Markdown IDE:
 
 * [documentation index](memory/mindforger/index.md)
@@ -16,11 +16,12 @@ the application and it's default data.
 * `memory/`
     * Notebooks with MindForger **documentation**
 * `stencils/`
-    * basic set of Notebook and Note stencils
+    * basic set of Notebook and Note **stencils**
 * `limbo/`
-    * place with no space and time where forgotten knowledge resides
+    * place with no space and time where **forgotten knowledge** resides
 
-To open repository with MindForger run the following command in this directory:
+To open initial repository with MindForger run the following command in 
+this directory:
 
 ```sh
 mindforger .
