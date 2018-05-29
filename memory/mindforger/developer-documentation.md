@@ -1,6 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 233; read: 2018-05-17 10:57:04; revision: 233; modified: 2018-05-17 10:57:04; importance: 0/5; urgency: 0/5; -->
-
-**DISCLAIMER: Please indulge me, MindForger is my first (reasonable) C++ application.**
+# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 255; read: 2018-05-29 11:04:04; revision: 255; modified: 2018-05-29 11:04:04; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -131,14 +129,14 @@ See also:
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
 ### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 28; read: 2018-04-26 09:31:14; revision: 3; modified: 2018-04-26 09:31:14; -->
 ...
-# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 29; read: 2018-05-04 07:01:30; revision: 7; modified: 2018-05-04 07:01:30; -->
+# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 31; read: 2018-05-04 07:01:30; revision: 7; modified: 2018-05-04 07:01:30; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).
 
 However, you can use MindForger's [Markdown hosted DSL](#markdown-hosted-dsl) and
 [repository format](#repository-format) to get much more (mind related) features.
-## Markdown hosted DSL <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 45; read: 2018-04-26 09:22:11; revision: 12; modified: 2018-04-26 09:22:11; -->
+## Markdown hosted DSL <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 47; read: 2018-04-26 09:22:11; revision: 12; modified: 2018-04-26 09:22:11; -->
 This section describes MD conventions that MindForger uses to store outlines.
 
 Description:
@@ -162,7 +160,7 @@ canonical messages.
 
 ... here comes a text.
 ```
-## Repository Layout <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 33; read: 2018-04-26 09:27:38; revision: 9; modified: 2018-04-26 09:27:38; -->
+## Repository Layout <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 35; read: 2018-05-29 11:04:04; revision: 18; modified: 2018-05-29 11:04:04; -->
 Design goals:
 
 * Repository specification SHOULD be general i.e. not bound to MindForger
@@ -183,14 +181,9 @@ Repository layout:
       [OUTLINE-NAME].[ATTACH-NAME].png  ... '.' is reserved character
       [OUTLINE-NAME].[ATTACH-NAME].jpg
       [OUTLINE-NAME].[ATTACH-NAME].gif
-      [OUTLINE-NAME].attachments/       ... if there are many attachments, then they can
-                                            be stored to directory using this convention
     ...
   limbo/
   stencils/
-  attachments/                          ... Git ignored directory
-    [DIRECTORY-NAME]/
-      [OUTLINE-NAME].[ATTACH-NAME].*    ... '.' is reserved character
     ...
   mind/                                 ... Git ignored directory w/ indexed knowledge base
     index.mf                            ... MF's index can be fully rebuilt from
@@ -216,10 +209,6 @@ ROOT/
       repository-design.overview.png
       repository-design.structure.png
       ideas.txt
-  attachments/
-    My Example/
-      demo.avi
-      formal-specification.pdf
   mind/
   .gitignore
   index
@@ -232,7 +221,6 @@ Description:
 * .gitignore prevents storing of big attachments and indices to Git
 * DIRECTORY-NAME ... A-Z a-z 0-9 SPACE - _
 * OUTLINE-NAME   ... A-Z a-z 0-9 SPACE - _
-* ATTACH-NAME    ... A-Z a-z 0-9 SPACE - _
 * directory is outline *label* - name directories to be nice labels:
    * do NOT use plurals: 'templates' is not good label > use 'template' instead
    * user lower case for normal adjectives (template, import) and upper case for
@@ -240,6 +228,3 @@ Description:
 * MindForger home screen == cloud of is outline and/or note *labels* (split screen).
 * Extensions:
    * files w/ extensions that are not explicitly enumerated are ignored by Git (global ignore)
-
-
-

@@ -5,9 +5,7 @@
 This is an initial repository image of [MindForger](https://github.com/dvorka/mindforger) -
 thinking notebook and Markdown IDE:
 
-* [user documentation](memory/mindforger/user-documentation.md)
-* [developer documentation](memory/mindforger/developer-documentation.md)
-* [history](memory/mindforger/history.md)
+* [documentation index](memory/mindforger/index.md)
 
 The repository is kept separate from MindForger source code to
 distinquish changes to the application source code and repository

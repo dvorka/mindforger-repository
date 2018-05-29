@@ -1,4 +1,4 @@
-# Why MindForger? <!-- Metadata: type: Outline; tags: important; created: 2018-02-23 10:56:27; reads: 18; read: 2018-04-26 09:42:11; revision: 13; modified: 2018-04-26 09:42:11; importance: 0/5; urgency: 0/5; -->
+# Why MindForger? <!-- Metadata: type: Outline; tags: important; created: 2018-02-23 10:56:27; reads: 22; read: 2018-05-29 11:07:00; revision: 15; modified: 2018-05-29 11:07:00; importance: 0/5; urgency: 0/5; -->
 
 This document describes driving principles and vision for MindForger.
 
@@ -6,11 +6,16 @@ Are you drowning in information? How do you learn? Where do you keep your
 private remarks like ideas, personal plans, gift tips, how-tos, dreams, 
 business vision, finance strategy, auto coaching notes? Loads of documents, 
 sketches and remarks spread around the file system, web and Post-it notes? 
-Are you able to find then once you create them? No?
+Are you able to find then once you create them?  Do you know how
+they are mutually related when you read or write them? No?
 
-
-
-# Motivation <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 11; read: 2018-03-31 08:58:16; revision: 2; modified: 2018-03-31 08:58:16; -->
+MindForger is **human mind** inspired **knowledge management tool** which
+aims to connect the tradition of outline editors with emerging technologies. 
+Its mission is to help you in organization of your knowledge and associated 
+local, web and real world resources in a way that enables quick navigation, 
+concise representation, automatic interconnections, associative completion 
+and inferencing.
+# Motivation <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 15; read: 2018-03-31 08:58:16; revision: 2; modified: 2018-03-31 08:58:16; -->
 MindForger is **human mind** inspired **personal** knowledge management tool:
 
 * **Personal**
@@ -43,7 +48,7 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
 
 
 
-# Features <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 19; read: 2018-04-10 10:58:57; revision: 5; modified: 2018-04-10 10:58:57; -->
+# Features <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 23; read: 2018-04-10 10:58:57; revision: 5; modified: 2018-04-10 10:58:57; -->
 MindForger features:
 
 * **Open**
@@ -109,7 +114,7 @@ MindForger features:
 
 
 
-# Non Use Cases <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 7; read: 2018-04-26 09:42:11; revision: 3; modified: 2018-04-26 09:42:11; -->
+# Non Use Cases <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 9; read: 2018-04-26 09:42:11; revision: 3; modified: 2018-04-26 09:42:11; -->
 MindForger is NOT:
 
 * **Editor** aiming to compete with Emacs, Vim, etc.

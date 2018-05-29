@@ -1,31 +1,24 @@
-# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 106; read: 2018-05-17 08:45:44; revision: 98; modified: 2018-05-17 08:45:44; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 130; read: 2018-05-29 11:10:04; revision: 130; modified: 2018-05-29 11:10:04; importance: 0/5; urgency: 0/5; -->
 
-MindForger is [personal](why-mindforger.md) [thinking](human-mind-inspiration.md) [notebook](why-mindforger.md) and Markdown editor/IDE.
+MindForger is **personal thinking notebook** and **Markdown editor/IDE**.
 
 ![MindForger](mindforger.png)
 
-Where do you keep your private remarks like ideas, personal plans, gift tips, howtos,
-dreams, master thesis, research remarks, business vision, finance strategy or auto 
-coaching notes? Loads of documents, sketches and remarks spread around the file system, 
-web and Post-it notes? Are you able to find then once you create them? Do you know how
-they are mutually related when you read or write them? No?
+MindForger project motivation and inspiration:
 
-MindForger is **human mind** inspired **knowledge management tool** which
-aims to connect the tradition of outline editors with emerging technologies. 
-Its mission is to help you in organization of your knowledge and associated 
-local, web and real world resources in a way that enables quick navigation, 
-concise representation, automatic interconnections, associative completion 
-and inferencing.
+* [Why MindForger?](why-mindforger.md)
 
-MindForger project motivation, history and documentation:
+How to use MindForger:
 
-* [User](./user-documentation.md) documentation
+* [User documentation](./user-documentation.md) and [FAQ](faq.md)
 
 How to clone, build, improve, research, tweak and contribute:
 
-* [Developer](./developer-documentation.md) documentation
+* [Developer documentation](./developer-documentation.md)
 
-MindForger is **free** and **open source** program (FLOSS).
+MindForger project history:
+
+* [History](history.md)
 
 For more details see also MindForger project home https://www.mindforger.com
 
