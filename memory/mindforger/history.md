@@ -29,7 +29,7 @@ on top of dying UI and runtime technology. Therefore I decided to start a new pr
 ![Coaching Notebook](history.mf.png)
 
 [CoachingNotebook](http://web.mindforger.com/) is a successor of MindRaider. 
-At the beginning it was a combination of an auto-coaching tool and an outliner.
+At the beginning it was a combination of auto-coaching tool and outliner.
 Implemented on Google App Engine PaaS (GAE) it served as a way to learn trendy
 technologies. After a few years I determined
 that coaching aspect of MindForger has questionable future, application is too big,
