@@ -23,7 +23,7 @@ number of potential users. This is why I decided to implement more user friendly
 [MindRaider](http://mindraider.sourceforge.net/) is a 90s Java-based 
 Semantic Web desktop application which is an outliner with RDF runtime. 
 MindRaider was decently successful project with 100.000+ downloads. However 
-it became morally obsolete and I didn't want to invest time to deliver new features 
+it became morally obsolete and I didn't want to invest my time to deliver new features 
 on top of dying UI and runtime technology. Therefore I decided to start a new project.
 # Coaching Notebook <!-- Metadata: type: Note; created: 2018-03-18 09:13:06; reads: 13; read: 2018-03-18 09:19:34; revision: 8; modified: 2018-03-18 09:19:34; -->
 ![Coaching Notebook](history.mf.png)
