@@ -14,7 +14,7 @@ of the Semantic Web.
 
 RDF Spiders can be seen as a **mind mapping** application with native 
 RDF runtime interoperable with other Semantic Web applications.
-Therefore it required good knowledge of RDF specification which limited 
+It required good knowledge of RDF which limited 
 number of potential users. This is why I decided to implement more user friendly 
 [MindRaider](#mindraider).
 # MindRaider <!-- Metadata: type: Note; created: 2018-03-18 09:12:59; reads: 17; read: 2018-04-24 17:18:33; revision: 4; modified: 2018-04-24 17:18:33; -->
