@@ -1,13 +1,14 @@
-# Why MindForger? <!-- Metadata: type: Outline; tags: important; created: 2018-02-23 10:56:27; reads: 22; read: 2018-05-29 11:07:00; revision: 15; modified: 2018-05-29 11:07:00; importance: 0/5; urgency: 0/5; -->
+# Why MindForger? <!-- Metadata: type: Outline; tags: important; created: 2018-02-23 10:56:27; reads: 24; read: 2018-05-29 22:44:37; revision: 19; modified: 2018-05-29 22:44:37; importance: 0/5; urgency: 0/5; -->
 
 This document describes driving principles and vision for MindForger.
 
-Are you drowning in information? How do you learn? Where do you keep your 
-private remarks like ideas, personal plans, gift tips, how-tos, dreams, 
-business vision, finance strategy, auto coaching notes? Loads of documents, 
-sketches and remarks spread around the file system, web and Post-it notes? 
-Are you able to find then once you create them?  Do you know how
-they are mutually related when you read or write them? No?
+Are you drowning in information, but starving for **knowledge**? Where do you 
+keep your **private remarks** like ideas, personal plans, gift tips, how-tos, 
+dreams, business vision, finance strategy, auto  coaching notes? Loads of 
+documents, sketches and remarks spread around the file system, cloud, 
+web and Post-it notes? Are you affraid of your knowledge **privacy**? Are you 
+able to **find** then once you create them? Do you know how are they mutually
+**related** when you read or write them? No?
 
 MindForger is **human mind** inspired **knowledge management tool** which
 aims to connect the tradition of outline editors with emerging technologies. 

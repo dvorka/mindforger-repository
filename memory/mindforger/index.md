@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 132; read: 2018-05-29 11:37:14; revision: 132; modified: 2018-05-29 11:37:14; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 140; read: 2018-05-30 23:08:10; revision: 140; modified: 2018-05-30 23:08:10; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**.
 
@@ -30,26 +30,27 @@ For more details see also MindForger project home https://www.mindforger.com
 
 💡 click a note in the tree of notes on the left to see other sections of this notebook.
 
-💡 click `menu/View/Outlines` or press <kbd>Ctrl+O</kbd> to view all documents in MindForger
+💡 click menu `View/Outlines` or press <kbd>Ctrl+O</kbd> to view all documents in MindForger
 documentation repository.
 
 ---
 
 _Made with passion for personal pleasure._
 
-# User Documentation <!-- Metadata: type: Note; created: 2018-02-23 10:57:35; reads: 18; read: 2018-04-24 13:56:23; revision: 4; modified: 2018-04-24 13:56:23; -->
+# User Documentation <!-- Metadata: type: Note; created: 2018-02-23 10:57:35; reads: 25; read: 2018-05-29 22:42:54; revision: 5; modified: 2018-05-29 22:42:54; -->
 Understand motivation, install, configure and use:
 
 * [Why MindForger?](why-mindforger.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
 * [Documentation](user-documentation.md)
+* [FAQ](mindforger/faq.md)
 * [History](history.md)
 
-# Developer Documentation <!-- Metadata: type: Note; created: 2018-03-18 09:10:35; reads: 16; read: 2018-04-24 13:57:18; revision: 8; modified: 2018-04-24 13:57:18; -->
+# Developer Documentation <!-- Metadata: type: Note; created: 2018-03-18 09:10:35; reads: 21; read: 2018-05-29 22:42:33; revision: 9; modified: 2018-05-29 22:42:33; -->
 Clone, build, improve, research, tweak, contribute:
 
-* [developer documentation](developer-documentation.md)
+* [Developer documentation](developer-documentation.md)
 
 # Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 24; read: 2018-05-10 22:09:23; revision: 24; modified: 2018-05-10 22:09:23; -->
 
@@ -58,19 +59,17 @@ you may want to check examples of various documents (collections)
 below. 
 
 Simply clone Git repository and open it from its root 
-directoring using `mindforger .`:
+directoring using MindForger:
 
 * ProGit
-  https://github.com/progit/progit
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * NYTimes Objective-C style guide:
-  https://github.com/NYTimes/objective-c-style-guide
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
 * LivingSocial API design
-  https://github.com/livingsocial/api-design
+    * `git clone https://github.com/livingsocial/api-design && cd api-design && mindforger .`
 * C++ core guidelines
-  https://github.com/isocpp/CppCoreGuidelines
+    * `git clone https://github.com/isocpp/CppCoreGuidelines && cd CppCoreGuidelines && mindforger .`
 * AI computer vision resources:
-  https://github.com/jbhuang0604/awesome-computer-vision
+    * `git clone https://github.com/jbhuang0604/awesome-computer-vision && cd awesome-computer-vision && mindforger .`
 * FiveThirtyEight data sources:
-  https://github.com/fivethirtyeight/data
+    * `git clone https://github.com/fivethirtyeight/data && cd data && mindforger .`
