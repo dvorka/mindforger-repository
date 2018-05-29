@@ -111,11 +111,3 @@ MindForger features:
     * If you are fine with using a remote (private) repository, you can use
       any CMS or cloud drive to push your data for backup (even to multiple 
       locations).
-
-
-
-# Non Use Cases <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 9; read: 2018-04-26 09:42:11; revision: 3; modified: 2018-04-26 09:42:11; -->
-MindForger is NOT:
-
-* **Editor** aiming to compete with Emacs, Vim, etc.
-* **AI/ML** application aiming to solve a problem.
