@@ -1,5 +1,4 @@
 # History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 98; read: 2018-05-10 12:51:32; revision: 98; modified: 2018-05-10 12:51:32; importance: 0/5; urgency: 0/5; -->
-![MindForger](mindforger.png)
 
 [MindForger](https://www.mindforger.com) is my fourth attempt to implement a good knowledge management
 tool. Therefore it has relatively long history - it is successor of
@@ -45,7 +44,7 @@ Then I decided to return back to the roots.
 # MindForger <!-- Metadata: type: Note; tags: cool; created: 2018-03-18 09:14:07; reads: 6; read: 2018-05-10 12:51:32; revision: 5; modified: 2018-05-10 12:51:32; -->
 ![MindForger](mindforger.png)
 
-[MindForger](https://github.com/dvorka/mindforger) is an desktop
-application that is built using experience from all my past projects. 
+[MindForger](https://github.com/dvorka/mindforger) is desktop
+application built with lessons learned/fails/experience from all my past projects. 
 It aims to finally go beyond outliner and become definitive human mind inspired *personal* knowledge management 
 tool running on desktop. Key features include human mind like capabilities, security, sharing and good overall performance.
