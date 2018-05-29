@@ -1,24 +1,69 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 362; read: 2018-05-25 07:19:28; revision: 362; modified: 2018-05-25 07:19:28; importance: 0/5; urgency: 0/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 378; read: 2018-05-29 19:45:36; revision: 378; modified: 2018-05-29 19:45:36; importance: 0/5; urgency: 0/5; -->
 
 Table of contents:
 
-* [Repository](repository)
+* [CLI and man](#cli-and-man)
+* [Repository](#repository)
+* [Configuration](#configuration)
 * [Markdown IDE](#markdown-ide)
 * [Searching](#searching)
 * [Thinking Notebook](#thinking-notebook)
 * [Sharing](#sharing)
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
-# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 12; read: 2018-05-01 17:27:30; revision: 5; modified: 2018-05-01 17:27:30; -->
+# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 18; read: 2018-05-29 19:40:22; revision: 7; modified: 2018-05-29 19:40:22; -->
 Read MindForger  manual page for command line (CLI) options documentation:
 
-```
+```shell
 man mindforger
 ```
-# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 17; read: 2018-04-10 10:50:50; revision: 1; modified: 2018-04-10 10:50:50; -->
-...
+... and check help:
 
-## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 9; read: 2018-04-10 10:51:20; revision: 1; modified: 2018-04-10 10:51:20; -->
-...
+```shell
+$ mindfoger --help
+
+Usage: mindfoger [options] [<directory>|<file>]
+Thinking notebook.
+
+Options:
+  -t, --theme <theme>            Use 'dark', 'light' or other GUI <theme>.
+  -c, --config-file-path <file>  Load configuration from given <file>.
+  -v, --version                  Displays version information.
+  -h, --help                     Displays this help.
+
+Arguments:
+  [<directory>|<file>]           MindForger repository or directory/file with
+                                 Markdown(s) to open
+```
+# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 20; read: 2018-05-29 19:41:42; revision: 2; modified: 2018-05-29 19:41:42; -->
+MindForger can be used to edit single Markdown file, multiple Markdown files
+(directory that contains itself or in its sub-directories Markdown files) or 
+MindForger repository.
+## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 11; read: 2018-05-29 19:45:36; revision: 5; modified: 2018-05-29 19:45:36; -->
+MindForger repository is a directory w/ specific structure 
+where is **your knowledge stored**. It contains (enriched) 
+Markdown files allowing you to get most of MindForger
+capabilities.
+
+MindForger creates default MindForger repository on its first 
+start in:
+
+```
+~/mindforger-repository
+```
+
+The structure looks like this:
+
+```
+$ tree mindforger-repository/
+
+mindforger-repository/
+├── limbo
+├── memory
+├── mind
+└── stencils
+    ├── notes
+    └── outline
+```
 ## Markdown file <!-- Metadata: type: Note; created: 2018-04-10 10:50:58; reads: 18; read: 2018-04-10 10:51:29; revision: 3; modified: 2018-04-10 10:51:29; -->
 ...
 ## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 10; read: 2018-04-10 10:51:34; revision: 2; modified: 2018-04-10 10:51:34; -->
