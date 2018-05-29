@@ -12,7 +12,7 @@ Specifications:
 * [Outline Format - Markdown hosted DSL](#markdown-hosted-dsl)
 
 In case that you have any question or want to learn more about technical details 
-please don't hesitate to [me](mailto:martin.dvorak@mindforger.com).
+please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
 # Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 107; read: 2018-04-01 08:09:28; revision: 71; modified: 2018-04-01 08:09:28; -->
 Perhaps you may find useful description of my development environment:
