@@ -2,7 +2,7 @@
 ![MindForger](mindforger.png)
 
 [MindForger](https://www.mindforger.com) is my fourth attempt to implement a good knowledge management
-tool. Therefore it has relatively long history - it's a successor of
+tool. Therefore it has relatively long history - it is successor of
 RDF Spiders, MindRaider and Coaching Notebook. Actually it's a bit more 
 complicated...
 # RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 38; read: 2018-05-10 12:48:36; revision: 36; modified: 2018-05-10 12:48:36; -->
