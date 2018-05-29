@@ -1,15 +1,12 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 274; read: 2018-05-17 09:47:19; revision: 274; modified: 2018-05-17 09:47:19; importance: 0/5; urgency: 0/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 280; read: 2018-05-29 11:38:35; revision: 280; modified: 2018-05-29 11:38:35; importance: 0/5; urgency: 0/5; -->
 
 *Table of Contents*
 
-* Ubuntu
-* [Build from Source Code](#build)
-    * [Dependencies](#dependencies)
-    * [Ubuntu](#ubuntu)
-	
+* [Build from Source Code](#build-from-source-code)
+* [Install a package](#install-package)
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 22; read: 2018-04-25 17:11:28; revision: 2; modified: 2018-04-25 17:11:28; -->
 Build MindForger from source code.
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 71; read: 2018-05-17 09:45:38; revision: 39; modified: 2018-05-17 09:45:38; -->
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 73; read: 2018-05-17 09:45:38; revision: 39; modified: 2018-05-17 09:45:38; -->
 Build MindForger on Ubuntu 14.04 or later.
 
 Install build tools:
@@ -171,7 +168,7 @@ Run MindForger:
 ```
 mindforger
 ```
-# Install <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 11; read: 2018-04-25 17:11:04; revision: 5; modified: 2018-04-25 17:11:04; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 14; read: 2018-05-29 11:38:26; revision: 6; modified: 2018-05-29 11:38:26; -->
 Install MindForger using a package.
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 44; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
