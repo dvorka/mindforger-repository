@@ -62,8 +62,10 @@ directoring using `mindforger .`:
 
 * ProGit
   https://github.com/progit/progit
+    * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * NYTimes Objective-C style guide:
   https://github.com/NYTimes/objective-c-style-guide
+    * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
 * LivingSocial API design
   https://github.com/livingsocial/api-design
 * C++ core guidelines
