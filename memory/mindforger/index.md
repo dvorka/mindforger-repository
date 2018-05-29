@@ -1,6 +1,6 @@
 # MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 132; read: 2018-05-29 11:37:14; revision: 132; modified: 2018-05-29 11:37:14; importance: 0/5; urgency: 0/5; -->
 
-MindForger is **personal thinking notebook** and **Markdown editor/IDE**.
+MindForger is **personal thinking notebook** and **Markdown IDE**.
 
 ![MindForger](mindforger.png)
 
