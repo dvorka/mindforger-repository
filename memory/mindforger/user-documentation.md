@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 451; read: 2018-05-30 23:10:38; revision: 451; modified: 2018-05-30 23:10:38; importance: 0/5; urgency: 0/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 485; read: 2018-05-31 23:10:38; revision: 485; modified: 2018-05-31 23:10:38; importance: 0/5; urgency: 0/5; -->
 
 Table of contents:
 
@@ -42,7 +42,7 @@ MindForger can be used to:
 * manage knowledge in a [MindForger repository](#mindforger-repository)
 * edit single [Markdown file](#markdown-file)
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
-## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 29; read: 2018-05-29 22:57:32; revision: 11; modified: 2018-05-29 22:57:32; -->
+## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 37; read: 2018-05-30 06:45:13; revision: 13; modified: 2018-05-30 06:45:13; -->
 MindForger repository is a directory with specific 
 [structure](developer-documentation.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
@@ -73,8 +73,8 @@ mindforger-repository/
 ├── memory
 ├── mind
 └── stencils
-    ├── notes
-    └── outline
+    ├── notebooks
+    └── notes
 ```
 ## Markdown file <!-- Metadata: type: Note; created: 2018-04-10 10:50:58; reads: 29; read: 2018-05-29 22:55:11; revision: 5; modified: 2018-05-29 22:55:11; -->
 MindForger can be used to edit **single** Markdown file:
@@ -85,7 +85,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-05-30 23:03:27; revision: 5; modified: 2018-05-30 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-05-31 23:03:27; revision: 5; modified: 2018-05-31 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -97,7 +97,7 @@ $ mindforger a-github-repository-with-interesting-content
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily find and navigate it.
-# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-05-30 23:04:40; revision: 8; modified: 2018-05-30 23:04:40; -->
+# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-05-31 23:04:40; revision: 8; modified: 2018-05-31 23:04:40; -->
 MindForger can be configured either from UI:
 
 * menu `Mind/Adapt`
@@ -107,16 +107,16 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-05-30 23:05:50; revision: 3; modified: 2018-05-30 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-05-31 23:05:50; revision: 3; modified: 2018-05-31 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:52:02; reads: 38; read: 2018-05-30 23:06:24; revision: 7; modified: 2018-05-30 23:06:24; -->
+## Markdown editor <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:52:02; reads: 38; read: 2018-05-31 23:06:24; revision: 7; modified: 2018-05-31 23:06:24; -->
 ...
 
 side-by-side editor and MF
 
 ...
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 23:09:05; reads: 10; read: 2018-05-30 23:09:08; revision: 2; modified: 2018-05-30 23:09:08; -->
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-31 23:09:05; reads: 10; read: 2018-05-31 23:09:08; revision: 2; modified: 2018-05-31 23:09:08; -->
 ...
 ### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 41; read: 2018-05-04 06:39:09; revision: 10; modified: 2018-05-04 06:39:09; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
@@ -137,7 +137,7 @@ _italic_ text, __bold__ text, ~~deleted~~ text.
 
 #### Keyboard keys <!-- Metadata: type: Note; created: 2018-05-03 10:07:40; reads: 12; read: 2018-05-03 10:08:27; revision: 4; modified: 2018-05-03 10:08:27; -->
 You can use <kbd>Alt+f b</kbd> to make marked text bold.
-#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 35; read: 2018-05-30 23:07:43; revision: 13; modified: 2018-05-30 23:07:43; -->
+#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 35; read: 2018-05-31 23:07:43; revision: 13; modified: 2018-05-31 23:07:43; -->
 See Markdown source of this Note to learn **image** syntax.
 
 Image from web:
@@ -151,7 +151,7 @@ Image from current MindForger repository:
 ---
 
 💡 click menu `Format/Image` or press <kbd>Alt+f m</kbd> to insert image.
-#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 58; read: 2018-05-30 23:07:56; revision: 23; modified: 2018-05-30 23:07:56; -->
+#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 58; read: 2018-05-31 23:07:56; revision: 23; modified: 2018-05-31 23:07:56; -->
 See Markdown source of this Note to learn **link** syntax.
 
 Link to web:
@@ -369,9 +369,9 @@ Markdown comments:
 And HTML comments:
 
 <!-- (usually) also invisible -->
-#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 11; read: 2018-05-30 23:07:01; revision: 3; modified: 2018-05-30 23:07:01; -->
+#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 11; read: 2018-05-31 23:07:01; revision: 3; modified: 2018-05-31 23:07:01; -->
 _This feature is not implemented yet._
-### Editor syntax highlighting <!-- Metadata: type: Note; created: 2018-04-26 08:49:22; reads: 17; read: 2018-05-30 23:08:38; revision: 7; modified: 2018-05-30 23:08:38; -->
+### Editor syntax highlighting <!-- Metadata: type: Note; created: 2018-04-26 08:49:22; reads: 17; read: 2018-05-31 23:08:38; revision: 7; modified: 2018-05-31 23:08:38; -->
 Markdown text below demonstrates syntax highlighting
 capabilities in **edit** mode - <kbd>double click</kbd> HTML preview to open
 Markdown editor:
@@ -457,8 +457,38 @@ document collections (repositories, documentation, books, etc.):
 * notes can be **refactoried** withing or across different notebooks
 ### Multiple documents <!-- Metadata: type: Note; created: 2018-04-24 14:01:18; reads: 21; read: 2018-04-26 09:14:41; revision: 2; modified: 2018-04-26 09:14:41; -->
 ...
-### Stencils <!-- Metadata: type: Note; created: 2018-04-24 14:01:55; reads: 16; read: 2018-04-26 09:14:42; revision: 3; modified: 2018-04-26 09:14:42; -->
-...
+### Stencils <!-- Metadata: type: Note; created: 2018-04-24 14:01:55; reads: 25; read: 2018-05-30 06:47:44; revision: 18; modified: 2018-05-30 06:47:44; -->
+Stencil represents a common pattern that can be used in
+variations e.g., to solve a task. It might be a how to 
+(like how to change a car wheel) that once created, you 
+may want it to customize for a different case.
+
+Notebook stencil corresponds to application of 
+a problem/semantic domain to another problem. 
+Once you have a _modus operandi_ or you know how to 
+do that, than this is the case.
+
+You can use a stencil when creating a **new** notebook
+or note - check `Stencils` drop-down in the dialog
+opened using menu `Notebook/New` or `Note/New`.
+
+[MindForger repositories](#mindforger-repository) (including 
+the default one) contain stencils for both notebooks and notes:
+
+```
+<mindforger repository>/
+├── ...
+└── stencils
+    ├── notebooks
+    └── notes
+```
+
+MindForger is shipped with an initial set of stencils for meeting
+notes, software analysis/design, [GROW model](https://en.wikipedia.org/wiki/GROW_model)
+etc. 
+
+You can easily **extend** outlines just by copying Markdown file
+to `notes` or `notebooks` directory.
 ### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 35; read: 2018-05-04 06:59:08; revision: 4; modified: 2018-05-04 06:59:08; -->
 ... Note up/down/...
 ### Note refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:22; reads: 26; read: 2018-04-26 09:14:44; revision: 4; modified: 2018-04-26 09:14:44; -->
@@ -593,7 +623,7 @@ all notes would be usefull, however HW resource consumption intensive. This is a
 why I don't want to duplicate this (already sophisticated) functionality within MindForger.
 # Sharing <!-- Metadata: type: Note; created: 2018-04-10 10:59:54; reads: 9; read: 2018-04-10 10:59:56; revision: 2; modified: 2018-04-10 10:59:56; -->
 ...
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-05-30 23:10:38; revision: 2; modified: 2018-05-30 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-05-31 23:10:38; revision: 2; modified: 2018-05-31 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
