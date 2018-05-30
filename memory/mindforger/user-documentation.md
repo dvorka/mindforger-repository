@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 485; read: 2018-05-31 23:10:38; revision: 485; modified: 2018-05-31 23:10:38; importance: 0/5; urgency: 0/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 603; read: 2018-06-01 23:10:38; revision: 601; modified: 2018-06-01 23:10:38; importance: 0/5; urgency: 0/5; -->
 
 Table of contents:
 
@@ -8,11 +8,10 @@ Table of contents:
 * [Markdown IDE](#markdown-ide)
 * [Searching](#searching)
 * [Thinking Notebook](#thinking-notebook)
-* [Sharing](#sharing)
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
 
 This document _briefly_ describes key MindForger features.
-# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 31; read: 2018-05-29 22:46:55; revision: 10; modified: 2018-05-29 22:46:55; -->
+# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 33; read: 2018-05-29 22:46:55; revision: 10; modified: 2018-05-29 22:46:55; -->
 Read MindForger  manual page for command line options documentation:
 
 ```shell
@@ -42,7 +41,7 @@ MindForger can be used to:
 * manage knowledge in a [MindForger repository](#mindforger-repository)
 * edit single [Markdown file](#markdown-file)
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
-## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 37; read: 2018-05-30 06:45:13; revision: 13; modified: 2018-05-30 06:45:13; -->
+## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 39; read: 2018-05-30 06:45:13; revision: 13; modified: 2018-05-30 06:45:13; -->
 MindForger repository is a directory with specific 
 [structure](developer-documentation.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
@@ -85,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-05-31 23:03:27; revision: 5; modified: 2018-05-31 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-06-01 23:03:27; revision: 5; modified: 2018-06-01 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -97,7 +96,7 @@ $ mindforger a-github-repository-with-interesting-content
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily find and navigate it.
-# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-05-31 23:04:40; revision: 8; modified: 2018-05-31 23:04:40; -->
+# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-06-01 23:04:40; revision: 8; modified: 2018-06-01 23:04:40; -->
 MindForger can be configured either from UI:
 
 * menu `Mind/Adapt`
@@ -107,37 +106,87 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-05-31 23:05:50; revision: 3; modified: 2018-05-31 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-06-01 23:05:50; revision: 3; modified: 2018-06-01 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:52:02; reads: 38; read: 2018-05-31 23:06:24; revision: 7; modified: 2018-05-31 23:06:24; -->
-...
+## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 74; read: 2018-06-01 23:06:24; revision: 21; modified: 2018-05-30 07:30:35; -->
+MindForger can be used as Markdown editor.
 
-side-by-side editor and MF
+It allows you to easily write [Markdown](#markdown) 
+documents without the need to remember all the details 
+of its **syntax** and **preview** Markdown rendered to 
+HTML.
 
-...
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-31 23:09:05; reads: 10; read: 2018-05-31 23:09:08; revision: 2; modified: 2018-05-31 23:09:08; -->
-...
-### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 41; read: 2018-05-04 06:39:09; revision: 10; modified: 2018-05-04 06:39:09; -->
+Before you get started check:
+
+* how MindForger represents Markdown as [outline](#markdown-outline)
+* how to switch between [view and edit mode](#view-vs-edit-mode)
+### Markdown Outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 28; read: 2018-05-30 07:38:31; revision: 18; modified: 2018-05-30 07:38:31; -->
+In order to enable quick **navigation** and **refactoring** 
+of Markdown documents, MindForger
+shows Markdown documents as **outline** allowing
+you to efficiently choose/read/edit/refactor particular section.
+
+![Image](user-documentation.outliner-rules.png)
+
+Check side-by-side Markdown document **text view**
+and **MindForger view** in the image above:
+
+* Markdown document `INSTALLATION` is opened in text editor on the **left**
+* the same Markdown document is opened in MindForger on the **right**
+
+As you can see, MindForger represents the hierarchy of sections 
+(prefixed/underlined in Markdown syntax with/by `#`, `-` or `=`) 
+as a **tree** - it's called **outline**:
+
+* tree of sections (on the left in MindForger window) reflects 
+  the **depth/level** of individual sections e.g. section `UBUNTU` 
+  on the second level is prefixed with `##` and shown on the second 
+  level in the tree 
+
+![Image](faq.title-section-edit.png)
+
+* you can **open** Markdown document **title section** (`INSTALLATION`) by
+  clicking its name `INSTALLATION` above **outline**
+* any **sub-section** can be opened by clicking its name in the tree
+
+For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
+
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 29; read: 2018-06-01 23:09:08; revision: 10; modified: 2018-05-30 07:26:08; -->
+![Image](user-documentation.outliner-rules.png)
+
+If you want to **edit** a section either **double-click** anywhere in the 
+rendered preview on the right (in the MindForger window) or choose:
+
+*  menu `Notebook/Edit` for title section
+*  menu `Note/Edit` for any sub-section
+### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 60; read: 2018-05-30 07:30:17; revision: 15; modified: 2018-05-30 07:30:17; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
 format to get rendered HTML.
 
-MindForger uses Markdown-based DSL as format of your remarkks. For Markdown
-syntax documentation please refere to:
+MindForger uses Markdown-based DSL as format of 
+your remarks. There exist many Markdown flavors - for
+Markdown syntax documentation please refere to:
 
 * [John Gruber Markdown syntax](https://daringfireball.net/projects/markdown/syntax) documentation
 * [GitHub Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) documentation
 * [GitHub flawored Markdown](https://github.github.com/gfm/) specification
 * [Discount](https://www.pell.portland.or.us/~orc/Code/discount/) documentation
 * [Mermaid diagrams](https://mermaidjs.github.io/) documentation
-#### Text <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 40; read: 2018-04-26 08:49:01; revision: 7; modified: 2018-04-26 08:49:01; -->
+
+Sub-sections of this section provide Markdown syntax
+overview and rendering demonstration. As you read
+particular Markdown syntax features, be sure to
+open each section for **edit** (to check syntax) and
+experiment with **menu** `Format/*`.
+#### Text <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 54; read: 2018-04-26 08:49:01; revision: 7; modified: 2018-04-26 08:49:01; -->
 `Monospace` text, *emph* text, **bold** text, 
 _italic_ text, __bold__ text, ~~deleted~~ text.
 
-#### Keyboard keys <!-- Metadata: type: Note; created: 2018-05-03 10:07:40; reads: 12; read: 2018-05-03 10:08:27; revision: 4; modified: 2018-05-03 10:08:27; -->
+#### Keyboard keys <!-- Metadata: type: Note; created: 2018-05-03 10:07:40; reads: 26; read: 2018-05-03 10:08:27; revision: 4; modified: 2018-05-03 10:08:27; -->
 You can use <kbd>Alt+f b</kbd> to make marked text bold.
-#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 35; read: 2018-05-31 23:07:43; revision: 13; modified: 2018-05-31 23:07:43; -->
+#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 51; read: 2018-06-01 23:07:43; revision: 13; modified: 2018-06-01 23:07:43; -->
 See Markdown source of this Note to learn **image** syntax.
 
 Image from web:
@@ -151,7 +200,7 @@ Image from current MindForger repository:
 ---
 
 💡 click menu `Format/Image` or press <kbd>Alt+f m</kbd> to insert image.
-#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 58; read: 2018-05-31 23:07:56; revision: 23; modified: 2018-05-31 23:07:56; -->
+#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 74; read: 2018-06-01 23:07:56; revision: 23; modified: 2018-06-01 23:07:56; -->
 See Markdown source of this Note to learn **link** syntax.
 
 Link to web:
@@ -181,7 +230,7 @@ Link to a directory on the filesystem:
 ---
 
 💡 click menu `Format/Link` or press <kbd>Alt+f l</kbd> to insert link.
-#### Smarty pants <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 42; read: 2018-04-26 08:49:05; revision: 6; modified: 2018-04-26 08:49:05; -->
+#### Smarty pants <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 56; read: 2018-04-26 08:49:05; revision: 6; modified: 2018-04-26 08:49:05; -->
 
 [Smarty pants like](https://daringfireball.net/projects/smartypants/) like:
 
@@ -192,7 +241,7 @@ Link to a directory on the filesystem:
 * consecutive dots ...
 * 1/4 1/2
 * A^B and a^(b+2)
-#### HR <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 46; read: 2018-05-04 06:45:10; revision: 8; modified: 2018-05-04 06:45:10; -->
+#### HR <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 58; read: 2018-05-04 06:45:10; revision: 8; modified: 2018-05-04 06:45:10; -->
 Horizontal...
 
 ---
@@ -202,7 +251,7 @@ Horizontal...
 ... split screen horizontally.
 ___
 
-#### List <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 43; read: 2018-05-04 06:46:14; revision: 7; modified: 2018-05-04 06:46:14; -->
+#### List <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 57; read: 2018-05-04 06:46:14; revision: 7; modified: 2018-05-04 06:46:14; -->
 Bullet list:
 
 * why
@@ -221,7 +270,7 @@ Numbered list:
 3. what
     1. ?
 
-#### Tasks <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 55; read: 2018-04-30 08:09:49; revision: 10; modified: 2018-04-30 08:09:49; -->
+#### Tasks <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 69; read: 2018-04-30 08:09:49; revision: 10; modified: 2018-04-30 08:09:49; -->
 Task list:
 
 * [x] skip-gram
@@ -230,7 +279,7 @@ Task list:
 * [ ] word embedding
 * [x] stemmer
 
-#### Blockquote <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 37; read: 2018-05-04 06:48:37; revision: 7; modified: 2018-05-04 06:48:37; -->
+#### Blockquote <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 49; read: 2018-05-04 06:48:37; revision: 7; modified: 2018-05-04 06:48:37; -->
 Riddle:
 
 > frodo and
@@ -238,7 +287,7 @@ Riddle:
 >> riddles
 >>> in the dark
 
-#### Tables <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 45; read: 2018-05-04 06:46:57; revision: 7; modified: 2018-05-04 06:46:57; -->
+#### Tables <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 59; read: 2018-05-04 06:46:57; revision: 7; modified: 2018-05-04 06:46:57; -->
 Pets:
 
 Snake | Turtle
@@ -248,7 +297,7 @@ Karkulka | Ema
 Frontend | Backend
 :----- | :------
 Qt | C++
-#### Source code with syntax highlighting <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 36; read: 2018-05-04 06:49:52; revision: 6; modified: 2018-05-04 06:49:52; -->
+#### Source code with syntax highlighting <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 50; read: 2018-05-04 06:49:52; revision: 6; modified: 2018-05-04 06:49:52; -->
 There are multiple options how a block of source code can be written in Markdown.
 
 **IMPORTANT**: note leading empty lines before code blocks.
@@ -296,7 +345,7 @@ public static void main(string[] args) {
     return 0;
 }
 ~~~
-#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 42; read: 2018-04-26 08:49:09; revision: 7; modified: 2018-04-26 08:49:09; -->
+#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 56; read: 2018-04-26 08:49:09; revision: 7; modified: 2018-04-26 08:49:09; -->
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
 
 
@@ -313,7 +362,7 @@ $$\lim_{x\to 0}$$
 
 Sqrt:
 $$\left(\frac{\sqrt x}{y^3}\right)$$
-#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 47; read: 2018-04-26 08:49:10; revision: 7; modified: 2018-04-26 08:49:10; -->
+#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 61; read: 2018-04-26 08:49:10; revision: 7; modified: 2018-04-26 08:49:10; -->
 Flowchart diagram:
 
 ```mermaid
@@ -361,7 +410,7 @@ gantt
         Add to mermaid                      :1d
 ```
 
-#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 18; read: 2018-05-04 06:49:36; revision: 2; modified: 2018-05-04 06:49:36; -->
+#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 30; read: 2018-05-04 06:49:36; revision: 2; modified: 2018-05-04 06:49:36; -->
 Markdown comments:
 
 [/]:# (This is a comment, you cannot see it)
@@ -369,95 +418,21 @@ Markdown comments:
 And HTML comments:
 
 <!-- (usually) also invisible -->
-#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 11; read: 2018-05-31 23:07:01; revision: 3; modified: 2018-05-31 23:07:01; -->
+#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 27; read: 2018-06-01 23:07:01; revision: 3; modified: 2018-06-01 23:07:01; -->
 _This feature is not implemented yet._
-### Editor syntax highlighting <!-- Metadata: type: Note; created: 2018-04-26 08:49:22; reads: 17; read: 2018-05-31 23:08:38; revision: 7; modified: 2018-05-31 23:08:38; -->
-Markdown text below demonstrates syntax highlighting
-capabilities in **edit** mode - <kbd>double click</kbd> HTML preview to open
-Markdown editor:
-
----
-
-*blah* text
-*bl ah* text
-*bl   ah* text
-text *123* a text
-*b123c* text
-*1abc2* text
-
-**blah** a text
-text **blah**
-text **bl ah** text
-**bl   ah** text
- 
-_italic_
-_ita lic_ text
-text __italicer__
-text __italicer__ text
-text __ital icer__ text
-
-~~strike~~ text
-text ~~str ike~~
-text ~~strike~~ text
-
-`codeblock`
-`codeb lock`
-inlined `codeblock` inline
-
-[Named Link](http://www.google.en/this-is-link) text
-
-text http://www.autolink.com/ text
-  http://www.autolink.com/ text
-  http://www.autolink.com
-text https://me.mf.com/info.html text
-text https://me.mf.com/b/c/info.html text
-Autolink in http://www.info.com/a/b text
-
-[In: Introduction](#S-introduction) text
-
-![Named Image](http://www.mindforger.com/favicon.ico) text
-
-* Bullet *and* his **with** list _italic_ and `code` is nice
-    * Nested bullet
-        * Sub-nested bullet etc
-+ Also bullet
-    + deep
-- Event this bullet
-    - deeper
-
-1. A numbered list **with** list _italic_ and `code` is nice
-    1. A nested numbered list
-        3. Which is numbered
-
-- [ ] An uncompleted task
-- [x] A completed task
-
-```
-code block
-```
-
-```java
-java code block
-```
-
-This is &entity;
-
-<tag a="abc" b="123">nice</tag> text
-
----
-## Markdown IDE <!-- Metadata: type: Note; created: 2018-04-10 10:52:12; reads: 33; read: 2018-05-04 06:58:52; revision: 3; modified: 2018-05-04 06:58:52; -->
-MindForger is integrated development environment (IDE) for the development of Markdown
-document collections (repositories, documentation, books, etc.):
+## Markdown IDE <!-- Metadata: type: Note; created: 2018-04-10 10:52:12; reads: 47; read: 2018-05-30 07:27:50; revision: 5; modified: 2018-05-30 07:27:50; -->
+MindForger is more than just Markdown editor - it is integrated development environment (IDE) 
+for the development of Markdown document collections (repositories, documentation, books, etc.):
 
 * **multiple** Markdown documents can be opened in order to perform search, refactoring
   and analytics
 * user defined **stencils** can be used to quickly create new notebooks and notes
 * notebook **structure** can be easily refactored with outliner-style operations
   defined on notes
-* notes can be **refactoried** withing or across different notebooks
-### Multiple documents <!-- Metadata: type: Note; created: 2018-04-24 14:01:18; reads: 21; read: 2018-04-26 09:14:41; revision: 2; modified: 2018-04-26 09:14:41; -->
+* both notebooks and notes can be **refactoried** withing or across different notebooks and notes
+### Multiple documents <!-- Metadata: type: Note; tags: todo; created: 2018-04-24 14:01:18; reads: 28; read: 2018-05-30 07:30:46; revision: 3; modified: 2018-05-30 07:30:46; -->
 ...
-### Stencils <!-- Metadata: type: Note; created: 2018-04-24 14:01:55; reads: 25; read: 2018-05-30 06:47:44; revision: 18; modified: 2018-05-30 06:47:44; -->
+### Stencils <!-- Metadata: type: Note; created: 2018-04-24 14:01:55; reads: 27; read: 2018-05-30 06:47:44; revision: 18; modified: 2018-05-30 06:47:44; -->
 Stencil represents a common pattern that can be used in
 variations e.g., to solve a task. It might be a how to 
 (like how to change a car wheel) that once created, you 
@@ -489,29 +464,29 @@ etc.
 
 You can easily **extend** outlines just by copying Markdown file
 to `notes` or `notebooks` directory.
-### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 35; read: 2018-05-04 06:59:08; revision: 4; modified: 2018-05-04 06:59:08; -->
-... Note up/down/...
-### Note refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:22; reads: 26; read: 2018-04-26 09:14:44; revision: 4; modified: 2018-04-26 09:14:44; -->
+### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 38; read: 2018-05-30 07:30:55; revision: 5; modified: 2018-05-30 07:30:55; -->
 ...
-# Searching <!-- Metadata: type: Note; created: 2018-04-10 10:55:15; reads: 23; read: 2018-04-10 10:55:15; revision: 1; modified: 2018-04-10 10:55:15; -->
+### Note refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:22; reads: 30; read: 2018-04-26 09:14:44; revision: 4; modified: 2018-04-26 09:14:44; -->
 ...
-## Scope <!-- Metadata: type: Note; created: 2018-04-10 10:55:49; reads: 15; read: 2018-04-10 10:55:49; revision: 1; modified: 2018-04-10 10:55:49; -->
+# Searching <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:55:15; reads: 30; read: 2018-05-30 07:31:31; revision: 2; modified: 2018-05-30 07:31:31; -->
 ...
-## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 13; read: 2018-04-10 10:55:46; revision: 2; modified: 2018-04-10 10:55:46; -->
+## Scope <!-- Metadata: type: Note; created: 2018-04-10 10:55:49; reads: 19; read: 2018-04-10 10:55:49; revision: 1; modified: 2018-04-10 10:55:49; -->
 ...
-## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 11; read: 2018-04-10 10:55:57; revision: 1; modified: 2018-04-10 10:55:57; -->
+## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 17; read: 2018-04-10 10:55:46; revision: 2; modified: 2018-04-10 10:55:46; -->
 ...
-## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 9; read: 2018-04-10 10:56:02; revision: 1; modified: 2018-04-10 10:56:02; -->
+## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 15; read: 2018-04-10 10:55:57; revision: 1; modified: 2018-04-10 10:55:57; -->
 ...
-# Thinking Notebook <!-- Metadata: type: Note; created: 2018-04-10 10:50:28; reads: 51; read: 2018-04-26 08:48:05; revision: 5; modified: 2018-04-26 08:48:05; -->
+## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 13; read: 2018-04-10 10:56:02; revision: 1; modified: 2018-04-10 10:56:02; -->
 ...
-## Think as you Search <!-- Metadata: type: Note; created: 2018-04-10 10:49:58; reads: 27; read: 2018-04-10 10:50:31; revision: 2; modified: 2018-04-10 10:50:31; -->
+# Thinking Notebook <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:50:28; reads: 58; read: 2018-05-30 07:31:39; revision: 6; modified: 2018-05-30 07:31:39; -->
 ...
-## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 23; read: 2018-04-10 10:50:31; revision: 2; modified: 2018-04-10 10:50:31; -->
+## Think as you Search <!-- Metadata: type: Note; created: 2018-04-10 10:49:58; reads: 29; read: 2018-04-10 10:50:31; revision: 2; modified: 2018-04-10 10:50:31; -->
 ...
-## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 19; read: 2018-04-10 10:50:32; revision: 2; modified: 2018-04-10 10:50:32; -->
+## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 25; read: 2018-04-10 10:50:31; revision: 2; modified: 2018-04-10 10:50:31; -->
 ...
-## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 24; read: 2018-05-03 09:26:24; revision: 17; modified: 2018-05-03 09:26:24; -->
+## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 23; read: 2018-04-10 10:50:32; revision: 2; modified: 2018-04-10 10:50:32; -->
+...
+## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 26; read: 2018-05-03 09:26:24; revision: 17; modified: 2018-05-03 09:26:24; -->
 > Motto: "Computers need to forget". -- [Viktor Mayer-Schönberger](http://blog.mindforger.com/2007/11/computers-need-to-forget.html)
 
 Before I deep dive to MindForger features let me formulate
@@ -551,7 +526,7 @@ forgetting does **NOT** mean deleting of information.
 MindForger maintains **all** the remarks you ever written
 (see [limbo](#limbo)), but works with/shows only with 
 a [scope](#time-scope) **configurable** by you.
-### Time scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 47; read: 2018-05-03 10:08:38; revision: 43; modified: 2018-05-03 10:08:38; -->
+### Time scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 49; read: 2018-05-03 10:08:38; revision: 43; modified: 2018-05-03 10:08:38; -->
 Use menu `Mind/Scope` or <kbd>Alt+m p</kbd> to configure time scope.
 
 ---
@@ -610,7 +585,7 @@ In particular you can set **global** time scope:
 In particular you can set **note** specific time scope that overrides global time scope:
 
 * ... behaviour is the same as above except that this setting has no effect on notebooks listing ...
-### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 16; read: 2018-05-03 10:06:46; revision: 4; modified: 2018-05-03 10:06:46; -->
+### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 18; read: 2018-05-03 10:06:46; revision: 4; modified: 2018-05-03 10:06:46; -->
 MindForger does **not** **delete** notebooks - it moves them to a location called Limbo that
 can be found in `${ACTIVE_MF_REPOSITORY}/limbo`. This is where you can delete Markdown
 documents pernamently.
@@ -621,9 +596,7 @@ If you use menu `Note/Forget`, then the note is deleted.
 Side note: I personally use CMS (Git) - I have full history of notebooks and notes. Tracking of
 all notes would be usefull, however HW resource consumption intensive. This is also
 why I don't want to duplicate this (already sophisticated) functionality within MindForger.
-# Sharing <!-- Metadata: type: Note; created: 2018-04-10 10:59:54; reads: 9; read: 2018-04-10 10:59:56; revision: 2; modified: 2018-04-10 10:59:56; -->
-...
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-05-31 23:10:38; revision: 2; modified: 2018-05-31 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-06-01 23:10:38; revision: 2; modified: 2018-06-01 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)

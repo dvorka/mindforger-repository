@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 255; read: 2018-05-29 11:04:04; revision: 255; modified: 2018-05-29 11:04:04; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 265; read: 2018-05-30 07:33:09; revision: 265; modified: 2018-05-30 07:33:09; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -14,7 +14,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 107; read: 2018-04-01 08:09:28; revision: 71; modified: 2018-04-01 08:09:28; -->
+# Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 111; read: 2018-04-01 08:09:28; revision: 71; modified: 2018-04-01 08:09:28; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -45,7 +45,7 @@ Perhaps you may find useful description of my development environment:
         * Alt-X compile > cd ../.. && make (make -k for keep going)
 
 For more details see source code.
-## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 46; read: 2018-03-31 08:39:39; revision: 13; modified: 2018-03-31 08:39:39; -->
+## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 48; read: 2018-03-31 08:39:39; revision: 13; modified: 2018-03-31 08:39:39; -->
 MindForger has:
 
 * library unit tests
@@ -65,7 +65,7 @@ Frontend library tests:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 31; read: 2018-03-31 08:39:30; revision: 6; modified: 2018-03-31 08:39:30; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 33; read: 2018-03-31 08:39:30; revision: 6; modified: 2018-03-31 08:39:30; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
@@ -74,9 +74,9 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 24; read: 2018-05-17 10:57:04; revision: 5; modified: 2018-05-17 10:57:04; -->
+## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 26; read: 2018-05-17 10:57:04; revision: 5; modified: 2018-05-17 10:57:04; -->
 [Continous builds](https://travis-ci.org/dvorka/mindforger) via Travis CI, see also `.travis.yml`.
-## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 8; read: 2018-04-26 09:39:04; revision: 2; modified: 2018-04-26 09:39:04; -->
+## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 10; read: 2018-04-26 09:39:04; revision: 2; modified: 2018-04-26 09:39:04; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -91,25 +91,25 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
-# Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 35; read: 2018-04-26 09:32:27; revision: 7; modified: 2018-04-26 09:32:27; -->
+# Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 37; read: 2018-04-26 09:32:27; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
-## Library <!-- Metadata: type: Note; created: 2018-03-18 08:57:10; reads: 29; read: 2018-03-18 08:57:12; revision: 2; modified: 2018-03-18 08:57:12; -->
+## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 34; read: 2018-05-30 07:33:03; revision: 3; modified: 2018-05-30 07:33:03; -->
 ...
-### Markdown Recursive Descent Parser <!-- Metadata: type: Note; created: 2018-03-18 08:58:00; reads: 29; read: 2018-03-18 08:58:00; revision: 1; modified: 2018-03-18 08:58:00; -->
+### Markdown Recursive Descent Parser <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:58:00; reads: 35; read: 2018-05-30 07:32:40; revision: 3; modified: 2018-05-30 07:32:40; -->
 ...
-### NLP: stemmer, lexicon, BoW <!-- Metadata: type: Note; created: 2018-04-26 09:30:35; reads: 15; read: 2018-04-26 09:30:35; revision: 1; modified: 2018-04-26 09:30:35; -->
+### NLP: stemmer, lexicon, BoW <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:35; reads: 22; read: 2018-05-30 07:32:48; revision: 2; modified: 2018-05-30 07:32:48; -->
 ...
-### Neural Network <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:17; reads: 39; read: 2018-04-26 09:40:00; revision: 7; modified: 2018-04-26 09:40:00; -->
+### Neural Network <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:17; reads: 41; read: 2018-04-26 09:40:00; revision: 7; modified: 2018-04-26 09:40:00; -->
 ...
-## GUI <!-- Metadata: type: Note; created: 2018-03-18 08:57:27; reads: 32; read: 2018-03-18 08:57:38; revision: 3; modified: 2018-03-18 08:57:38; -->
+## GUI <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:27; reads: 38; read: 2018-05-30 07:33:09; revision: 4; modified: 2018-05-30 07:33:09; -->
 ...
-### Qt <!-- Metadata: type: Note; created: 2018-05-04 07:01:09; reads: 6; read: 2018-05-04 07:01:12; revision: 2; modified: 2018-05-04 07:01:12; -->
+### Qt <!-- Metadata: type: Note; created: 2018-05-04 07:01:09; reads: 8; read: 2018-05-04 07:01:12; revision: 2; modified: 2018-05-04 07:01:12; -->
 ...
-### Model View Presenter <!-- Metadata: type: Note; created: 2018-03-18 08:57:45; reads: 36; read: 2018-03-31 08:44:21; revision: 3; modified: 2018-03-31 08:44:21; -->
+### Model View Presenter <!-- Metadata: type: Note; created: 2018-03-18 08:57:45; reads: 38; read: 2018-03-31 08:44:21; revision: 3; modified: 2018-03-31 08:44:21; -->
 ...
-### Async UI updates <!-- Metadata: type: Note; created: 2018-04-26 09:30:53; reads: 19; read: 2018-04-26 09:30:53; revision: 1; modified: 2018-04-26 09:30:53; -->
+### Async UI updates <!-- Metadata: type: Note; created: 2018-04-26 09:30:53; reads: 21; read: 2018-04-26 09:30:53; revision: 1; modified: 2018-04-26 09:30:53; -->
 ...
-### Localization <!-- Metadata: type: Note; created: 2018-05-10 08:21:10; reads: 31; read: 2018-05-10 08:53:53; revision: 31; modified: 2018-05-10 08:53:53; -->
+### Localization <!-- Metadata: type: Note; created: 2018-05-10 08:21:10; reads: 33; read: 2018-05-10 08:53:53; revision: 31; modified: 2018-05-10 08:53:53; -->
 Adding a new/updating existing MindForger l10n:
 
 * Add translation name to `app/app.pro`: `TRANSLATIONS += src/qt/translations/mindforger_en.ts`
