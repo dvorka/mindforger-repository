@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 603; read: 2018-06-01 23:10:38; revision: 601; modified: 2018-06-01 23:10:38; importance: 0/5; urgency: 0/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 605; read: 2018-06-02 23:10:38; revision: 603; modified: 2018-06-02 23:10:38; importance: 0/5; urgency: 0/5; -->
 
 Table of contents:
 
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-06-01 23:03:27; revision: 5; modified: 2018-06-01 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 19; read: 2018-06-02 23:03:27; revision: 5; modified: 2018-06-02 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -96,7 +96,7 @@ $ mindforger a-github-repository-with-interesting-content
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily find and navigate it.
-# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-06-01 23:04:40; revision: 8; modified: 2018-06-01 23:04:40; -->
+# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 43; read: 2018-06-02 23:04:40; revision: 8; modified: 2018-06-02 23:04:40; -->
 MindForger can be configured either from UI:
 
 * menu `Mind/Adapt`
@@ -106,10 +106,10 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-06-01 23:05:50; revision: 3; modified: 2018-06-01 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 23; read: 2018-06-02 23:05:50; revision: 3; modified: 2018-06-02 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 74; read: 2018-06-01 23:06:24; revision: 21; modified: 2018-05-30 07:30:35; -->
+## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 74; read: 2018-06-02 23:06:24; revision: 21; modified: 2018-05-30 07:30:35; -->
 MindForger can be used as Markdown editor.
 
 It allows you to easily write [Markdown](#markdown) 
@@ -152,7 +152,7 @@ as a **tree** - it's called **outline**:
 
 For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
 
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 29; read: 2018-06-01 23:09:08; revision: 10; modified: 2018-05-30 07:26:08; -->
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 29; read: 2018-06-02 23:09:08; revision: 10; modified: 2018-05-30 07:26:08; -->
 ![Image](user-documentation.outliner-rules.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
@@ -186,7 +186,7 @@ _italic_ text, __bold__ text, ~~deleted~~ text.
 
 #### Keyboard keys <!-- Metadata: type: Note; created: 2018-05-03 10:07:40; reads: 26; read: 2018-05-03 10:08:27; revision: 4; modified: 2018-05-03 10:08:27; -->
 You can use <kbd>Alt+f b</kbd> to make marked text bold.
-#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 51; read: 2018-06-01 23:07:43; revision: 13; modified: 2018-06-01 23:07:43; -->
+#### Images <!-- Metadata: type: Note; created: 2018-04-26 08:45:45; reads: 51; read: 2018-06-02 23:07:43; revision: 13; modified: 2018-06-02 23:07:43; -->
 See Markdown source of this Note to learn **image** syntax.
 
 Image from web:
@@ -200,7 +200,7 @@ Image from current MindForger repository:
 ---
 
 💡 click menu `Format/Image` or press <kbd>Alt+f m</kbd> to insert image.
-#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 74; read: 2018-06-01 23:07:56; revision: 23; modified: 2018-06-01 23:07:56; -->
+#### Links <!-- Metadata: type: Note; created: 2018-04-26 08:46:02; reads: 74; read: 2018-06-02 23:07:56; revision: 23; modified: 2018-06-02 23:07:56; -->
 See Markdown source of this Note to learn **link** syntax.
 
 Link to web:
@@ -418,7 +418,7 @@ Markdown comments:
 And HTML comments:
 
 <!-- (usually) also invisible -->
-#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 27; read: 2018-06-01 23:07:01; revision: 3; modified: 2018-06-01 23:07:01; -->
+#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 27; read: 2018-06-02 23:07:01; revision: 3; modified: 2018-06-02 23:07:01; -->
 _This feature is not implemented yet._
 ## Markdown IDE <!-- Metadata: type: Note; created: 2018-04-10 10:52:12; reads: 47; read: 2018-05-30 07:27:50; revision: 5; modified: 2018-05-30 07:27:50; -->
 MindForger is more than just Markdown editor - it is integrated development environment (IDE) 
@@ -596,7 +596,7 @@ If you use menu `Note/Forget`, then the note is deleted.
 Side note: I personally use CMS (Git) - I have full history of notebooks and notes. Tracking of
 all notes would be usefull, however HW resource consumption intensive. This is also
 why I don't want to duplicate this (already sophisticated) functionality within MindForger.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-06-01 23:10:38; revision: 2; modified: 2018-06-01 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 13; read: 2018-06-02 23:10:38; revision: 2; modified: 2018-06-02 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
