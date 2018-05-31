@@ -7,7 +7,7 @@
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 22; read: 2018-04-25 17:11:28; revision: 2; modified: 2018-04-25 17:11:28; -->
 Build MindForger from source code.
 ## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 73; read: 2018-05-17 09:45:38; revision: 39; modified: 2018-05-17 09:45:38; -->
-Build MindForger on Ubuntu 14.04 or later.
+Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
 
