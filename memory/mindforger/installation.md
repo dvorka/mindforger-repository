@@ -15,7 +15,7 @@ Install build tools:
 sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
-Get source code:
+Get [source code](https://github.com/dvorka/mindforger):
 
 ```
 # clone MindForger repository
@@ -69,7 +69,7 @@ Install build tools:
 sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
-Get source code:
+Get [source code](https://github.com/dvorka/mindforger):
 
 ```
 # clone MindForger repository
