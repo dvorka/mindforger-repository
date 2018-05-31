@@ -12,7 +12,7 @@ Build MindForger on Ubuntu 14.04 or later.
 Install build tools:
 
 ```sh
-sudo apt-get install build-essential libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
 Get source code:
@@ -66,7 +66,7 @@ Build MindForger on Debian Stretch or later.
 Install build tools:
 
 ```sh
-sudo apt-get install build-essential libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
 Get source code:
@@ -120,7 +120,7 @@ Build MindForger on Fedora.
 Install build tools:
 
 ```sh
-sudo dnf install qt-devel qt5-devel ccache
+sudo dnf install zlib-devel qt-devel qt5-devel ccache
 ```
 
 Get source code:
