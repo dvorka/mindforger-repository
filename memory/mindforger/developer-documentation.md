@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 265; read: 2018-05-30 07:33:09; revision: 265; modified: 2018-05-30 07:33:09; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 270; read: 2018-06-02 07:06:14; revision: 270; modified: 2018-06-02 07:06:14; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -76,7 +76,7 @@ Benchmarks are *disabled* by default - go to benchmark source code and remove `D
 from its name. For more details see Google test framework documentation and benchmarks source code.
 ## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 26; read: 2018-05-17 10:57:04; revision: 5; modified: 2018-05-17 10:57:04; -->
 [Continous builds](https://travis-ci.org/dvorka/mindforger) via Travis CI, see also `.travis.yml`.
-## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 10; read: 2018-04-26 09:39:04; revision: 2; modified: 2018-04-26 09:39:04; -->
+## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 12; read: 2018-04-26 09:39:04; revision: 2; modified: 2018-04-26 09:39:04; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -91,6 +91,15 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
+## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 3; read: 2018-06-02 07:06:14; revision: 3; modified: 2018-06-02 07:06:14; -->
+Git branching naming convention:
+
+* `fb/feature-name`
+    * feature branch 
+* `platform/platform`
+    * platform support branch 
+* `stabilization/1.42.0`
+    * release stabilization brach
 # Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 37; read: 2018-04-26 09:32:27; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
 ## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 34; read: 2018-05-30 07:33:03; revision: 3; modified: 2018-05-30 07:33:03; -->
