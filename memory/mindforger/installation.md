@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 280; read: 2018-05-29 11:38:35; revision: 280; modified: 2018-05-29 11:38:35; importance: 0/5; urgency: 0/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 311; read: 2018-06-04 21:24:14; revision: 311; modified: 2018-06-04 21:24:14; importance: 0/5; urgency: 0/5; -->
 
 *Table of Contents*
 
@@ -114,7 +114,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 30; read: 2018-05-17 09:46:43; revision: 11; modified: 2018-05-17 09:46:43; -->
+## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 37; read: 2018-05-17 09:46:43; revision: 11; modified: 2018-05-17 09:46:43; -->
 Build MindForger on Fedora.
 
 Install build tools:
@@ -167,6 +167,98 @@ Run MindForger:
 
 ```
 mindforger
+```
+## Build on macOS <!-- Metadata: type: Note; tags: experimental,unstable; created: 2018-06-04 21:07:57; reads: 16; read: 2018-06-04 21:24:14; revision: 16; modified: 2018-06-04 21:24:14; -->
+Build MindForger on macOS Sierra 10.12+
+
+Install [Homebrew](https://brew.sh) package manager:
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+```
+
+Install [ccache](https://ccache.samba.org):
+
+```sh
+brew install ccache
+
+# verify that ccache is in path
+ccache
+# if not, add it to `$PATH` in `~/.bash_profile`
+```
+
+Install [Qt](https://www.qt.io):
+
+```
+brew install qt
+...
+==> Pouring qt-5.11.0.sierra.bottle.tar
+...
+
+This formula is keg-only, which means it was NOT
+simlinked into /usr/local, because Qt 5 has CMake
+issues when linked.
+
+If you need to have this software first in your PATH
+run:
+echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bashr_profile
+```
+
+Add Qt tooling to path as described
+above and source `.bash_profile` to apply updated environment):
+
+```
+. .bash_profile
+```
+
+Get MindForger source code:
+
+```
+# clone MindForger source code (any directory you want)
+git clone https://github.com/dvorka/mindforger.git
+# update repository sub-modules
+git submodule init
+git submodule update
+```
+
+Build dependencies:
+
+```
+# build Discount
+cd deps/discount
+./configure.sh
+make
+```
+
+Compile (consider adding `-j` with number of CPU cores to use e.g. `make -j 8`):
+
+```
+qmake -r CONFIG+=mfwebengine mindforger.pro && make
+```
+
+Install:
+
+```
+cd app && cp -rvf mindforger.app /Applications
+```
+
+Install documentation and stencils:
+
+```
+# clone MindForger documentation repository to home directory (location and directory name matters)
+cd ~
+git clone https://github.com/dvorka/mindforger-repository.git
+
+# verify MindForger repository installation
+ls mindforger-repository
+  limbo  memory  mind  stencils
+```
+
+Run MindForger either as application or using command line:
+
+```
+/Applications/mindforger.app/contents/MacOS/mindforger
 ```
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 14; read: 2018-05-29 11:38:26; revision: 6; modified: 2018-05-29 11:38:26; -->
 Install MindForger using a package.
