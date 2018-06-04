@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 270; read: 2018-06-02 07:06:14; revision: 270; modified: 2018-06-02 07:06:14; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 274; read: 2018-06-04 11:12:22; revision: 274; modified: 2018-06-04 11:12:22; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -91,12 +91,12 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
-## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 3; read: 2018-06-02 07:06:14; revision: 3; modified: 2018-06-02 07:06:14; -->
+## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 6; read: 2018-06-04 11:12:22; revision: 5; modified: 2018-06-04 11:12:22; -->
 Git branching naming convention:
 
 * `fb/feature-name`
     * feature branch 
-* `platform/platform`
+* `platform/platform-name`
     * platform support branch 
 * `stabilization/1.42.0`
     * release stabilization brach
