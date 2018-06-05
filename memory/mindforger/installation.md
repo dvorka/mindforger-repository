@@ -1,12 +1,17 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 311; read: 2018-06-04 21:24:14; revision: 311; modified: 2018-06-04 21:24:14; importance: 0/5; urgency: 0/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 389; read: 2018-06-05 08:11:45; revision: 389; modified: 2018-06-05 08:11:45; importance: 0/5; urgency: 0/5; -->
 
 *Table of Contents*
 
 * [Build from Source Code](#build-from-source-code)
 * [Install a package](#install-package)
-# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 22; read: 2018-04-25 17:11:28; revision: 2; modified: 2018-04-25 17:11:28; -->
-Build MindForger from source code.
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 73; read: 2018-05-17 09:45:38; revision: 39; modified: 2018-05-17 09:45:38; -->
+# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 26; read: 2018-06-05 08:07:51; revision: 5; modified: 2018-06-05 08:07:51; -->
+Build MindForger from source code:
+
+* [build on Ubuntu](#build-on-ubuntu)
+* [build on Debian](#build-on-debian)
+* [build on Fedora](#build-on-fedora)
+* [build on macOS](#build-on-macos)
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 82; read: 2018-06-05 08:11:28; revision: 42; modified: 2018-06-05 08:11:28; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
@@ -34,7 +39,7 @@ cd deps/discount
 make
 ```
 
-Compile and install:
+Compile and install from Git repository root directory:
 
 ```sh
 qmake -r mindforger.pro
@@ -43,7 +48,7 @@ make
 sudo make install
 ```
 
-Install documentation and stencils:
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
 
 ```
 # clone MindForger documentation repository to home directory (location and directory name matters)
@@ -60,7 +65,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 42; read: 2018-05-17 09:46:11; revision: 11; modified: 2018-05-17 09:46:11; -->
+## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 50; read: 2018-06-05 08:11:36; revision: 13; modified: 2018-06-05 08:11:36; -->
 Build MindForger on Debian Stretch or later.
 
 Install build tools:
@@ -88,7 +93,7 @@ cd deps/discount
 make
 ```
 
-Compile and install:
+Compile and install from Git repository root directory:
 
 ```sh
 qmake -r mindforger.pro
@@ -97,7 +102,7 @@ make
 sudo make install
 ```
 
-Install documentation and stencils:
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
 
 ```
 # clone MindForger documentation repository to home directory (location and directory name matters)
@@ -114,7 +119,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 37; read: 2018-05-17 09:46:43; revision: 11; modified: 2018-05-17 09:46:43; -->
+## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 42; read: 2018-06-05 08:11:45; revision: 13; modified: 2018-06-05 08:11:45; -->
 Build MindForger on Fedora.
 
 Install build tools:
@@ -142,7 +147,7 @@ cd deps/discount
 make
 ```
 
-Compile and install:
+Compile and install from Git repository root directory:
 
 ```sh
 qmake-qt5 -r mindforger.pro
@@ -151,7 +156,7 @@ make
 sudo make install
 ```
 
-Install documentation and stencils:
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
 
 ```
 # clone MindForger documentation repository to home directory (location and directory name matters)
@@ -168,90 +173,79 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; tags: experimental,unstable; created: 2018-06-04 21:07:57; reads: 16; read: 2018-06-04 21:24:14; revision: 16; modified: 2018-06-04 21:24:14; -->
-Build MindForger on macOS Sierra 10.12+
+## Build on macOS <!-- Metadata: type: Note; tags: experimental,unstable; created: 2018-06-04 21:07:57; reads: 48; read: 2018-06-05 08:11:16; revision: 44; modified: 2018-06-05 08:11:16; -->
+Build MindForger on macOS Sierra 10.12+.
+
+Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
+
+```sh
+xcode-select --install
+```
 
 Install [Homebrew](https://brew.sh) package manager:
 
-```
+```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 ```
 
-Install [ccache](https://ccache.samba.org):
+Install build tools and dependencies:
 
 ```sh
-brew install ccache
-
-# verify that ccache is in path
-ccache
-# if not, add it to `$PATH` in `~/.bash_profile`
+brew install ccache qt
 ```
 
-Install [Qt](https://www.qt.io):
+Add them to `PATH` (if they already not present):
 
-```
-brew install qt
-...
-==> Pouring qt-5.11.0.sierra.bottle.tar
-...
-
-This formula is keg-only, which means it was NOT
-simlinked into /usr/local, because Qt 5 has CMake
-issues when linked.
-
-If you need to have this software first in your PATH
-run:
+```sh
+# add newly installed deps to path
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashr_profile
 echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bashr_profile
+
+# apply changes
+. ~/.bash_profile
 ```
 
-Add Qt tooling to path as described
-above and source `.bash_profile` to apply updated environment):
+Get [source code](https://github.com/dvorka/mindforger):
 
-```
-. .bash_profile
-```
-
-Get MindForger source code:
-
-```
-# clone MindForger source code (any directory you want)
+```sh
 git clone https://github.com/dvorka/mindforger.git
-# update repository sub-modules
 git submodule init
 git submodule update
 ```
 
 Build dependencies:
 
-```
+```sh
 # build Discount
-cd deps/discount
+cd mindforger/deps/discount
 ./configure.sh
 make
 ```
 
-Compile (consider adding `-j` with number of CPU cores to use e.g. `make -j 8`):
+Compile MindForger from Git repository root directory:
 
-```
-qmake -r CONFIG+=mfwebengine mindforger.pro && make
+```sh
+qmake -r mindforger.pro
+# consider adding -j parameter with the number of CPU cores to use e.g. make -j 8
+make
 ```
 
-Install:
+Optionally install MindForger:
 
 ```
 cd app && cp -rvf mindforger.app /Applications
 ```
 
-Install documentation and stencils:
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
 
 ```
-# clone MindForger documentation repository to home directory (location and directory name matters)
+# clone MindForger documentation repository to home directory - location and directory name matters
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
 
 # verify MindForger repository installation
-ls mindforger-repository
+ls ~/mindforger-repository
   limbo  memory  mind  stencils
 ```
 
@@ -260,8 +254,12 @@ Run MindForger either as application or using command line:
 ```
 /Applications/mindforger.app/contents/MacOS/mindforger
 ```
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 14; read: 2018-05-29 11:38:26; revision: 6; modified: 2018-05-29 11:38:26; -->
-Install MindForger using a package.
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 17; read: 2018-06-05 08:08:32; revision: 7; modified: 2018-06-05 08:08:32; -->
+Install MindForger using a package:
+
+* [Ubuntu](#ubuntu)
+* [Debian](#debian)
+* [Fedora](#fedora)
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 44; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
