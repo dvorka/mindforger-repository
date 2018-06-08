@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 142; read: 2018-06-08 08:02:56; revision: 142; modified: 2018-06-08 08:02:56; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; created: 2018-02-23 10:57:35; reads: 158; read: 2018-06-08 08:16:50; revision: 158; modified: 2018-06-08 08:16:50; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**.
 
@@ -52,7 +52,7 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 26; read: 2018-06-08 08:02:56; revision: 25; modified: 2018-06-08 08:02:56; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 33; read: 2018-06-08 08:16:50; revision: 33; modified: 2018-06-08 08:16:50; -->
 
 If you want to use MindForger as Markdown IDE/editor, then
 you may want to check examples of various documents (collections)
@@ -64,14 +64,14 @@ directoring using MindForger:
 * ProGit
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * JavaScript algorithms
-    * `git clone https://github.com/trekhleb/javascript-algorithms.git`
-* NYTimes Objective-C style guide:
+    * `git clone https://github.com/trekhleb/javascript-algorithms.git && cd javascript-algorithms && mindforger .`
+* NYTimes Objective-C style guide
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
 * LivingSocial API design
     * `git clone https://github.com/livingsocial/api-design && cd api-design && mindforger .`
 * C++ core guidelines
     * `git clone https://github.com/isocpp/CppCoreGuidelines && cd CppCoreGuidelines && mindforger .`
-* AI computer vision resources:
+* AI computer vision resources
     * `git clone https://github.com/jbhuang0604/awesome-computer-vision && cd awesome-computer-vision && mindforger .`
-* FiveThirtyEight data sources:
+* FiveThirtyEight data sources
     * `git clone https://github.com/fivethirtyeight/data && cd data && mindforger .`
