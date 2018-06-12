@@ -1,4 +1,4 @@
-# Why MindForger? <!-- Metadata: type: Outline; tags: important; created: 2018-02-23 10:56:27; reads: 24; read: 2018-05-29 22:44:37; revision: 19; modified: 2018-05-29 22:44:37; importance: 0/5; urgency: 0/5; -->
+# Why MindForger? <!-- Metadata: type: Outline; tags: cool; created: 2018-02-23 10:56:27; reads: 36; read: 2018-06-12 14:14:09; revision: 36; modified: 2018-06-12 14:14:09; importance: 0/5; urgency: 0/5; -->
 
 This document describes driving principles and vision for MindForger.
 
@@ -16,12 +16,12 @@ Its mission is to help you in organization of your knowledge and associated
 local, web and real world resources in a way that enables quick navigation, 
 concise representation, automatic interconnections, associative completion 
 and inferencing.
-# Motivation <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 15; read: 2018-03-31 08:58:16; revision: 2; modified: 2018-03-31 08:58:16; -->
+# Motivation <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 32; read: 2018-06-12 14:14:09; revision: 7; modified: 2018-06-12 14:14:09; -->
 MindForger is **human mind** inspired **personal** knowledge management tool:
 
 * **Personal**
     * MindFoger enables you to **own your data** - it's meant to store your 
-      personal ideas, remarks, notes and plans in a [secure](#secure) way.
+      personal ideas, remarks, notes and plans in a secure way.
 	* MindForger enables **privacy** and **security** of your knowledge.
     * MindForger doesn't compete with tools for sharing information like
       Wikis - its purpose is to maintain your **private** data.
@@ -31,7 +31,7 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
       lookup of your thoughts, ideas, how-tos, etc.
 
 * **Human mind**
-    * MindForger [mimics human mind](./human-mind-inspiration.md) in order to 
+    * MindForger [human-mind Inspiration](#human-mind-inspiration) in order to 
 	  achieve **synergy** between your mind and MindForger whenever you use 
 	  it. MindForger aims to be your mind *extender* whenever you learn, search
 	  or managege knowledge.
@@ -49,7 +49,11 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
 
 
 
-# Features <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 23; read: 2018-04-10 10:58:57; revision: 5; modified: 2018-04-10 10:58:57; -->
+# Human-mind Inspiration <!-- Metadata: type: Note; created: 2018-06-12 14:10:48; reads: 11; read: 2018-06-12 14:13:29; revision: 3; modified: 2018-06-12 14:13:29; -->
+MindForger is inspired by human mind. Check the following presentation for more details:
+
+* [MindForger - Thinking Notebook. Thinking?](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU)
+# Features <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 27; read: 2018-04-10 10:58:57; revision: 5; modified: 2018-04-10 10:58:57; -->
 MindForger features:
 
 * **Open**
