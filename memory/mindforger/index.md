@@ -67,6 +67,8 @@ directoring using MindForger:
     * `git clone https://github.com/trekhleb/javascript-algorithms.git && cd javascript-algorithms && mindforger .`
 * NYTimes Objective-C style guide
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
+* Build your own X
+    * `https://github.com/danistefanovic/build-your-own-x && cd build-your-own-x && mindforger README.md`
 * LivingSocial API design
     * `git clone https://github.com/livingsocial/api-design && cd api-design && mindforger .`
 * C++ core guidelines
