@@ -306,7 +306,7 @@ Install RPM:
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
 ## macOS <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 14; read: 2018-06-12 19:50:48; revision: 7; modified: 2018-06-12 19:50:48; -->
-Install MindForger on Fedora (tested on `macOS Sierra 10.12`):
+Install MindForger on macOS (tested on `Sierra 10.12`):
 
 * [download DMG](https://github.com/dvorka/mindforger/releases) from GitHub releases
 
