@@ -310,7 +310,7 @@ Install MindForger on macOS (tested on `Sierra 10.12`):
 
 * [download .dmg](https://github.com/dvorka/mindforger/releases) from GitHub releases
 
-Install DMG:
+Install `.dmg`:
 
 * Open/mount `.dmg`
 * Drag and drop/copy `mindforger` from `.dmg` to `Applications`
