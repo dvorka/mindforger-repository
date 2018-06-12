@@ -308,12 +308,12 @@ sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ## macOS <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 14; read: 2018-06-12 19:50:48; revision: 7; modified: 2018-06-12 19:50:48; -->
 Install MindForger on macOS (tested on `Sierra 10.12`):
 
-* [download DMG](https://github.com/dvorka/mindforger/releases) from GitHub releases
+* [download .dmg](https://github.com/dvorka/mindforger/releases) from GitHub releases
 
 Install DMG:
 
-* Open/mount DMG
-* Drag and drop/copy `mindforger` from DMG to Applications
+* Open/mount `.dmg`
+* Drag and drop/copy `mindforger` from `.dmg` to `Applications`
 * Run `MindForger`
 
 MindForger copies documentation to your home directory (`~/mindforger-repository`) and opens it as default repository.
