@@ -316,4 +316,4 @@ Install `.dmg`:
 * Drag and drop/copy `mindforger` from `.dmg` to `Applications`
 * Run `MindForger`
 
-MindForger copies documentation to your home directory (`~/mindforger-repository`) and opens it as default repository.
+MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
