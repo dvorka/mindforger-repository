@@ -1,8 +1,10 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 164; read: 2018-06-12 19:47:02; revision: 164; modified: 2018-06-12 19:47:02; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 178; read: 2018-06-13 11:36:11; revision: 178; modified: 2018-06-13 11:36:11; importance: 0/5; urgency: 0/5; -->
 
-MindForger is **personal thinking notebook** and **Markdown IDE**.
+MindForger is **personal thinking notebook** and **Markdown IDE**:
 
-![MindForger](mindforger.png)
+* Check getting started and features walkthrough [YouTube video](https://t.co/ym1KKEny3y)
+
+[![MindForger](mindforger.png)](https://t.co/ym1KKEny3y)
 
 MindForger project motivation and inspiration:
 
@@ -14,7 +16,7 @@ How to install MindForger?
 
 How to use MindForger?
 
-* [User documentation](./user-documentation.md) and [FAQ](faq.md)
+* [User documentation](./user-documentation.md), [FAQ](faq.md) and [YouTube video](https://t.co/ym1KKEny3y)
 
 How to clone, build, improve, research, tweak and contribute?
 

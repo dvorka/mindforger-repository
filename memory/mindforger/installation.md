@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 414; read: 2018-06-12 19:51:25; revision: 414; modified: 2018-06-12 19:51:25; importance: 0/5; urgency: 0/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 416; read: 2018-06-13 11:35:26; revision: 416; modified: 2018-06-13 11:35:26; importance: 0/5; urgency: 0/5; -->
 
 *Table of Contents*
 
@@ -173,7 +173,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; tags: experimental,unstable; created: 2018-06-04 21:07:57; reads: 50; read: 2018-06-05 08:11:16; revision: 44; modified: 2018-06-05 08:11:16; -->
+## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 52; read: 2018-06-13 11:35:26; revision: 45; modified: 2018-06-13 11:35:26; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
