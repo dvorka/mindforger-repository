@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 178; read: 2018-06-13 11:36:11; revision: 178; modified: 2018-06-13 11:36:11; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 184; read: 2018-06-17 15:49:07; revision: 184; modified: 2018-06-17 15:49:07; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**:
 
@@ -54,7 +54,7 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 33; read: 2018-06-08 08:16:50; revision: 33; modified: 2018-06-08 08:16:50; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 36; read: 2018-06-17 15:49:07; revision: 36; modified: 2018-06-17 15:49:07; -->
 
 If you want to use MindForger as Markdown IDE/editor, then
 you may want to check examples of various documents (collections)
@@ -67,6 +67,8 @@ directoring using MindForger:
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * JavaScript algorithms
     * `git clone https://github.com/trekhleb/javascript-algorithms.git && cd javascript-algorithms && mindforger .`
+* Pure Bash bible
+    * `git clone https://github.com/dylanaraps/pure-bash-bible.git && cd pure-bash-bible && mindforger .`
 * NYTimes Objective-C style guide
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
 * Build your own X
