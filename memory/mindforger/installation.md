@@ -260,6 +260,7 @@ Install MindForger using a package:
 * [Ubuntu](#ubuntu)
 * [Debian](#debian)
 * [Fedora](#fedora)
+* [Arch Linux](#arch-linux)
 * [macOS](#macos)
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 46; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
@@ -305,6 +306,12 @@ Install RPM:
 ```
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
+
+## Arch Linux <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 14; read: 2018-06-12 19:50:48; revision: 7; modified: 2018-06-12 19:50:48; -->
+Install MindForger from Arch User Repository (AUR):
+
+* https://aur.archlinux.org/packages/mindforger/
+
 ## macOS <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 14; read: 2018-06-12 19:50:48; revision: 7; modified: 2018-06-12 19:50:48; -->
 Install MindForger on macOS (tested on `Sierra 10.12`):
 
