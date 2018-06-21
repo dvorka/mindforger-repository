@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 184; read: 2018-06-17 15:49:07; revision: 184; modified: 2018-06-17 15:49:07; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 206; read: 2018-06-21 08:26:41; revision: 206; modified: 2018-06-21 08:26:41; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**:
 
@@ -54,7 +54,7 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 36; read: 2018-06-17 15:49:07; revision: 36; modified: 2018-06-17 15:49:07; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 47; read: 2018-06-21 08:26:41; revision: 47; modified: 2018-06-21 08:26:41; -->
 
 If you want to use MindForger as Markdown IDE/editor, then
 you may want to check examples of various documents (collections)
@@ -63,21 +63,23 @@ below.
 Simply clone Git repository and open it from its root 
 directoring using MindForger:
 
-* ProGit
+* [ProGit](clone https://github.com/progit/progit)
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
-* JavaScript algorithms
-    * `git clone https://github.com/trekhleb/javascript-algorithms.git && cd javascript-algorithms && mindforger .`
-* Pure Bash bible
-    * `git clone https://github.com/dylanaraps/pure-bash-bible.git && cd pure-bash-bible && mindforger .`
-* NYTimes Objective-C style guide
-    * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
-* Build your own X
+* [JavaScript algorithms](https://github.com/trekhleb/javascript-algorithms)
+    * `git clone https://github.com/trekhleb/javascript-algorithms && cd javascript-algorithms && mindforger .`
+* [Pure Bash bible](https://github.com/trekhleb/javascript-algorithms)
+    * `git clone https://github.com/dylanaraps/pure-bash-bible && cd pure-bash-bible && mindforger .`
+* [Awesome AI services](https://github.com/sekwiatkowski/awesome-ai-services)
+    * `git clone https://github.com/sekwiatkowski/awesome-ai-services && cd awesome-ai-services && mindforger .`
+* [Build your own X](https://github.com/danistefanovic/build-your-own-x)
     * `https://github.com/danistefanovic/build-your-own-x && cd build-your-own-x && mindforger README.md`
-* LivingSocial API design
+* [NYTimes Objective-C style guide](https://github.com/NYTimes/objective-c-style-guide)
+    * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
+* [LivingSocial API design](https://github.com/livingsocial/api-design)
     * `git clone https://github.com/livingsocial/api-design && cd api-design && mindforger .`
-* C++ core guidelines
+* [C++ core guidelines](https://github.com/isocpp/CppCoreGuidelines)
     * `git clone https://github.com/isocpp/CppCoreGuidelines && cd CppCoreGuidelines && mindforger .`
-* AI computer vision resources
+* [AI computer vision resources](https://github.com/jbhuang0604/awesome-computer-vision)
     * `git clone https://github.com/jbhuang0604/awesome-computer-vision && cd awesome-computer-vision && mindforger .`
-* FiveThirtyEight data sources
+* [FiveThirtyEight data sources](https://github.com/fivethirtyeight/data)
     * `git clone https://github.com/fivethirtyeight/data && cd data && mindforger .`
