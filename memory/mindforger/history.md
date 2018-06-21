@@ -1,8 +1,8 @@
-# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 98; read: 2018-05-10 12:51:32; revision: 98; modified: 2018-05-10 12:51:32; importance: 0/5; urgency: 0/5; -->
+# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 100; read: 2018-06-21 08:31:19; revision: 100; modified: 2018-06-21 08:31:19; importance: 0/5; urgency: 0/5; -->
 
 [MindForger](https://www.mindforger.com) is my fourth attempt to implement a good knowledge management
 tool. Therefore it has relatively long history - it is successor of
-RDF Spiders, MindRaider and Coaching Notebook. Actually it's a bit more 
+[RDF Spiders](#rdf-spiders), [MindRaider](#mindraider) and [Coaching Notebook](#coaching-notebook). Actually it's a bit more 
 complicated...
 # RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 38; read: 2018-05-10 12:48:36; revision: 36; modified: 2018-05-10 12:48:36; -->
 ![RDF Spiders](history.spiders.jpg)

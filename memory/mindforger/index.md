@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 206; read: 2018-06-21 08:26:41; revision: 206; modified: 2018-06-21 08:26:41; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 210; read: 2018-06-21 15:41:56; revision: 210; modified: 2018-06-21 15:41:56; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**:
 
@@ -17,6 +17,10 @@ How to install MindForger?
 How to use MindForger?
 
 * [User documentation](./user-documentation.md), [FAQ](faq.md) and [YouTube video](https://t.co/ym1KKEny3y)
+
+What are interesting (collections of) Markdown documents?
+
+* [Markdown content and examples](#markdown-content-and-examples)
 
 How to clone, build, improve, research, tweak and contribute?
 
@@ -54,7 +58,7 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 47; read: 2018-06-21 08:26:41; revision: 47; modified: 2018-06-21 08:26:41; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 49; read: 2018-06-21 15:41:56; revision: 48; modified: 2018-06-21 15:41:56; -->
 
 If you want to use MindForger as Markdown IDE/editor, then
 you may want to check examples of various documents (collections)
@@ -72,7 +76,9 @@ directoring using MindForger:
 * [Awesome AI services](https://github.com/sekwiatkowski/awesome-ai-services)
     * `git clone https://github.com/sekwiatkowski/awesome-ai-services && cd awesome-ai-services && mindforger .`
 * [Build your own X](https://github.com/danistefanovic/build-your-own-x)
-    * `https://github.com/danistefanovic/build-your-own-x && cd build-your-own-x && mindforger README.md`
+    * `git clone https://github.com/danistefanovic/build-your-own-x && cd build-your-own-x && mindforger .`
+* [Front-end Handbook 2018](https://github.com/FrontendMasters/front-end-handbook-2018 && cd front-end-handbook-2018)
+    * `git clone https://github.com/FrontendMasters/front-end-handbook-2018 && cd front-end-handbook-2018 && minforger .`
 * [NYTimes Objective-C style guide](https://github.com/NYTimes/objective-c-style-guide)
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
 * [LivingSocial API design](https://github.com/livingsocial/api-design)
