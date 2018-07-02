@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 210; read: 2018-06-21 15:41:56; revision: 210; modified: 2018-06-21 15:41:56; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 214; read: 2018-07-02 16:52:35; revision: 214; modified: 2018-07-02 16:52:35; importance: 0/5; urgency: 0/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**:
 
@@ -58,7 +58,7 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 49; read: 2018-06-21 15:41:56; revision: 48; modified: 2018-06-21 15:41:56; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 51; read: 2018-07-02 16:52:35; revision: 50; modified: 2018-07-02 16:52:35; -->
 
 If you want to use MindForger as Markdown IDE/editor, then
 you may want to check examples of various documents (collections)
@@ -67,7 +67,7 @@ below.
 Simply clone Git repository and open it from its root 
 directoring using MindForger:
 
-* [ProGit](clone https://github.com/progit/progit)
+* [ProGit](https://github.com/progit/progit)
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * [JavaScript algorithms](https://github.com/trekhleb/javascript-algorithms)
     * `git clone https://github.com/trekhleb/javascript-algorithms && cd javascript-algorithms && mindforger .`
@@ -77,7 +77,7 @@ directoring using MindForger:
     * `git clone https://github.com/sekwiatkowski/awesome-ai-services && cd awesome-ai-services && mindforger .`
 * [Build your own X](https://github.com/danistefanovic/build-your-own-x)
     * `git clone https://github.com/danistefanovic/build-your-own-x && cd build-your-own-x && mindforger .`
-* [Front-end Handbook 2018](https://github.com/FrontendMasters/front-end-handbook-2018 && cd front-end-handbook-2018)
+* [Front-end Handbook 2018](https://github.com/FrontendMasters/front-end-handbook-2018)
     * `git clone https://github.com/FrontendMasters/front-end-handbook-2018 && cd front-end-handbook-2018 && minforger .`
 * [NYTimes Objective-C style guide](https://github.com/NYTimes/objective-c-style-guide)
     * `git clone https://github.com/NYTimes/objective-c-style-guide && cd objective-c-style-guide && mindforger .`
