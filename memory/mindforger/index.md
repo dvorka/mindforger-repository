@@ -36,7 +36,7 @@ For more details see also MindForger project home https://www.mindforger.com
 
 💡 click a note in the tree of notes on the left to see other sections of this notebook.
 
-💡 click menu `View/Outlines` or press <kbd>Ctrl+O</kbd> to view all documents in MindForger
+💡 click menu `View/Outlines` or press <kbd>Ctrl+Shift+O</kbd> to view all documents in MindForger
 documentation repository.
 
 ---
