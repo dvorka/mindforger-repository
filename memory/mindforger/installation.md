@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 421; read: 2018-07-10 07:15:30; revision: 420; modified: 2018-07-10 07:15:30; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 428; read: 2018-07-10 10:04:02; revision: 428; modified: 2018-07-10 10:04:02; importance: 3/5; urgency: 3/5; -->
 
 *Table of Contents*
 
@@ -173,7 +173,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 52; read: 2018-06-13 11:35:26; revision: 45; modified: 2018-06-13 11:35:26; -->
+## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 57; read: 2018-07-10 10:04:02; revision: 49; modified: 2018-07-10 10:04:02; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
@@ -254,6 +254,16 @@ Run MindForger either as application or using command line:
 ```
 /Applications/mindforger.app/contents/MacOS/mindforger
 ```
+
+---
+
+**IMPORTANT**: in case that there is a problem with HTML preview ~ **nothing** is shown for a note:
+
+* **uinstall** Qt installed using brew (`brew remove qt`)
+* **install** Qt from https://www.qt.io/download 
+* use `qmake` from the official distribution to **build** MindForger (as described above)
+
+Brew approach is simpler, faster and usually works - this is why it is used by default.
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 21; read: 2018-06-12 19:51:25; revision: 13; modified: 2018-06-12 19:51:25; -->
 Install MindForger using a package:
 
@@ -262,7 +272,7 @@ Install MindForger using a package:
 * [Fedora](#fedora)
 * [Arch Linux](#arch-linux)
 * [macOS](#macos)
-## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 46; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
+## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 48; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 

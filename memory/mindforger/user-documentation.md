@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 892; read: 2018-07-10 08:51:38; revision: 892; modified: 2018-07-10 08:51:38; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 974; read: 2018-07-10 09:54:26; revision: 974; modified: 2018-07-10 09:54:26; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-06 23:03:27; revision: 5; modified: 2018-06-06 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-07 23:03:27; revision: 5; modified: 2018-06-07 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -106,7 +106,7 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-06 23:05:50; revision: 3; modified: 2018-06-06 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-07 23:05:50; revision: 3; modified: 2018-06-07 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
@@ -604,7 +604,7 @@ between different Notebooks (Markdown documents):
 * use menu `Note/Refactor` to specify **target** notebook
 
 Note and its child notes will be moved to the target notebook.
-# Searching <!-- Metadata: type: Note; created: 2018-04-10 10:55:15; reads: 44; read: 2018-07-10 08:06:45; revision: 6; modified: 2018-07-10 08:06:45; -->
+# Searching <!-- Metadata: type: Note; created: 2018-04-10 10:55:15; reads: 49; read: 2018-07-10 08:06:45; revision: 6; modified: 2018-07-10 08:06:45; -->
 Ability to find a specific Notebook or Note is one of the 
 most important MindForger features. Notebooks and Notes
 can be found by:
@@ -616,29 +616,108 @@ can be found by:
 ---
 
 💡 see menu `Recall` for search options
-## Fulltext <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:55:44; reads: 28; read: 2018-07-10 08:21:17; revision: 3; modified: 2018-07-10 08:21:17; -->
-...
-## Name <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:55:57; reads: 22; read: 2018-07-10 08:22:33; revision: 2; modified: 2018-07-10 08:22:33; -->
-...
-## Tag <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:56:02; reads: 24; read: 2018-07-10 08:22:38; revision: 2; modified: 2018-07-10 08:22:38; -->
-...
-## Named-entity Recognition <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:50; reads: 22; read: 2018-07-10 08:11:31; revision: 5; modified: 2018-07-10 08:11:31; -->
+## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 42; read: 2018-07-10 09:17:12; revision: 7; modified: 2018-07-10 09:17:12; -->
+Use menu `Recall/Full-text Search` to search for **notes**
+using full-text search. Result shows notes Markdown source
+with **highlighted** matches.
+
+Search **scope**:
+
+* If you run full-text search from notebooks
+  view (menu `View/Notebooks`), then **all** notebooks and their
+  notes are searched.
+* If you run full-text search when a notebook is opened
+  (notes outline on the left, note view/editor on the right),
+  then **only** notes of that particular notebook are searched.
+## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 32; read: 2018-07-10 09:17:26; revision: 6; modified: 2018-07-10 09:17:26; -->
+Use menu `Recall/Recall Notebook by Name` / `Recall/Recall Note by Name`
+to search for **notebooks** / **notes** by name. Result shows as you
+write the name in the dialog.
+
+Search **scope**:
+
+* If you run note search **by name** from notebooks
+  view (menu `View/Notebooks`), then **all** notebooks notes
+  are searched.
+* If you run note search **by name** when a notebook is opened
+  (notes outline on the left, note view/editor on the right),
+  then **only** notes of that particular notebook are searched.
+## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 28; read: 2018-07-10 09:18:55; revision: 4; modified: 2018-07-10 09:18:55; -->
+Use menu `Recall/Recall Notebook by Tag` / `Recall/Recall Note by Tag`
+to search for **notebooks** / **notes** by tag(s). Result shows as you
+add/remove tags in the dialog.
+
+Search **scope**:
+
+* If you run note search **by tag** from notebooks
+  view (menu `View/Notebooks`), then **all** notebooks notes
+  are searched.
+* If you run note search **by tag** when a notebook is opened
+  (notes outline on the left, note view/editor on the right),
+  then **only** notes of that particular notebook are searched.
+## Named-entity Recognition <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:50; reads: 28; read: 2018-07-10 08:11:31; revision: 5; modified: 2018-07-10 08:11:31; -->
 ![Image](user-documentation.ner.png)
 
 _This feature is being implemented._
-## Semantic domain <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:26; reads: 17; read: 2018-07-10 08:11:36; revision: 5; modified: 2018-07-10 08:11:36; -->
+## Semantic Domain <!-- Metadata: type: Note; tags: todo; created: 2018-07-10 08:04:26; reads: 23; read: 2018-07-10 09:53:59; revision: 7; modified: 2018-07-10 09:53:59; -->
 _This feature is being implemented._
-# Thinking Notebook <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:50:28; reads: 66; read: 2018-05-30 07:31:39; revision: 6; modified: 2018-05-30 07:31:39; -->
-...
-## Thinking vs Sleeping mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 10; read: 2018-07-10 08:12:48; revision: 2; modified: 2018-07-10 08:12:48; -->
-...
-## Think as you Search <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:49:58; reads: 48; read: 2018-07-10 08:11:44; revision: 4; modified: 2018-07-10 08:11:44; -->
+# Thinking Notebook <!-- Metadata: type: Note; created: 2018-04-10 10:50:28; reads: 75; read: 2018-07-10 09:37:44; revision: 9; modified: 2018-07-10 09:37:44; -->
+MindForger aims to mimic human mind - **learning**, **recalling**, 
+**recognition**, **associations**, **forgetting** - in order to achieve 
+synergy with your mind to make your searching, reading and writing more 
+productive:
+
+* **learning**: MindForger loads Markdown document(s), parses them and construct [knowledge graph](#knowledge-graph-navigator) 
+* **recalling**: you can recall notebooks/notes by content, name, tags, semantic domain, ...
+* **recognition**: MindForger is able to recognize people, organization, places, ... in your remarks
+* **associations**: MindForger suggests relevant notes as you browse, read and edit notebooks and notes
+* **forgetting**: MindForger handles the process of scoping and forgetting analogous to human mind
+## Thinking vs Sleeping mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 21; read: 2018-07-10 09:44:42; revision: 8; modified: 2018-07-10 09:44:42; -->
+MindForger can be either in **thinking** or **sleeping** mode:
+
+* **Thinking** mode can be activated from menu `Mind/Think` and it's also
+  indicated by the `Thinking` indicator in main window status bar.
+    * MindForger runs background mind-related computations/tasks that can be **CPU intensive**
+    * MindForger suggests relevant notes as you browse/read/write
+    * MindForger named-entity recognition model is loaded and enabled
+    * ...
+* **Sleeping** mode can be activated from menu `Mind/Sleep` and it's also
+  indicated by the `Sleeping` indicator in main window status bar.
+    * MindForger runs **no** background mind-related computations/tasks i.e. it 
+      does **not** consume any extra CPU power and does **not** show any async information
+
+Switch thinking/sleeping mode based on whether you **need** mind features for the particular
+repository or not - consider performance/CPU consumption vs features trade-off.
+## Think as you Search <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:49:58; reads: 52; read: 2018-07-10 08:11:44; revision: 4; modified: 2018-07-10 08:11:44; -->
 _This feature is being implemented._
-## Think as you Read <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:50:11; reads: 37; read: 2018-07-10 08:22:17; revision: 4; modified: 2018-07-10 08:22:17; -->
-...
-## Think as you Write <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:50:18; reads: 36; read: 2018-07-10 08:22:25; revision: 3; modified: 2018-07-10 08:22:25; -->
-...
-## Knowledge Graph Navigator <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:13:17; reads: 11; read: 2018-07-10 08:21:38; revision: 3; modified: 2018-07-10 08:21:38; -->
+## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 49; read: 2018-07-10 09:50:47; revision: 12; modified: 2018-07-10 09:50:47; -->
+![TAYR](user-documentation.tayr.png)
+
+MindForger is able to **suggest relevant notes** as you browse and
+read:
+
+* relevant notes are computed for the note being currently **selected**
+* relevant notes are shown in the **lower left corner** by `Associations` table
+* similarity score in the `Associations` table indicates **relative relevancy** in %
+
+
+In the screenshot above you can see relevant notes (lower left corner) for the selected
+note `My 3D Printer MK2S by Prusa RESEARCH`.
+## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 49; read: 2018-07-10 09:53:28; revision: 10; modified: 2018-07-10 09:53:28; -->
+![TAYW](user-documentation.tayw.png)
+
+MindForger is able to **suggest relevant notes** as you write note
+content in the editor:
+
+
+* relevant notes are computed for the **word under the cursor**
+* relevant notes are shown in the **lower left corner** by `Associations` table
+* similarity score in the `Associations` table indicates **relative relevancy** in %
+
+
+In the screenshot above you can see relevant notes (lower left corner) for the selected
+word `graph` (notice cursor between letter `g` and `r` on the current line with light-gray background).
+## Knowledge Graph Navigator <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:13:17; reads: 34; read: 2018-07-10 08:21:38; revision: 3; modified: 2018-07-10 08:21:38; -->
 _This feature is being implemented._
 ## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 32; read: 2018-05-03 09:26:24; revision: 17; modified: 2018-05-03 09:26:24; -->
 > Motto: "Computers need to forget". -- [Viktor Mayer-Schönberger](http://blog.mindforger.com/2007/11/computers-need-to-forget.html)
@@ -680,7 +759,7 @@ forgetting does **NOT** mean deleting of information.
 MindForger maintains **all** the remarks you ever written
 (see [limbo](#limbo)), but works with/shows only with 
 a [scope](#time-scope) **configurable** by you.
-### Time scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 63; read: 2018-07-10 08:08:01; revision: 44; modified: 2018-07-10 08:08:01; -->
+### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 65; read: 2018-07-10 09:54:26; revision: 45; modified: 2018-07-10 09:54:26; -->
 Use menu `Mind/Scope` or <kbd>Alt+m p</kbd> to configure **time** scope.
 
 ---
@@ -799,7 +878,7 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-06 23:10:38; revision: 2; modified: 2018-06-06 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-07 23:10:38; revision: 2; modified: 2018-06-07 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)

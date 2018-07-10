@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 278; read: 2018-07-10 08:01:19; revision: 278; modified: 2018-07-10 08:01:19; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 290; read: 2018-07-10 10:07:09; revision: 290; modified: 2018-07-10 10:07:09; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -112,13 +112,13 @@ This section gives a brief summary of MindForger technical architecture highligh
 ...
 ## GUI <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:27; reads: 40; read: 2018-05-30 07:33:09; revision: 4; modified: 2018-05-30 07:33:09; -->
 ...
-### Qt <!-- Metadata: type: Note; created: 2018-05-04 07:01:09; reads: 10; read: 2018-05-04 07:01:12; revision: 2; modified: 2018-05-04 07:01:12; -->
+### Qt <!-- Metadata: type: Note; tags: todo; created: 2018-05-04 07:01:09; reads: 13; read: 2018-07-10 10:06:18; revision: 3; modified: 2018-07-10 10:06:18; -->
 ...
-### Model View Presenter <!-- Metadata: type: Note; created: 2018-03-18 08:57:45; reads: 40; read: 2018-03-31 08:44:21; revision: 3; modified: 2018-03-31 08:44:21; -->
+### Model View Presenter <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:45; reads: 43; read: 2018-07-10 10:06:30; revision: 4; modified: 2018-07-10 10:06:30; -->
 ...
-### Async UI Updates <!-- Metadata: type: Note; created: 2018-04-26 09:30:53; reads: 26; read: 2018-07-10 08:01:08; revision: 2; modified: 2018-07-10 08:01:08; -->
+### Async UI Updates <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:53; reads: 29; read: 2018-07-10 10:06:37; revision: 3; modified: 2018-07-10 10:06:37; -->
 ...
-### Localization <!-- Metadata: type: Note; created: 2018-05-10 08:21:10; reads: 35; read: 2018-05-10 08:53:53; revision: 31; modified: 2018-05-10 08:53:53; -->
+### Localization <!-- Metadata: type: Note; tags: todo; created: 2018-05-10 08:21:10; reads: 38; read: 2018-07-10 10:06:45; revision: 32; modified: 2018-07-10 10:06:45; -->
 Adding a new/updating existing MindForger l10n:
 
 * Add translation name to `app/app.pro`: `TRANSLATIONS += src/qt/translations/mindforger_en.ts`
@@ -136,16 +136,16 @@ See also:
 
 * http://doc.qt.io/qt-5/internationalization.html
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
-### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 32; read: 2018-04-26 09:31:14; revision: 3; modified: 2018-04-26 09:31:14; -->
+### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 34; read: 2018-04-26 09:31:14; revision: 3; modified: 2018-04-26 09:31:14; -->
 ...
-# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 33; read: 2018-05-04 07:01:30; revision: 7; modified: 2018-05-04 07:01:30; -->
+# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 35; read: 2018-05-04 07:01:30; revision: 7; modified: 2018-05-04 07:01:30; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).
 
 However, you can use MindForger's [Markdown hosted DSL](#markdown-hosted-dsl) and
 [repository format](#repository-format) to get much more (mind related) features.
-## Markdown hosted DSL <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 47; read: 2018-04-26 09:22:11; revision: 12; modified: 2018-04-26 09:22:11; -->
+## Markdown hosted DSL <!-- Metadata: type: Note; tags: todo,review; created: 2018-01-03 15:37:23; reads: 52; read: 2018-07-10 10:07:03; revision: 13; modified: 2018-07-10 10:07:03; -->
 This section describes MD conventions that MindForger uses to store outlines.
 
 Description:
@@ -169,7 +169,7 @@ canonical messages.
 
 ... here comes a text.
 ```
-## Repository Layout <!-- Metadata: type: Note; tags: todo; created: 2018-01-03 15:37:23; reads: 35; read: 2018-05-29 11:04:04; revision: 18; modified: 2018-05-29 11:04:04; -->
+## Repository Layout <!-- Metadata: type: Note; tags: todo,review; created: 2018-01-03 15:37:23; reads: 39; read: 2018-07-10 10:07:09; revision: 19; modified: 2018-07-10 10:07:09; -->
 Design goals:
 
 * Repository specification SHOULD be general i.e. not bound to MindForger
