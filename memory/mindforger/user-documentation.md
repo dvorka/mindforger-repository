@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 974; read: 2018-07-10 09:54:26; revision: 974; modified: 2018-07-10 09:54:26; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 976; read: 2018-07-10 12:56:24; revision: 976; modified: 2018-07-10 12:56:24; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-07 23:03:27; revision: 5; modified: 2018-06-07 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-08 23:03:27; revision: 5; modified: 2018-06-08 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -106,7 +106,7 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-07 23:05:50; revision: 3; modified: 2018-06-07 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-08 23:05:50; revision: 3; modified: 2018-06-08 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
@@ -717,7 +717,9 @@ content in the editor:
 
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 word `graph` (notice cursor between letter `g` and `r` on the current line with light-gray background).
-## Knowledge Graph Navigator <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:13:17; reads: 34; read: 2018-07-10 08:21:38; revision: 3; modified: 2018-07-10 08:21:38; -->
+## Knowledge Graph Navigator <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:13:17; reads: 36; read: 2018-07-10 12:56:24; revision: 4; modified: 2018-07-10 12:56:24; -->
+![Navigator](user-documentation.knowledge-graph-navigator.png)
+
 _This feature is being implemented._
 ## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 32; read: 2018-05-03 09:26:24; revision: 17; modified: 2018-05-03 09:26:24; -->
 > Motto: "Computers need to forget". -- [Viktor Mayer-Schönberger](http://blog.mindforger.com/2007/11/computers-need-to-forget.html)
@@ -878,7 +880,7 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-07 23:10:38; revision: 2; modified: 2018-06-07 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-08 23:10:38; revision: 2; modified: 2018-06-08 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
