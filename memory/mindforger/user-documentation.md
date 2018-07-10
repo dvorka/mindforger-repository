@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 890; read: 2018-07-10 08:46:57; revision: 890; modified: 2018-07-10 08:46:57; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 892; read: 2018-07-10 08:51:38; revision: 892; modified: 2018-07-10 08:51:38; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -109,7 +109,7 @@ Check `.mindforger.md` for configuration options details and description.
 # Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-06 23:05:50; revision: 3; modified: 2018-06-06 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 89; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
+## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
 MindForger can be used as a Markdown **editor**.
 
 It allows you to easily write [Markdown](#markdown) 
@@ -155,8 +155,8 @@ as a **tree** - it's called **outline**:
 
 For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
 
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 41; read: 2018-07-10 07:29:58; revision: 12; modified: 2018-07-10 07:29:58; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.click-to-edit.png)
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 43; read: 2018-07-10 08:51:38; revision: 13; modified: 2018-07-10 08:51:38; -->
+![Image](user-documentation.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
 rendered preview on the right (in the MindForger window) or choose:
@@ -500,7 +500,7 @@ If you need **inline** comment, then use HTML comments:
 💡 edit this Note to see the syntax
 #### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 32; read: 2018-07-10 08:11:24; revision: 4; modified: 2018-07-10 08:11:24; -->
 _This feature is being implemented._
-### Custom HTML Preview CSS <!-- Metadata: type: Note; created: 2018-07-10 08:40:23; reads: 21; read: 2018-07-10 08:46:57; revision: 11; modified: 2018-07-10 08:46:57; -->
+### Custom HTML Preview CSS <!-- Metadata: type: Note; created: 2018-07-10 08:40:23; reads: 22; read: 2018-07-10 08:46:57; revision: 11; modified: 2018-07-10 08:46:57; -->
 If you want to change color, font size, rendering of HTML preview, then it can
 be done using **custom CSS**.
 
@@ -529,7 +529,7 @@ for the development of Markdown document collections (repositories, documentatio
   defined on notes
 * both notebooks and notes can be **refactoried** withing or across different notebooks and notes
 ### Multiple documents <!-- Metadata: type: Note; created: 2018-04-24 14:01:18; reads: 51; read: 2018-07-10 08:11:10; revision: 11; modified: 2018-07-10 08:11:10; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.multiple-documents.png)
+![Image](user-documentation.multiple-documents.png)
 
 You can open **any** directory and MindForger will find
 all Markdown files within that directory and all its 
@@ -547,7 +547,7 @@ containing Markdown documents.
 
 💡 if you openeded more than one MindForger document, you can see all documents indexed by MindForger by clicking menu `View/Notebooks`
 ### Stencils <!-- Metadata: type: Note; created: 2018-04-24 14:01:55; reads: 40; read: 2018-07-10 07:47:00; revision: 23; modified: 2018-07-10 07:47:00; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.stencils.png)
+![Image](user-documentation.stencils.png)
 
 Stencil represents a common pattern that can be used in
 various situations e.g. to solve a task. It might be a how to 
@@ -581,7 +581,7 @@ etc.
 You can easily **extend** outlines just by copying Markdown file
 to `stencils/notes` or `stencils/notebooks` directory.
 ### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 53; read: 2018-07-10 07:56:17; revision: 11; modified: 2018-07-10 07:56:17; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.note-refactoring.png)
+![Image](user-documentation.note-refactoring.png)
 
 Hierarchy of **Notes** (Markdown document sections) can be easily
 changed using operations introduced by [outliners](https://en.wikipedia.org/wiki/Outliner).
@@ -623,7 +623,7 @@ can be found by:
 ## Tag <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:56:02; reads: 24; read: 2018-07-10 08:22:38; revision: 2; modified: 2018-07-10 08:22:38; -->
 ...
 ## Named-entity Recognition <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:50; reads: 22; read: 2018-07-10 08:11:31; revision: 5; modified: 2018-07-10 08:11:31; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.ner.png)
+![Image](user-documentation.ner.png)
 
 _This feature is being implemented._
 ## Semantic domain <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:26; reads: 17; read: 2018-07-10 08:11:36; revision: 5; modified: 2018-07-10 08:11:36; -->
@@ -772,7 +772,7 @@ Therefore it enables you to...
 * track **progress** in %
 * specify **deadlines** (for notes)
 ## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 18; read: 2018-07-10 08:30:44; revision: 7; modified: 2018-07-10 08:30:44; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.importance-urgency-edit.png)
+![Image](user-documentation.importance-urgency-edit.png)
 
 When creating (menu `Notebook/New`) or editing **notebook** (edit mode `More...` button) you
 can specify:
@@ -780,11 +780,11 @@ can specify:
 * **importance** property ~ how important is the notebook
 * **urgency** property ~ how important is (study/challenge/...) task related to notebook (or notebook content itself)
 
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.importance-urgency-view.png)
+![Image](user-documentation.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
 ## Eisenhower Matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 27; read: 2018-07-10 08:38:33; revision: 10; modified: 2018-07-10 08:38:33; -->
-![Image](/home/dvorka/p/mindforger/git/mindforger-repository/memory/mindforger/user-documentation.eisenhower-matrix.png)
+![Image](user-documentation.eisenhower-matrix.png)
 
 
 **Wikipedia**: [Eisenhower matrix](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method) stems from a quote attributed to Dwight D. Eisenhower: "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
