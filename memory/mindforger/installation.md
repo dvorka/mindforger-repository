@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 416; read: 2018-06-13 11:35:26; revision: 416; modified: 2018-06-13 11:35:26; importance: 0/5; urgency: 0/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 421; read: 2018-07-10 07:15:30; revision: 420; modified: 2018-07-10 07:15:30; importance: 3/5; urgency: 3/5; -->
 
 *Table of Contents*
 

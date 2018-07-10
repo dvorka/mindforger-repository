@@ -1,4 +1,4 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 214; read: 2018-07-02 16:52:35; revision: 214; modified: 2018-07-02 16:52:35; importance: 0/5; urgency: 0/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 216; read: 2018-07-10 07:12:15; revision: 216; modified: 2018-07-10 07:12:15; importance: 5/5; urgency: 3/5; -->
 
 MindForger is **personal thinking notebook** and **Markdown IDE**:
 

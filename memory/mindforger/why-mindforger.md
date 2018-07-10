@@ -1,4 +1,4 @@
-# Why MindForger? <!-- Metadata: type: Outline; tags: cool; created: 2018-02-23 10:56:27; reads: 36; read: 2018-06-12 14:14:09; revision: 36; modified: 2018-06-12 14:14:09; importance: 0/5; urgency: 0/5; -->
+# Why MindForger? <!-- Metadata: type: Outline; tags: cool; created: 2018-02-23 10:56:27; reads: 38; read: 2018-07-10 07:14:29; revision: 38; modified: 2018-07-10 07:14:29; importance: 5/5; urgency: 1/5; -->
 
 This document describes driving principles and vision for MindForger.
 

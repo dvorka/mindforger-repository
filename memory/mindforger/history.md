@@ -1,4 +1,4 @@
-# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 100; read: 2018-06-21 08:31:19; revision: 100; modified: 2018-06-21 08:31:19; importance: 0/5; urgency: 0/5; -->
+# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 102; read: 2018-07-10 07:13:44; revision: 102; modified: 2018-07-10 07:13:44; importance: 1/5; urgency: 1/5; -->
 
 [MindForger](https://www.mindforger.com) is my fourth attempt to implement a good knowledge management
 tool. Therefore it has relatively long history - it is successor of
