@@ -8,10 +8,11 @@
 Build MindForger from source code:
 
 * [build on Ubuntu](#build-on-ubuntu)
-* [build on WSL](#build-on-wsl)
 * [build on Debian](#build-on-debian)
 * [build on Fedora](#build-on-fedora)
 * [build on macOS](#build-on-macos)
+* [build on Windows Subsystem for Linux (WSL)](#build-on-wsl)
+
 ## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 91; read: 2018-07-10 10:22:28; revision: 44; modified: 2018-07-10 10:22:28; -->
 Build MindForger on Ubuntu 16.04 or later.
 
@@ -83,7 +84,7 @@ Update `gcc` and `g++` to version 5 (at least):
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install gcc-5 g++-5
-# subsitute gcc-5 for gcc and g++-5 for g++ (current version)
+# substitute gcc-5 for gcc and g++-5 for g++ (current version)
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 ```
 
