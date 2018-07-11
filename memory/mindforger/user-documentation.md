@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 976; read: 2018-07-10 12:56:24; revision: 976; modified: 2018-07-10 12:56:24; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 982; read: 2018-07-11 16:28:46; revision: 982; modified: 2018-07-11 16:28:46; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-08 23:03:27; revision: 5; modified: 2018-06-08 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-09 23:03:27; revision: 5; modified: 2018-06-09 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -106,7 +106,7 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-08 23:05:50; revision: 3; modified: 2018-06-08 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-09 23:05:50; revision: 3; modified: 2018-06-09 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
@@ -761,8 +761,8 @@ forgetting does **NOT** mean deleting of information.
 MindForger maintains **all** the remarks you ever written
 (see [limbo](#limbo)), but works with/shows only with 
 a [scope](#time-scope) **configurable** by you.
-### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 65; read: 2018-07-10 09:54:26; revision: 45; modified: 2018-07-10 09:54:26; -->
-Use menu `Mind/Scope` or <kbd>Alt+m p</kbd> to configure **time** scope.
+### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 69; read: 2018-07-11 16:28:46; revision: 47; modified: 2018-07-11 16:28:46; -->
+Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **time** scope.
 
 ---
 
@@ -820,8 +820,8 @@ In particular you can set **global** time scope:
 In particular you can set **note** specific time scope that overrides global time scope:
 
 * ... behaviour is the same as above except that this setting has no effect on notebooks listing ...
-### Tag Scope <!-- Metadata: type: Note; created: 2018-07-10 08:07:12; reads: 17; read: 2018-07-10 08:10:21; revision: 5; modified: 2018-07-10 08:10:21; -->
-Use menu `Mind/Scope` or <kbd>Alt+m p</kbd> to configure **tag(s)** scope.
+### Tag Scope <!-- Metadata: type: Note; created: 2018-07-10 08:07:12; reads: 20; read: 2018-07-11 16:28:38; revision: 6; modified: 2018-07-11 16:28:38; -->
+Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **tag(s)** scope.
 
 ---
 
@@ -880,7 +880,7 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-08 23:10:38; revision: 2; modified: 2018-06-08 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-09 23:10:38; revision: 2; modified: 2018-06-09 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
