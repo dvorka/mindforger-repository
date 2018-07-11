@@ -69,7 +69,7 @@ Run MindForger:
 mindforger
 ```
 ## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 13; read: 2018-07-10 10:31:09; revision: 5; modified: 2018-07-10 10:31:09; -->
-Build MindForger on WSL.
+Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
 
@@ -129,9 +129,7 @@ ls mindforger-repository
   limbo  memory  mind  stencils
 ```
 
-Run MindForger:
-
-Start your XServer for Windows (e.g. Xming)
+Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourceforge.net/projects/xming/))
 
 ```
 DISPLAY=:0.0 mindforger
