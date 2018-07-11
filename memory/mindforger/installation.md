@@ -68,72 +68,6 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 13; read: 2018-07-10 10:31:09; revision: 5; modified: 2018-07-10 10:31:09; -->
-Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
-
-Install build tools:
-
-```sh
-sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
-```
-
-Update `gcc` and `g++` to version 5 (at least):
-
-```
-# adds the the test toolchain which includes gcc-5 and g++5 
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt-get update
-sudo apt-get install gcc-5 g++-5
-# substitute gcc-5 for gcc and g++-5 for g++ (current version)
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
-```
-
-Get [source code](https://github.com/dvorka/mindforger):
-
-```
-# clone MindForger repository
-git clone https://github.com/dvorka/mindforger.git
-# update repository sub-modules
-cd mindforger
-git submodule init
-git submodule update
-```
-
-Build dependencies:
-
-```
-# build Discount
-cd deps/discount
-./configure.sh
-make
-```
-
-Compile and install from Git repository root directory:
-
-```sh
-qmake -r mindforger.pro
-# consider speeding up compilation by increasing the number of CPU cores to use e.g. make -j8
-make
-sudo make install
-```
-
-Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
-
-```
-# clone MindForger documentation repository to home directory (location and directory name matters)
-cd ~
-git clone https://github.com/dvorka/mindforger-repository.git
-
-# verify MindForger repository installation
-ls mindforger-repository
-  limbo  memory  mind  stencils
-```
-
-Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourceforge.net/projects/xming/))
-
-```
-DISPLAY=:0.0 mindforger
-```
 
 ## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 50; read: 2018-06-05 08:11:36; revision: 13; modified: 2018-06-05 08:11:36; -->
 Build MindForger on Debian Stretch or later.
@@ -334,6 +268,74 @@ Run MindForger either as application or using command line:
 * use `qmake` from the official distribution to **build** MindForger (as described above)
 
 Brew approach is simpler, faster and usually works - this is why it is used by default.
+
+## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 13; read: 2018-07-10 10:31:09; revision: 5; modified: 2018-07-10 10:31:09; -->
+Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
+
+Install build tools:
+
+```sh
+sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+```
+
+Update `gcc` and `g++` to version 5 (at least):
+
+```
+# adds the the test toolchain which includes gcc-5 and g++5 
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install gcc-5 g++-5
+# substitute gcc-5 for gcc and g++-5 for g++ (current version)
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+```
+
+Get [source code](https://github.com/dvorka/mindforger):
+
+```
+# clone MindForger repository
+git clone https://github.com/dvorka/mindforger.git
+# update repository sub-modules
+cd mindforger
+git submodule init
+git submodule update
+```
+
+Build dependencies:
+
+```
+# build Discount
+cd deps/discount
+./configure.sh
+make
+```
+
+Compile and install from Git repository root directory:
+
+```sh
+qmake -r mindforger.pro
+# consider speeding up compilation by increasing the number of CPU cores to use e.g. make -j8
+make
+sudo make install
+```
+
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
+
+```
+# clone MindForger documentation repository to home directory (location and directory name matters)
+cd ~
+git clone https://github.com/dvorka/mindforger-repository.git
+
+# verify MindForger repository installation
+ls mindforger-repository
+  limbo  memory  mind  stencils
+```
+
+Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourceforge.net/projects/xming/))
+
+```
+DISPLAY=:0.0 mindforger
+```
+
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 21; read: 2018-06-12 19:51:25; revision: 13; modified: 2018-06-12 19:51:25; -->
 Install MindForger using a package:
 
