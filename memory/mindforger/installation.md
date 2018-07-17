@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 460; read: 2018-07-11 15:43:13; revision: 460; modified: 2018-07-11 15:43:13; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 468; read: 2018-07-16 17:35:23; revision: 468; modified: 2018-07-16 17:35:23; importance: 3/5; urgency: 3/5; -->
 
 *Table of Contents*
 
@@ -269,7 +269,7 @@ Run MindForger either as application or using command line:
 
 Brew approach is simpler, faster and usually works - this is why it is used by default.
 
-## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 13; read: 2018-07-10 10:31:09; revision: 5; modified: 2018-07-10 10:31:09; -->
+## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 18; read: 2018-07-16 17:35:03; revision: 6; modified: 2018-07-16 17:35:03; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
@@ -280,7 +280,7 @@ sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-t
 
 Update `gcc` and `g++` to version 5 (at least):
 
-```
+```sh
 # adds the the test toolchain which includes gcc-5 and g++5 
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
@@ -291,7 +291,7 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /u
 
 Get [source code](https://github.com/dvorka/mindforger):
 
-```
+```sh
 # clone MindForger repository
 git clone https://github.com/dvorka/mindforger.git
 # update repository sub-modules
@@ -302,7 +302,7 @@ git submodule update
 
 Build dependencies:
 
-```
+```sh
 # build Discount
 cd deps/discount
 ./configure.sh
@@ -320,7 +320,7 @@ sudo make install
 
 Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
 
-```
+```sh
 # clone MindForger documentation repository to home directory (location and directory name matters)
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
@@ -332,11 +332,11 @@ ls mindforger-repository
 
 Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourceforge.net/projects/xming/))
 
-```
+```sh
 DISPLAY=:0.0 mindforger
 ```
 
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 32; read: 2018-07-11 15:43:13; revision: 17; modified: 2018-07-11 15:43:13; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 34; read: 2018-07-11 15:43:13; revision: 17; modified: 2018-07-11 15:43:13; -->
 Install MindForger using a package:
 
 * [Ubuntu](#ubuntu)
@@ -407,7 +407,7 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 14; read: 2018-07-11 15:42:00; revision: 5; modified: 2018-07-11 15:42:00; -->
+## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 22; read: 2018-07-16 17:35:23; revision: 8; modified: 2018-07-16 17:35:23; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -416,6 +416,7 @@ lsb_release -a
   Release:        16.04
   Codename:       xenial
 ```
+If not run `sudo do-release-upgrade`.
 
 Install and start an X server for Windows like [Xming](https://sourceforge.net/projects/xming/).
 
@@ -424,7 +425,7 @@ Install and start an X server for Windows like [Xming](https://sourceforge.net/p
 Install MindForger from PPA. Add [my PPA](http://www.mindforger.com/debian) to Apt, trust [GPG key](http://www.mindforger.com/gpgpubkey.txt),
 install MindForger and run it:
 
-```
+```sh
 # add PPA to trusted repositories
 sudo add-apt-repository ppa:ultradvorka/productivity
 
