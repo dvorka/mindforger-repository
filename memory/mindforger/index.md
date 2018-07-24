@@ -89,3 +89,5 @@ directoring using MindForger:
     * `git clone https://github.com/jbhuang0604/awesome-computer-vision && cd awesome-computer-vision && mindforger .`
 * [FiveThirtyEight data sources](https://github.com/fivethirtyeight/data)
     * `git clone https://github.com/fivethirtyeight/data && cd data && mindforger .`
+
+See also [https://github.com/dvorka/awesome-markdown-repositories](awesome Markdown repositories) for more examples.
