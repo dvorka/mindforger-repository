@@ -90,4 +90,4 @@ directoring using MindForger:
 * [FiveThirtyEight data sources](https://github.com/fivethirtyeight/data)
     * `git clone https://github.com/fivethirtyeight/data && cd data && mindforger .`
 
-See also [https://github.com/dvorka/awesome-markdown-repositories](awesome Markdown repositories) for more examples.
+See also [awesome Markdown repositories](https://github.com/dvorka/awesome-markdown-repositories) for more examples.
