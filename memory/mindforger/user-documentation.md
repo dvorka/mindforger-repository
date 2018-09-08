@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 982; read: 2018-07-11 16:28:46; revision: 982; modified: 2018-07-11 16:28:46; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1071; read: 2018-09-08 07:02:57; revision: 1071; modified: 2018-09-08 07:02:57; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If given file exists, then it's opened for edit, else
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-09 23:03:27; revision: 5; modified: 2018-06-09 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-10 23:03:27; revision: 5; modified: 2018-06-10 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editation:
@@ -106,7 +106,7 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Check `.mindforger.md` for configuration options details and description.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-09 23:05:50; revision: 3; modified: 2018-06-09 23:05:50; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-10 23:05:50; revision: 3; modified: 2018-06-10 23:05:50; -->
 This section provides brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
@@ -335,7 +335,7 @@ Js | ESB | C++
 ---
 
 💡 edit this Note to see the syntax
-#### Source code with syntax highlighting <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 57; read: 2018-07-10 07:32:56; revision: 7; modified: 2018-07-10 07:32:56; -->
+#### Source code with syntax highlighting <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 59; read: 2018-07-10 07:32:56; revision: 7; modified: 2018-07-10 07:32:56; -->
 There are multiple options how a block of source code can be written in Markdown.
 
 **IMPORTANT**: note leading empty lines before code blocks.
@@ -387,7 +387,7 @@ public static void main(string[] args) {
 ---
 
 💡 edit this Note to see the syntax
-#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 74; read: 2018-07-10 07:34:34; revision: 15; modified: 2018-07-10 07:34:34; -->
+#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 80; read: 2018-07-10 07:34:34; revision: 15; modified: 2018-07-10 07:34:34; -->
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
 
 
@@ -414,7 +414,28 @@ expression to image and include it in Markdown.
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu `Mind/Adapt/Markdown`
-#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 70; read: 2018-07-10 07:35:27; revision: 8; modified: 2018-07-10 07:35:27; -->
+##### MathJax cheetsheet <!-- Metadata: type: Note; created: 2018-09-08 06:45:50; reads: 45; read: 2018-09-08 07:02:57; revision: 45; modified: 2018-09-08 07:02:57; -->
+MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
+
+* use `$` to inline expressions, and `$$` for blocks
+* superscript: $x^2$
+* subscript: $x_i$
+* superscript and subscript: $x^2_i$
+* Greek letters:
+  $\alpha, \beta, \delta ... \omega, \Delta, ... \Omega$
+* groups: for `10^10` you get $10^10$, but `10^{10}` gives $10^{10}$. 
+* parenthesis: [, ( and use `\{` for curly braces
+* fraction: $\frac{2}{3}$ $\frac{a+b}{c-d}$
+* square: $\sqrt{10}$
+* exponential: $2^8$
+* absolute: $\vert{x}\vert$
+* metric: $\Vert{x}\Vert$
+* interval: $\langle x, y \rangle$
+* sum: $\sum x_i$
+* integral: $\int x_i$ $\iint x_i$ $\iiint x_i$
+* union: $x \cup y$, $\bigcup x$
+* intersection: $x \cap y$, $\bigcap x$
+#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 72; read: 2018-07-10 07:35:27; revision: 8; modified: 2018-07-10 07:35:27; -->
 Flowchart diagram:
 
 ```mermaid
@@ -880,7 +901,7 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-09 23:10:38; revision: 2; modified: 2018-06-09 23:10:38; -->
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-10 23:10:38; revision: 2; modified: 2018-06-10 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
