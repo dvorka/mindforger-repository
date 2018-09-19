@@ -416,7 +416,7 @@ lsb_release -a
   Release:        16.04
   Codename:       xenial
 ```
-If not run `sudo do-release-upgrade`.
+If not, then run `sudo do-release-upgrade`.
 
 Install and start an X server for Windows like [Xming](https://sourceforge.net/projects/xming/).
 
