@@ -13,7 +13,7 @@ Build MindForger from source code:
 * [build on macOS](#build-on-macos)
 * [build on Windows Subsystem for Linux (WSL)](#build-on-wsl)
 
-## Build on Ubuntu   <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 93; read: 2018-07-10 10:22:28; revision: 44; modified: 2018-07-10 10:22:28; -->
+## Build on Ubuntu<!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 93; read: 2018-07-10 10:22:28; revision: 44; modified: 2018-07-10 10:22:28; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
