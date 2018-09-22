@@ -98,8 +98,10 @@ Git branching naming convention:
     * feature branch 
 * `platform/platform-name`
     * platform support branch 
+* `dev/1.42.0`
+    * development branch used **before** release (stable master)
 * `stabilization/1.42.0`
-    * release stabilization brach
+    * stable brach used **after** release (patch releases)
 # Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 39; read: 2018-04-26 09:32:27; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
 ## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 36; read: 2018-05-30 07:33:03; revision: 3; modified: 2018-05-30 07:33:03; -->
