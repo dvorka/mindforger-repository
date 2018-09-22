@@ -20,7 +20,7 @@ Tarball:
 
 * [download tarball](https://github.com/dvorka/mindforger/releases)
 
-> _Links above has trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these linsk are broken in Markdown editors including MF_
+> _Links above have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these linsk are broken in Markdown editors including MF_
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 37; read: 2018-09-22 11:30:41; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 52; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
