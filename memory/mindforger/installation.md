@@ -18,7 +18,7 @@ Build:
 
 Docker:
 
-* [build and run container](#build-and-run-container-)
+* [build and run container](#build-and-run-in-container-)
 
 Tarball:
 
