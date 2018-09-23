@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 611; read: 2018-09-23 14:28:47; revision: 611; modified: 2018-09-23 14:28:47; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 615; read: 2018-09-23 14:46:39; revision: 615; modified: 2018-09-23 14:46:39; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Ubuntu](#ubuntu-)
@@ -447,7 +447,7 @@ DISPLAY=:0.0 mindforger
 
 # Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 14; read: 2018-09-23 13:49:01; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 61; read: 2018-09-23 14:28:47; revision: 57; modified: 2018-09-23 14:28:47; -->
+## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 63; read: 2018-09-23 14:46:39; revision: 59; modified: 2018-09-23 14:46:39; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:
@@ -465,7 +465,7 @@ docker build -t mindforger:latest mindforger
 Run container:
 
 ```
-# allow access to X server (UNSECURE, but simplest):
+# allow access to X server (UNSECURE, but simple):
 xhost +local:root
 
 # run image
