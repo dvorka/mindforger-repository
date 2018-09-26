@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1115; read: 2018-09-08 07:16:04; revision: 1115; modified: 2018-09-08 07:16:04; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1142; read: 2018-09-26 09:41:38; revision: 1142; modified: 2018-09-26 09:41:38; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -124,7 +124,7 @@ MindForger terminology:
 
 
 MindForger represents any Markdown as [follows](#markdown-outline)...
-### Markdown Outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 46; read: 2018-07-10 07:25:11; revision: 22; modified: 2018-07-10 07:25:11; -->
+### Markdown Outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 48; read: 2018-09-26 09:32:08; revision: 22; modified: 2018-07-10 07:25:11; -->
 In order to enable quick **navigation** and **refactoring** 
 of Markdown documents, MindForger shows Markdown documents 
 as an **outline** of Markdown sections (**Notes**) allowing
@@ -155,7 +155,7 @@ as a **tree** - it's called **outline**:
 
 For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
 
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 43; read: 2018-07-10 08:51:38; revision: 13; modified: 2018-07-10 08:51:38; -->
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 45; read: 2018-09-26 09:32:11; revision: 13; modified: 2018-07-10 08:51:38; -->
 ![Image](user-documentation.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
@@ -163,7 +163,7 @@ rendered preview on the right (in the MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 64; read: 2018-05-30 07:30:17; revision: 15; modified: 2018-05-30 07:30:17; -->
+### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 66; read: 2018-09-26 09:32:12; revision: 15; modified: 2018-05-30 07:30:17; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
 format to get rendered HTML.
@@ -387,7 +387,7 @@ public static void main(string[] args) {
 ---
 
 💡 edit this Note to see the syntax
-#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 80; read: 2018-07-10 07:34:34; revision: 15; modified: 2018-07-10 07:34:34; -->
+#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 84; read: 2018-09-26 09:31:36; revision: 15; modified: 2018-07-10 07:34:34; -->
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
 
 
@@ -414,7 +414,7 @@ expression to image and include it in Markdown.
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu `Mind/Adapt/Markdown`
-##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 67; read: 2018-09-08 07:16:04; revision: 67; modified: 2018-09-08 07:16:04; -->
+##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 74; read: 2018-09-26 09:38:49; revision: 67; modified: 2018-09-08 07:16:04; -->
 MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
 
 * use `$` to inline expressions, and `$$` for blocks
@@ -452,7 +452,7 @@ Limit block:
 
 $$\lim_{x\to 0}$$
 
-#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 72; read: 2018-07-10 07:35:27; revision: 8; modified: 2018-07-10 07:35:27; -->
+#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 74; read: 2018-09-26 09:31:35; revision: 8; modified: 2018-07-10 07:35:27; -->
 Flowchart diagram:
 
 ```mermaid
@@ -504,7 +504,7 @@ gantt
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** them using menu `Mind/Adapt/Markdown`
-#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 40; read: 2018-07-10 07:35:46; revision: 10; modified: 2018-07-10 07:35:46; -->
+#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 42; read: 2018-09-26 09:31:34; revision: 10; modified: 2018-07-10 07:35:46; -->
 If you want **line** or **multi-line** comment that 
 is strictly for yourself (readers of the converted 
 document should not be able 
@@ -618,7 +618,7 @@ etc.
 
 You can easily **extend** outlines just by copying Markdown file
 to `stencils/notes` or `stencils/notebooks` directory.
-### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 53; read: 2018-07-10 07:56:17; revision: 11; modified: 2018-07-10 07:56:17; -->
+### Notebook structure refactoring <!-- Metadata: type: Note; created: 2018-04-10 10:52:55; reads: 55; read: 2018-09-26 09:32:21; revision: 11; modified: 2018-07-10 07:56:17; -->
 ![Image](user-documentation.note-refactoring.png)
 
 Hierarchy of **Notes** (Markdown document sections) can be easily
@@ -654,7 +654,7 @@ can be found by:
 ---
 
 💡 see menu `Recall` for search options
-## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 42; read: 2018-07-10 09:17:12; revision: 7; modified: 2018-07-10 09:17:12; -->
+## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 44; read: 2018-09-26 09:32:29; revision: 7; modified: 2018-07-10 09:17:12; -->
 Use menu `Recall/Full-text Search` to search for **notes**
 using full-text search. Result shows notes Markdown source
 with **highlighted** matches.
@@ -667,7 +667,7 @@ Search **scope**:
 * If you run full-text search when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 32; read: 2018-07-10 09:17:26; revision: 6; modified: 2018-07-10 09:17:26; -->
+## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 34; read: 2018-09-26 09:32:30; revision: 6; modified: 2018-07-10 09:17:26; -->
 Use menu `Recall/Recall Notebook by Name` / `Recall/Recall Note by Name`
 to search for **notebooks** / **notes** by name. Result shows as you
 write the name in the dialog.
@@ -680,7 +680,7 @@ Search **scope**:
 * If you run note search **by name** when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 28; read: 2018-07-10 09:18:55; revision: 4; modified: 2018-07-10 09:18:55; -->
+## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 30; read: 2018-09-26 09:32:30; revision: 4; modified: 2018-07-10 09:18:55; -->
 Use menu `Recall/Recall Notebook by Tag` / `Recall/Recall Note by Tag`
 to search for **notebooks** / **notes** by tag(s). Result shows as you
 add/remove tags in the dialog.
@@ -693,7 +693,7 @@ Search **scope**:
 * If you run note search **by tag** when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Named-entity Recognition <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:04:50; reads: 28; read: 2018-07-10 08:11:31; revision: 5; modified: 2018-07-10 08:11:31; -->
+## Named-entity Recognition <!-- Metadata: type: Note; tags: wip; created: 2018-07-10 08:04:50; reads: 31; read: 2018-09-26 09:32:44; revision: 6; modified: 2018-09-26 09:32:44; -->
 ![Image](user-documentation.ner.png)
 
 _This feature is being implemented._
@@ -710,7 +710,7 @@ productive:
 * **recognition**: MindForger is able to recognize people, organization, places, ... in your remarks
 * **associations**: MindForger suggests relevant notes as you browse, read and edit notebooks and notes
 * **forgetting**: MindForger handles the process of scoping and forgetting analogous to human mind
-## Thinking vs Sleeping mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 21; read: 2018-07-10 09:44:42; revision: 8; modified: 2018-07-10 09:44:42; -->
+## Thinking vs Sleeping mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 25; read: 2018-09-26 09:32:50; revision: 8; modified: 2018-07-10 09:44:42; -->
 MindForger can be either in **thinking** or **sleeping** mode:
 
 * **Thinking** mode can be activated from menu `Mind/Think` and it's also
@@ -726,9 +726,9 @@ MindForger can be either in **thinking** or **sleeping** mode:
 
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
-## Think as you Search <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:49:58; reads: 52; read: 2018-07-10 08:11:44; revision: 4; modified: 2018-07-10 08:11:44; -->
+## Think as you Search <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:49:58; reads: 56; read: 2018-09-26 09:32:51; revision: 4; modified: 2018-07-10 08:11:44; -->
 _This feature is being implemented._
-## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 49; read: 2018-07-10 09:50:47; revision: 12; modified: 2018-07-10 09:50:47; -->
+## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 51; read: 2018-09-26 09:32:52; revision: 12; modified: 2018-07-10 09:50:47; -->
 ![TAYR](user-documentation.tayr.png)
 
 MindForger is able to **suggest relevant notes** as you browse and
@@ -741,7 +741,7 @@ read:
 
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 note `My 3D Printer MK2S by Prusa RESEARCH`.
-## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 49; read: 2018-07-10 09:53:28; revision: 10; modified: 2018-07-10 09:53:28; -->
+## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 51; read: 2018-09-26 09:32:52; revision: 10; modified: 2018-07-10 09:53:28; -->
 ![TAYW](user-documentation.tayw.png)
 
 MindForger is able to **suggest relevant notes** as you write note
@@ -755,11 +755,18 @@ content in the editor:
 
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 word `graph` (notice cursor between letter `g` and `r` on the current line with light-gray background).
-## Knowledge Graph Navigator <!-- Metadata: type: Note; tags: todo,wip; created: 2018-07-10 08:13:17; reads: 36; read: 2018-07-10 12:56:24; revision: 4; modified: 2018-07-10 12:56:24; -->
+## Knowledge Graph Navigator <!-- Metadata: type: Note; created: 2018-07-10 08:13:17; reads: 51; read: 2018-09-26 09:37:54; revision: 9; modified: 2018-09-26 09:37:54; -->
 ![Navigator](user-documentation.knowledge-graph-navigator.png)
 
-_This feature is being implemented._
-## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 32; read: 2018-05-03 09:26:24; revision: 17; modified: 2018-05-03 09:26:24; -->
+**Knowledge graph navigator** allows you to browse notebooks, notes, tags and other resources
+in **visually**.
+
+Navigator can be either activated using toolbar or using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>k</kbd> keyboard
+shortcut. It is **scope sensitive** e.g. if you activate navigator while viewing note, then this note
+becomes central node of the visualization.
+
+Knowledge graph can be **zoomed**, **shuffled** and its edgest can be (globally) stretched/shrinked.
+## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 34; read: 2018-09-26 09:37:58; revision: 17; modified: 2018-05-03 09:26:24; -->
 > Motto: "Computers need to forget". -- [Viktor Mayer-Schönberger](http://blog.mindforger.com/2007/11/computers-need-to-forget.html)
 
 Before I deep dive to MindForger features let me formulate
@@ -799,7 +806,7 @@ forgetting does **NOT** mean deleting of information.
 MindForger maintains **all** the remarks you ever written
 (see [limbo](#limbo)), but works with/shows only with 
 a [scope](#time-scope) **configurable** by you.
-### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 69; read: 2018-07-11 16:28:46; revision: 47; modified: 2018-07-11 16:28:46; -->
+### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 73; read: 2018-09-26 09:38:04; revision: 47; modified: 2018-07-11 16:28:46; -->
 Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **time** scope.
 
 ---
@@ -858,7 +865,7 @@ In particular you can set **global** time scope:
 In particular you can set **note** specific time scope that overrides global time scope:
 
 * ... behaviour is the same as above except that this setting has no effect on notebooks listing ...
-### Tag Scope <!-- Metadata: type: Note; created: 2018-07-10 08:07:12; reads: 20; read: 2018-07-11 16:28:38; revision: 6; modified: 2018-07-11 16:28:38; -->
+### Tag Scope <!-- Metadata: type: Note; created: 2018-07-10 08:07:12; reads: 26; read: 2018-09-26 09:38:04; revision: 6; modified: 2018-07-11 16:28:38; -->
 Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **tag(s)** scope.
 
 ---
@@ -869,7 +876,7 @@ bigger MindForger repositoriers and you don't want to be distracted by
 unrelated notebooks.
 
 Scoping using tags can be combined (`AND`) with [scoping using time](#time-scope).
-### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 24; read: 2018-05-03 10:06:46; revision: 4; modified: 2018-05-03 10:06:46; -->
+### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 28; read: 2018-09-26 09:38:04; revision: 4; modified: 2018-05-03 10:06:46; -->
 MindForger does **not** **delete** notebooks - it moves them to a location called Limbo that
 can be found in `${ACTIVE_MF_REPOSITORY}/limbo`. This is where you can delete Markdown
 documents pernamently.
@@ -880,7 +887,7 @@ If you use menu `Note/Forget`, then the note is deleted.
 Side note: I personally use CMS (Git) - I have full history of notebooks and notes. Tracking of
 all notes would be usefull, however HW resource consumption intensive. This is also
 why I don't want to duplicate this (already sophisticated) functionality within MindForger.
-# Productivity <!-- Metadata: type: Note; created: 2018-07-10 08:17:32; reads: 17; read: 2018-07-10 08:39:47; revision: 6; modified: 2018-07-10 08:39:47; -->
+# Productivity <!-- Metadata: type: Note; created: 2018-07-10 08:17:32; reads: 19; read: 2018-09-26 09:38:05; revision: 6; modified: 2018-07-10 08:39:47; -->
 MindForger aims to help you when you study, write a document/paper/article/book or
 want to achieve a goal.
 
@@ -890,7 +897,7 @@ Therefore it enables you to...
 * helps you to decide what you do first and next using **Eisenhower matrix**
 * track **progress** in %
 * specify **deadlines** (for notes)
-## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 18; read: 2018-07-10 08:30:44; revision: 7; modified: 2018-07-10 08:30:44; -->
+## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 22; read: 2018-09-26 09:39:15; revision: 7; modified: 2018-07-10 08:30:44; -->
 ![Image](user-documentation.importance-urgency-edit.png)
 
 When creating (menu `Notebook/New`) or editing **notebook** (edit mode `More...` button) you
@@ -902,7 +909,7 @@ can specify:
 ![Image](user-documentation.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
-## Eisenhower Matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 27; read: 2018-07-10 08:38:33; revision: 10; modified: 2018-07-10 08:38:33; -->
+## Eisenhower Matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 35; read: 2018-09-26 09:39:16; revision: 10; modified: 2018-07-10 08:38:33; -->
 ![Image](user-documentation.eisenhower-matrix.png)
 
 
@@ -918,11 +925,20 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 19; read: 2018-06-11 23:10:38; revision: 2; modified: 2018-06-11 23:10:38; -->
+## Home notebook <!-- Metadata: type: Note; created: 2018-09-26 09:39:19; reads: 8; read: 2018-09-26 09:41:38; revision: 5; modified: 2018-09-26 09:41:38; -->
+You can mark any notebook as **home** and it will be opened:
+
+* on MindForger start
+* using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>h</kbd> keyboard shortcut
+
+Home notebook can be **set**/unset using menu `Navigator/Make Home`.
+# Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 21; read: 2018-09-26 09:38:10; revision: 2; modified: 2018-06-11 23:10:38; -->
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
-## Keyboard Shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 40; read: 2018-07-10 08:00:10; revision: 13; modified: 2018-07-10 08:00:10; -->
+## MathJax cheatsheet <!-- Metadata: type: Note; created: 2018-09-26 09:38:26; reads: 5; read: 2018-09-26 09:38:48; revision: 3; modified: 2018-09-26 09:38:48; -->
+See [MathJax](#mathjax).
+## Keyboard Shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 42; read: 2018-09-26 09:38:12; revision: 13; modified: 2018-07-10 08:00:10; -->
 Prefer menu based keyboard shortcuts which are self-documented e.g.
 
 * <kbd>Alt+o n</kbd>       
