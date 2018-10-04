@@ -12,12 +12,12 @@ Table of contents:
 
 This document _briefly_ describes key MindForger features.
 # CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 35; read: 2018-05-29 22:46:55; revision: 10; modified: 2018-05-29 22:46:55; -->
-Read MindForger  manual page for command line options documentation:
+For information on Mindforger command line options read the manual page:
 
 ```shell
 man mindforger
 ```
-Check also help:
+For command options see the help file:
 
 ```shell
 $ mindforger --help
@@ -33,7 +33,7 @@ Options:
 
 Arguments:
   [<directory>|<file>]           MindForger repository or directory/file with
-                                 Markdown(s) to open
+                                 Markdown file(s) to open
 ```
 # Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 36; read: 2018-05-29 22:59:20; revision: 12; modified: 2018-05-29 22:59:20; -->
 MindForger can be used to:
@@ -48,7 +48,7 @@ where MindForger stores your **knowledge**. It contains Markdown
 files ([Markdown hosted DSL](developer-documentation.md#markdown-hosted-dsl)) 
 allowing you to get most of MindForger capabilities.
 
-If you run MindForger without parameters, then it opens
+If you run MindForger without parameters, then it opens the
 default MindForger repository:
 
 ```
@@ -76,26 +76,26 @@ mindforger-repository/
     └── notes
 ```
 ## Markdown file <!-- Metadata: type: Note; created: 2018-04-10 10:50:58; reads: 33; read: 2018-05-29 22:55:11; revision: 5; modified: 2018-05-29 22:55:11; -->
-MindForger can be used to edit **single** Markdown file:
+MindForger can be used to edit a **single** Markdown file:
 
 ```
 mindforger analysis.md
 ```
 
-If given file exists, then it's opened for edit, else
+If the given file exists, then it's opened for editing, otherwise a
 new Markdown file with this name is **created** and opened.
 ## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 26; read: 2018-06-11 23:03:27; revision: 5; modified: 2018-06-11 23:03:27; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
-and open them for search, navigation and editation:
+and open them for search, navigation and editing:
 
 ```
-$ mindforger a-github-repository-with-interesting-content
+$ mindforger a-git-repository-with-interesting-content
 ```
 
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
-with MindForger to easily find and navigate it.
+with MindForger to easily navigate it.
 # Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 48; read: 2018-07-10 07:18:22; revision: 10; modified: 2018-07-10 07:18:22; -->
 MindForger can be configured either from UI:
 
@@ -105,44 +105,43 @@ MindForger can be configured either from UI:
 
 * `~/.mindforger.md`
 
-Check `.mindforger.md` for configuration options details and description.
+Review `.mindforger.md` for configuration option details and descriptions.
 # Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 25; read: 2018-06-11 23:05:50; revision: 3; modified: 2018-06-11 23:05:50; -->
-This section provides brief overview of MindForger's 
+This section provides a brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 91; read: 2018-07-10 07:22:52; revision: 27; modified: 2018-07-10 07:22:52; -->
 MindForger can be used as a Markdown **editor**.
 
 It allows you to easily write [Markdown](#markdown) 
-documents without the need to remember all the details 
-of its **syntax** and **preview** Markdown rendered to 
-HTML.
+documents in a WYSIWYG text editor with
+Markdow **syntax** hints and an HTML rendered **preview**.
 
 MindForger terminology:
 
-* Markdown file is **Notebook**.
-* Markdown document section (line with leading `#`) is **Note**.
+* A Markdown file is a **Notebook**.
+* A Markdown document section (line with leading `#`) is a **Note**.
 
 
 MindForger represents any Markdown as [follows](#markdown-outline)...
 ### Markdown Outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 48; read: 2018-09-26 09:32:08; revision: 22; modified: 2018-07-10 07:25:11; -->
 In order to enable quick **navigation** and **refactoring** 
-of Markdown documents, MindForger shows Markdown documents 
+of Markdown documents, MindForger shows Markdown documents (**Notebooks**) 
 as an **outline** of Markdown sections (**Notes**) allowing
-you to efficiently choose/read/edit/refactor particular section.
+you to efficiently choose/read/edit/refactor a particular section.
 
 ![Image](user-documentation.outliner-rules.png)
 
 Check side-by-side Markdown document **text view**
 and **MindForger view** in the image above:
 
-* Markdown document named `INSTALLATION` is opened in a text editor (Emacs) on the **left**.
+* The `INSTALLATION` Markdown document is opened in a text editor (Emacs) on the **left**.
 * The same Markdown document is opened in MindForger on the **right**.
 
 As you can see, MindForger represents the hierarchy of sections 
 (prefixed/underlined in Markdown syntax with/by `#`, `-` or `=`) 
-as a **tree** - it's called **outline**:
+as a **tree** - called an **outline**:
 
-* Tree of sections (on the left in MindForger window) reflects 
+* The tree of sections (in the left MindForger window) reflects 
   the **depth/level** of individual sections e.g. section `UBUNTU` 
   on the second level is prefixed with `##` and shown on the second 
   level in the tree.
@@ -159,18 +158,18 @@ For switching between section (pre)view and edit mode refer to the [next section
 ![Image](user-documentation.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
-rendered preview on the right (in the MindForger window) or choose:
+rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
 ### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 66; read: 2018-09-26 09:32:12; revision: 15; modified: 2018-05-30 07:30:17; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
-format to get rendered HTML.
+format, easily rendered as HTML.
 
-MindForger uses Markdown-based DSL as format of 
-your remarks. There exist many Markdown flavors - for
-Markdown syntax documentation please refere to:
+MindForger uses Markdown-based DSL.
+There are many flavors of Markdown - for
+Markdown syntax documentation please refer to:
 
 * [John Gruber Markdown syntax](https://daringfireball.net/projects/markdown/syntax) documentation
 * [GitHub Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) documentation
