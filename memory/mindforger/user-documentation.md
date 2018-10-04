@@ -173,7 +173,7 @@ Markdown syntax documentation please refer to:
 
 * [John Gruber Markdown syntax](https://daringfireball.net/projects/markdown/syntax) documentation
 * [GitHub Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) documentation
-* [GitHub flawored Markdown](https://github.github.com/gfm/) specification
+* [GitHub flavored Markdown](https://github.github.com/gfm/) specification
 * [Discount](https://www.pell.portland.or.us/~orc/Code/discount/) documentation
 * [Mermaid diagrams](https://mermaidjs.github.io/) documentation
 
