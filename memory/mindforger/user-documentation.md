@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1163; read: 2018-10-10 13:40:54; revision: 1163; modified: 2018-10-10 13:40:54; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1169; read: 2018-11-12 23:28:37; revision: 1169; modified: 2018-11-12 23:28:37; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -899,16 +899,16 @@ bigger MindForger repositoriers and you don't want to be distracted by
 unrelated notebooks.
 
 Scoping using tags can be combined (`AND`) with [scoping using time](#time-scope).
-### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 36; read: 2018-10-10 13:39:48; revision: 4; modified: 2018-05-03 10:06:46; -->
+### Limbo <!-- Metadata: type: Note; created: 2018-04-10 10:56:16; reads: 43; read: 2018-11-12 23:28:37; revision: 7; modified: 2018-11-12 23:28:37; -->
 MindForger does **not** **delete** notebooks - it moves them to a location called Limbo that
 can be found in `${ACTIVE_MF_REPOSITORY}/limbo`. This is where you can delete Markdown
-documents pernamently.
+documents permanently.
 
 MindForger, in its current implementation, **does** delete notes. They are not moved to a note Limbo.
 If you use menu `Note/Forget`, then the note is deleted. 
 
 Side note: I personally use CMS (Git) - I have full history of notebooks and notes. Tracking of
-all notes would be usefull, however HW resource consumption intensive. This is also
+all notes would be useful, however HW resource consumption intensive. This is also
 why I don't want to duplicate this (already sophisticated) functionality within MindForger.
 # Productivity <!-- Metadata: type: Note; created: 2018-07-10 08:17:32; reads: 29; read: 2018-10-10 13:40:08; revision: 6; modified: 2018-07-10 08:39:47; -->
 MindForger aims to help you when you study, write a document/paper/article/book or
