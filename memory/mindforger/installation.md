@@ -46,9 +46,9 @@ Install MindForger from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
 
-```
+```bash
 # add PPA to APT sources:
-sudo echo -e "\ndeb http://www.mindforger.com/debian stretch main" >> /etc/apt/sources.list
+sudo bash -c 'echo -e "\ndeb https://www.mindforger.com/debian stretch main" > /etc/apt/sources.list.d/mindforger.list'
 
 # import PPA's GPG key
 wget -qO - http://www.mindforger.com/gpgpubkey.txt | sudo apt-key add -
