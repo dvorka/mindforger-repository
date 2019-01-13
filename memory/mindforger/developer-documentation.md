@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 290; read: 2018-07-10 10:07:09; revision: 290; modified: 2018-07-10 10:07:09; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 351; read: 2019-01-13 09:08:38; revision: 351; modified: 2019-01-13 09:08:38; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -14,7 +14,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 111; read: 2018-04-01 08:09:28; revision: 71; modified: 2018-04-01 08:09:28; -->
+# Linux Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 144; read: 2019-01-13 09:08:39; revision: 76; modified: 2019-01-13 09:08:37; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -45,7 +45,7 @@ Perhaps you may find useful description of my development environment:
         * Alt-X compile > cd ../.. && make (make -k for keep going)
 
 For more details see source code.
-## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 50; read: 2018-03-31 08:39:39; revision: 13; modified: 2018-03-31 08:39:39; -->
+## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 72; read: 2019-01-13 09:08:39; revision: 15; modified: 2019-01-13 09:08:19; -->
 MindForger has:
 
 * library unit tests
@@ -65,7 +65,7 @@ Frontend library tests:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 35; read: 2018-03-31 08:39:30; revision: 6; modified: 2018-03-31 08:39:30; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 57; read: 2019-01-13 09:08:39; revision: 7; modified: 2019-01-13 09:08:20; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
@@ -74,9 +74,9 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 28; read: 2018-05-17 10:57:04; revision: 5; modified: 2018-05-17 10:57:04; -->
+## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 48; read: 2019-01-13 09:08:39; revision: 6; modified: 2019-01-13 09:08:21; -->
 [Continous builds](https://travis-ci.org/dvorka/mindforger) via Travis CI, see also `.travis.yml`.
-## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 14; read: 2018-04-26 09:39:04; revision: 2; modified: 2018-04-26 09:39:04; -->
+## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 32; read: 2019-01-13 09:08:39; revision: 3; modified: 2019-01-13 09:08:21; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -91,18 +91,30 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
-## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 8; read: 2018-06-04 11:12:22; revision: 5; modified: 2018-06-04 11:12:22; -->
-Git branching naming convention:
+# Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 13; read: 2019-01-13 09:08:38; revision: 5; modified: 2019-01-13 09:08:38; -->
+For more details on Windows development environment,
+build and distribution please refer to [Windows development](developer-documentation/windows-build.md) notebook.
+# Conventions and BPs <!-- Metadata: type: Note; created: 2019-01-13 09:01:08; reads: 13; read: 2019-01-13 09:06:12; revision: 4; modified: 2019-01-13 09:01:18; -->
+Conventions and best practices.
+## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 20; read: 2019-01-13 09:06:08; revision: 9; modified: 2019-01-13 09:06:01; -->
+Git branch naming convention:
 
-* `fb/feature-name`
+* `feature-<related issue id>/<feature-name>`
     * feature branch 
-* `platform/platform-name`
+* `enhancement-<related issue id>/<enhancement-name>`
+    * enhancement branch 
+* `bug-<related issue id>/<description>`
+    * bug fix branch 
+* `benchmark-<related issue id>/<description>`
+    * benchmark branch 
+* `platform-<release version>/<platform-name>`
     * platform support branch 
-* `dev/1.42.0`
-    * development branch used **before** release (stable master)
-* `stabilization/1.42.0`
+
+* `dev/<release version>`
+    * release development branch used **before** release (stable master)
+* `stabilization/<release version>`
     * stable brach used **after** release (patch releases)
-# Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 39; read: 2018-04-26 09:32:27; revision: 7; modified: 2018-04-26 09:32:27; -->
+# Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 41; read: 2019-01-13 08:58:54; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
 ## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 36; read: 2018-05-30 07:33:03; revision: 3; modified: 2018-05-30 07:33:03; -->
 ...
