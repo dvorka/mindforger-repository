@@ -1,6 +1,6 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 52; read: 2019-01-13 09:49:42; revision: 52; modified: 2019-01-13 09:49:42; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 54; read: 2019-01-13 11:15:01; revision: 54; modified: 2019-01-13 11:15:01; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
-# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 20; read: 2019-01-13 09:49:42; revision: 17; modified: 2019-01-13 09:49:42; -->
+# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 22; read: 2019-01-13 11:15:01; revision: 18; modified: 2019-01-13 11:15:01; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
@@ -17,7 +17,8 @@ Plan:
         * conditional compilation which introduces Qt dependency for Win only
     * https://github.com/dvorka/mindforger/issues/77
 * [ ] (preview) **frontend build** to identify non-portable code:
-    * skip MD 2 HTML rendering (avoid its compilation)
+    * skip MD 2 HTML rendering (avoid its compilation) w/
+      `html_outline_representation.cpp` and `MF_NO_MD_2_HTML` define
     * skip HTML rendering (avoid its compilation)
     * https://github.com/dvorka/mindforger/issues/648
 * [ ] **MD 2 HTML rendering**:
