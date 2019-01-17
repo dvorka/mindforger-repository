@@ -51,7 +51,24 @@ Get **pre-release** user feedback:
     * Dowload [Zlib for Windows](http://gnuwin32.sourceforge.net/packages/zlib.htm)
       * Binaries
       * Developer files
-    * Unpack content to `c:/libs/zlib`
+    * Unpack content to `c:\libs\zlib`
+    * (Temporary) Patch `c:\libs\zlib\include\zconf.h`
+      ```
+      289,294c289,291
+      < #  if not defined(WINDOWS) && not defined(WIN32)
+      < #    include <unistd.h>    /* for SEEK_* and off_t */
+      < #    ifdef VMS
+      < #      include <unixio.h>   /* for off_t */
+      < #    endif
+      < #    define z_off_t off_t
+      ---
+      > #  include <unistd.h>    /* for SEEK_* and off_t */
+      > #  ifdef VMS
+      > #    include <unixio.h>   /* for off_t */
+      295a293
+      > #  define z_off_t off_t
+      ```
+          
     
  Build:
   * Checkout Mindforger
