@@ -41,16 +41,14 @@ Get **pre-release** user feedback:
  
  Install prerequisites:
  * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
-   * or [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
+   * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
  * Qt
     * Download [Qt for Windows](https://www.qt.io/download) - Open Source
-    * Select:
+    * During installation select:
       * Qt->Qt 5.12.x->MSVC 2017 64-bit
-      * Qt->Qt Debug Information Files (may not be necessary)
+      * Qt-> Qt WebEngine
   * Zlib
-    * Dowload [Zlib for Windows](http://gnuwin32.sourceforge.net/packages/zlib.htm)
-      * Binaries
-      * Developer files
+    * Dowload [Zlib 1.2.3 developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
     * Unpack content to `c:\libs\zlib`
     * (Temporary) Patch `c:\libs\zlib\include\zconf.h`
       ```
@@ -67,12 +65,17 @@ Get **pre-release** user feedback:
       > #    include <unixio.h>   /* for off_t */
       295a293
       > #  define z_off_t off_t
-      ```
-          
+       ```
+    * Download [Zlib 1.2.3 64-bit DLL files](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+    * Unpack `\dll_x64\zlibwapi.*` to  `c:\libs\zlib\lib`
     
  Build:
   * Checkout Mindforger
   * Start Qt creator
-  * Open project `$GIT\mindforger\lib\lib.pro`
-    * Check zlib path in lib pro. It's absolute path, relative to lib.pro location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
-  * Build MSVC 2017 64-bit->Debug  
+  * Open project `$GIT\mindforger\mindforger.pro`
+    * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
+    * Set the **Build Directory** to `$GIT\mindforger\build-mindforger-debug` for the **Debug** configuration and `$GIT\mindforger\build-mindforger-release` for the **Release** configuration 
+    * Check zlib path in the `app.pro` and the `lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
+  * Build MSVC 2017 64-bit
+  * For debugging mindforger follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm) 
+    * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
