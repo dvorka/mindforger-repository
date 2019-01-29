@@ -79,3 +79,7 @@ Get **pre-release** user feedback:
   * Build MSVC 2017 64-bit
   * For debugging mindforger follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm) 
     * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
+  
+Running:
+  * Click _Run_ from QtCreator
+  * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. 
