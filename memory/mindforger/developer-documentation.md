@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 351; read: 2019-01-13 09:08:38; revision: 351; modified: 2019-01-13 09:08:38; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 357; read: 2019-02-02 12:40:12; revision: 357; modified: 2019-02-02 12:40:12; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -94,9 +94,9 @@ Scripts used to created packages for Linux distributions can be found in:
 # Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 13; read: 2019-01-13 09:08:38; revision: 5; modified: 2019-01-13 09:08:38; -->
 For more details on Windows development environment,
 build and distribution please refer to [Windows development](developer-documentation/windows-build.md) notebook.
-# Conventions and BPs <!-- Metadata: type: Note; created: 2019-01-13 09:01:08; reads: 13; read: 2019-01-13 09:06:12; revision: 4; modified: 2019-01-13 09:01:18; -->
+# Conventions and BPs <!-- Metadata: type: Note; created: 2019-01-13 09:01:08; reads: 15; read: 2019-02-02 12:39:10; revision: 4; modified: 2019-01-13 09:01:18; -->
 Conventions and best practices.
-## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 20; read: 2019-01-13 09:06:08; revision: 9; modified: 2019-01-13 09:06:01; -->
+## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 24; read: 2019-02-02 12:39:11; revision: 9; modified: 2019-01-13 09:06:01; -->
 Git branch naming convention:
 
 * `feature-<related issue id>/<feature-name>`
@@ -114,6 +114,11 @@ Git branch naming convention:
     * release development branch used **before** release (stable master)
 * `stabilization/<release version>`
     * stable brach used **after** release (patch releases)
+## Source documentation conventions <!-- Metadata: type: Note; created: 2019-02-02 12:39:19; reads: 6; read: 2019-02-02 12:40:12; revision: 3; modified: 2019-02-02 12:40:12; -->
+Source code documentation conventions:
+
+* Use Doxygen syntax in source code comments 
+  https://www.cs.cmu.edu/~410/doc/doxygen.html
 # Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 41; read: 2019-01-13 08:58:54; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
 ## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 36; read: 2018-05-30 07:33:03; revision: 3; modified: 2018-05-30 07:33:03; -->

@@ -8,7 +8,9 @@ Release checklist:
 * [ ] user doc: installation
 * [ ] user doc: build
 * [ ] developer doc: polished developer doc w/ migration details and decisions
+
 # Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 24; read: 2019-02-03 08:02:18; revision: 18; modified: 2019-01-13 11:15:01; -->
+
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
@@ -40,7 +42,58 @@ Plan:
     * keyboard shortcuts which follow Windows conventions
     * desktop integration which start associated app for opened attachments 
       (PDF, GIF, ...)
-## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 9; read: 2019-01-13 09:22:37; revision: 5; modified: 2019-01-13 09:21:35; -->
+## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 13; read: 2019-02-02 12:37:27; revision: 5; modified: 2019-01-13 09:21:35; -->
 Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
+
+### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 5; read: 2019-02-02 12:38:40; revision: 4; modified: 2019-02-02 12:38:40; -->
+Install prerequisites:
+
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
+    * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
+* Qt
+    * Download [Qt for Windows](https://www.qt.io/download) - Open Source
+    * During installation select:
+      * Qt->Qt 5.12.x->MSVC 2017 64-bit
+      * Qt-> Qt WebEngine
+* Zlib
+    * Dowload [Zlib 1.2.3 developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
+    * Unpack content to `c:\libs\zlib`
+    * (Temporary) Patch `c:\libs\zlib\include\zconf.h`
+
+```
+      289,294c289,291
+      < #  if not defined(WINDOWS) && not defined(WIN32)
+      < #    include <unistd.h>    /* for SEEK_* and off_t */
+      < #    ifdef VMS
+      < #      include <unixio.h>   /* for off_t */
+      < #    endif
+      < #    define z_off_t off_t
+      ---
+      > #  include <unistd.h>    /* for SEEK_* and off_t */
+      > #  ifdef VMS
+      > #    include <unixio.h>   /* for off_t */
+      295a293
+      > #  define z_off_t off_t
+```
+
+* Download [Zlib 1.2.3 64-bit DLL files](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+* Unpack `\dll_x64\zlibwapi.*` to  `c:\libs\zlib\lib`
+    
+Build:
+
+* Checkout Mindforger
+* Start Qt creator
+* Open project `$GIT\mindforger\mindforger.pro`
+    * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
+    * Set the **Build Directory** to `$GIT\mindforger\build-mindforger-debug` for the **Debug** configuration and `$GIT\mindforger\build-mindforger-release` for the **Release** configuration 
+    * Check zlib path in the `app.pro` and the `lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
+* Build MSVC 2017 64-bit
+* For debugging mindforger follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm) 
+    * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
+  
+Running:
+
+* Click _Run_ from QtCreator
+* Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. 
