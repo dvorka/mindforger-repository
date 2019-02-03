@@ -1,6 +1,14 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 54; read: 2019-01-13 11:15:01; revision: 54; modified: 2019-01-13 11:15:01; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 58; read: 2019-02-03 08:04:26; revision: 58; modified: 2019-02-03 08:04:26; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
-# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 22; read: 2019-01-13 11:15:01; revision: 18; modified: 2019-01-13 11:15:01; -->
+
+Release checklist:
+
+* [ ] credits for Saman and/or Bonitoo
+* [ ] licenses for all libraries and code (snippets) included in MindForger repository
+* [ ] user doc: installation
+* [ ] user doc: build
+* [ ] developer doc: polished developer doc w/ migration details and decisions
+# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 24; read: 2019-02-03 08:02:18; revision: 18; modified: 2019-01-13 11:15:01; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
