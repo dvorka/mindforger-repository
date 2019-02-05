@@ -18,25 +18,25 @@ GitHub:
 
 Plan:
 
-* [ ] **development environment**:
+* [x] **development environment**:
     * document IDE, compiler and OS setup - QtCreator, LLVM (would be nice), Win10 (VM)
-* [ ] **backend lib build**:
+* [x] **backend lib build**:
     * rewrite using Qt to portable version (Qt is NOT intentionally used in backend now)
     * decide whether...
         * go with Qt functions on all platforms
         * conditional compilation which introduces Qt dependency for Win only
     * https://github.com/dvorka/mindforger/issues/77
-* [ ] (preview) **frontend build** to identify non-portable code:
+* [x] (preview) **frontend build** to identify non-portable code:
     * skip MD 2 HTML rendering (avoid its compilation) w/
       `html_outline_representation.cpp` and `MF_NO_MD_2_HTML` define
     * skip HTML rendering (avoid its compilation)
     * https://github.com/dvorka/mindforger/issues/648
-* [ ] **MD 2 HTML rendering**:
+* [x] **MD 2 HTML rendering**:
     * refactor existing impl to iface & implementation allowing to switch renderer  
     * migrate to `cmark-GFM` library ~ GitHub's MD 2 HTML renderer
-* [ ] HTML **viewer**: 
+* [x] HTML **viewer**: 
     * Qt uses the same engine as on macOS (WebEngine vs. WebKit)
-* [ ] **full build** w/ lib, `cmark-GFM` and HTML viewer 
+* [x] **full build** w/ lib, `cmark-GFM` and HTML viewer 
 * [ ] Win **installer** (possibly Qt based)
 * [ ] make MF real Win app:
     * keyboard shortcuts which follow Windows conventions
@@ -86,8 +86,27 @@ Build:
 * Checkout Mindforger
 * Start Qt creator
 * Open project `$GIT\mindforger\mindforger.pro`
+       ```
+    * Download [Zlib 1.2.3 64-bit DLL files](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+    * Unpack `\dll_x64\zlibwapi.*` to  `c:\libs\zlib\lib`
+  * Install [cmake](https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-win64-x64.msi)
+    
+ Build:
+  * Checkout Mindforger
+    * `git clone https://github.com/dvorka/mindforger.git`
+  * Build cmark
+    * `cd mindforger`
+    * `git submodule init`
+    * `git supmodule update`
+    * `cd deps\cmark-gfm`
+    * `mkdir build`
+    * `cd build`
+    * `cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..` 
+    * `cmake --build . --config Debug -- /m`
+  * Start Qt creator
+  * Open project `$GIT\mindforger\mindforger.pro`
     * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
-    * Set the **Build Directory** to `$GIT\mindforger\build-mindforger-debug` for the **Debug** configuration and `$GIT\mindforger\build-mindforger-release` for the **Release** configuration 
+    * Set the **Build Directory** to `$GIT\mindforger\_build` for the **Debug** and **Release** configurations 
     * Check zlib path in the `app.pro` and the `lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
 * Build MSVC 2017 64-bit
 * For debugging mindforger follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm) 
