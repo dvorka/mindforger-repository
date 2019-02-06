@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 136; read: 2019-02-03 19:01:40; revision: 136; modified: 2019-02-03 19:01:40; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 142; read: 2019-02-06 08:26:14; revision: 142; modified: 2019-02-06 08:26:14; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -97,10 +97,10 @@ Running:
 
 * Click _Run_ from QtCreator
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 9; read: 2019-02-03 17:36:00; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 11; read: 2019-02-06 08:25:19; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 34; read: 2019-02-03 19:01:40; revision: 34; modified: 2019-02-03 19:01:40; -->
-_This is documentation draft written as I do it on clean system_
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 37; read: 2019-02-06 08:26:14; revision: 37; modified: 2019-02-06 08:26:14; -->
+_This is documentation draft written as I do it on clean system._
 
 Build on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
@@ -112,6 +112,7 @@ Install build tools:
     * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version)
     * Choose `Qt Installer Framework 3.0`
     * Choose `MinGW 7.3.0 64-bit`
+    * **TODO: WebEngine (didn't notice the option)**
 
 Install dependencies:
 
