@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 230; read: 2019-02-08 00:04:38; revision: 230; modified: 2019-02-08 00:04:38; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 252; read: 2019-02-08 00:16:08; revision: 252; modified: 2019-02-08 00:16:08; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -47,7 +47,7 @@ Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 43; read: 2019-02-07 23:58:57; revision: 6; modified: 2019-02-07 21:52:36; -->
+### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 45; read: 2019-02-08 00:12:50; revision: 6; modified: 2019-02-07 21:52:36; -->
 Install prerequisites:
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
@@ -142,7 +142,7 @@ Creating installer:
 
 # Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 29; read: 2019-02-07 23:48:33; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 87; read: 2019-02-08 00:04:38; revision: 79; modified: 2019-02-08 00:04:38; -->
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 100; read: 2019-02-08 00:16:08; revision: 90; modified: 2019-02-08 00:16:08; -->
 _This is documentation draft written as I do it on clean system._
 
 Build on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
@@ -152,7 +152,7 @@ Install build tools:
 * Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
     * Choose `Desktop development with C++` in installer.
 * Install [Qt and Qt Creator IDE](https://www.qt.io/download)
-    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version) or newer
+    * Qt version should be `Qt 5.9.5` (corresponds to Qt shipped with Ubuntu 18.04) or newer
     * Choose `Qt > Qt 5.9.5 > QMSVC 2017 64-bit`
     * Choose `Qt > Qt 5.9.5 > Qt WebEngine`
     * Choose `Qt > Developer and Designer tools > Qt Creator`
@@ -162,7 +162,7 @@ Install build tools:
 Get MindForger [source code](https://github.com/dvorka/mindforger):
 
 ```
-# 1. create and change to directory
+# 1. create and change to git directory
 C: | cd \ | mkdir git | cd git
 # 2. clone MindForger repository
 git clone https://github.com/dvorka/mindforger.git
@@ -174,19 +174,20 @@ git submodule update
 
 Install dependencies:
 
-* Install Zlib 1.2.3
-    * Download [developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
+* Zlib 1.2.3
+    * Download [ZLib developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
     * Unpack content to `C:\libs\zlib`
     * Patch `C:\libs\zlib\include\zconf.h`
-        * **PROBLEM**
-        * For example: `git apply --unsafe-paths`
+        * **PROBLEM**: for example: `git apply --unsafe-paths`
+    * Download [Zlib 64-bit DLL files](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+    * Unpack `dll_x64\zlibwapi.*` to  `C:\libs\zlib\lib`
 
 Build dependencies:
 
 * `cmark-gfm` build:
 
 ```
-cd mindforger/deps/cmark-gfm
+cd git/mindforger/deps/cmark-gfm
 mkdir build                                                                                                                                                                                                      
 cd build                                                                                                                                                                                                         
 cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
