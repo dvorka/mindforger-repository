@@ -94,6 +94,8 @@ Build:
  Build:
   * Checkout Mindforger
     * `git clone https://github.com/dvorka/mindforger.git`
+    * `git checkout dev/1.49.0-win`
+    * Check zlib path in the `app\app.pro` and the `lib\lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
   * Build cmark
     * `cd mindforger`
     * `git submodule init`
@@ -102,20 +104,39 @@ Build:
     * `mkdir build`
     * `cd build`
     * `cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..` 
-    * `cmake --build . --config Debug -- /m`
+    * `cmake --build . --config Release -- /m`
+  * Build mindforger
+    * `cd $GIT\mindforger`
+    * Setup dev env in cmd line
+      * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
+      * `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+    * `qmake -r mindforger.pro`
+    * `nmake`
+    * result exe is in the `app\release` folder
+      
+
+Build from QtCreator and Debuging 
+
   * Start Qt creator
   * Open project `$GIT\mindforger\mindforger.pro`
     * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
-    * Set the **Build Directory** to `$GIT\mindforger\_build` for the **Debug** and **Release** configurations 
-    * Check zlib path in the `app.pro` and the `lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
-* Build MSVC 2017 64-bit
-* For debugging mindforger follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm) 
+    * Set the **Build Directory** to `$GIT\mindforger`
+  * Build MSVC 2017 64-bit
+  * For setting debugger in QtCreator follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm)
     * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
+
   
 Running:
-
-* Click _Run_ from QtCreator
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. 
+
+Creating installer:
+* Install [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
+* `cd $GIT\mindforger`
+* `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
+* `windeployqt app\release\mindforger.exe  --dir app\release\bin --no-compiler-runtime`
+* `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp build\windows\installer\mindforger-setup.iss`
+* the result is in the `app\release\installer` folder
+
 # Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 11; read: 2019-02-06 08:25:19; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
 ## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 37; read: 2019-02-06 08:26:14; revision: 37; modified: 2019-02-06 08:26:14; -->
