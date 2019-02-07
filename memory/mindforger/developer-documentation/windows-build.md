@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 142; read: 2019-02-06 08:26:14; revision: 142; modified: 2019-02-06 08:26:14; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 146; read: 2019-02-07 21:52:36; revision: 146; modified: 2019-02-07 21:52:36; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -9,7 +9,7 @@ Release checklist:
 * [ ] user doc: build
 * [ ] developer doc: polished developer doc w/ migration details and decisions
 
-# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 24; read: 2019-02-03 08:02:18; revision: 18; modified: 2019-01-13 11:15:01; -->
+# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 26; read: 2019-02-07 21:51:14; revision: 18; modified: 2019-01-13 11:15:01; -->
 
 GitHub:
 
@@ -42,12 +42,12 @@ Plan:
     * keyboard shortcuts which follow Windows conventions
     * desktop integration which start associated app for opened attachments 
       (PDF, GIF, ...)
-## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 15; read: 2019-02-03 17:10:13; revision: 5; modified: 2019-01-13 09:21:35; -->
+## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 21; read: 2019-02-07 21:51:17; revision: 5; modified: 2019-01-13 09:21:35; -->
 Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 15; read: 2019-02-03 17:36:00; revision: 4; modified: 2019-02-02 12:38:40; -->
+### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 19; read: 2019-02-07 21:52:36; revision: 6; modified: 2019-02-07 21:52:36; -->
 Install prerequisites:
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
@@ -89,14 +89,15 @@ Build:
        ```
     * Download [Zlib 1.2.3 64-bit DLL files](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
     * Unpack `\dll_x64\zlibwapi.*` to  `c:\libs\zlib\lib`
-  * Install [cmake](https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-win64-x64.msi)
+* Install [cmake](https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-win64-x64.msi)
     
- Build:
-  * Checkout Mindforger
+Build:
+
+* Checkout Mindforger
     * `git clone https://github.com/dvorka/mindforger.git`
     * `git checkout dev/1.49.0-win`
     * Check zlib path in the `app\app.pro` and the `lib\lib.pro`. It's absolute path, relative to pro file location. Current path counts with mindforger repo on the 2nd level, eg. `c:\git\mindforger`.
-  * Build cmark
+* Build cmark
     * `cd mindforger`
     * `git submodule init`
     * `git supmodule update`
@@ -105,11 +106,11 @@ Build:
     * `cd build`
     * `cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..` 
     * `cmake --build . --config Release -- /m`
-  * Build mindforger
+* Build mindforger
     * `cd $GIT\mindforger`
     * Setup dev env in cmd line
-      * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
-      * `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+        * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
+        * `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
     * `qmake -r mindforger.pro`
     * `nmake`
     * result exe is in the `app\release` folder
@@ -117,19 +118,21 @@ Build:
 
 Build from QtCreator and Debuging 
 
-  * Start Qt creator
-  * Open project `$GIT\mindforger\mindforger.pro`
+* Start Qt creator
+* Open project `$GIT\mindforger\mindforger.pro`
     * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
     * Set the **Build Directory** to `$GIT\mindforger`
-  * Build MSVC 2017 64-bit
-  * For setting debugger in QtCreator follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm)
-    * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
+* Build MSVC 2017 64-bit
+* For setting debugger in QtCreator follow instructions in Qt documention [Setting Up Debugger](http://doc.qt.io/qtcreator/creator-debugger-engines.htm)
+* CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
 
   
 Running:
+
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. 
 
 Creating installer:
+
 * Install [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
 * `cd $GIT\mindforger`
 * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -137,7 +140,7 @@ Creating installer:
 * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp build\windows\installer\mindforger-setup.iss`
 * the result is in the `app\release\installer` folder
 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 11; read: 2019-02-06 08:25:19; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 15; read: 2019-02-07 21:51:10; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
 ## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 37; read: 2019-02-06 08:26:14; revision: 37; modified: 2019-02-06 08:26:14; -->
 _This is documentation draft written as I do it on clean system._
