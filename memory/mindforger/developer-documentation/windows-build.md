@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 146; read: 2019-02-07 21:52:36; revision: 146; modified: 2019-02-07 21:52:36; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 230; read: 2019-02-08 00:04:38; revision: 230; modified: 2019-02-08 00:04:38; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -42,12 +42,12 @@ Plan:
     * keyboard shortcuts which follow Windows conventions
     * desktop integration which start associated app for opened attachments 
       (PDF, GIF, ...)
-## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 21; read: 2019-02-07 21:51:17; revision: 5; modified: 2019-01-13 09:21:35; -->
+## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 25; read: 2019-02-07 23:18:43; revision: 5; modified: 2019-01-13 09:21:35; -->
 Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 19; read: 2019-02-07 21:52:36; revision: 6; modified: 2019-02-07 21:52:36; -->
+### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 43; read: 2019-02-07 23:58:57; revision: 6; modified: 2019-02-07 21:52:36; -->
 Install prerequisites:
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
@@ -140,9 +140,9 @@ Creating installer:
 * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp build\windows\installer\mindforger-setup.iss`
 * the result is in the `app\release\installer` folder
 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 15; read: 2019-02-07 21:51:10; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 29; read: 2019-02-07 23:48:33; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 37; read: 2019-02-06 08:26:14; revision: 37; modified: 2019-02-06 08:26:14; -->
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 87; read: 2019-02-08 00:04:38; revision: 79; modified: 2019-02-08 00:04:38; -->
 _This is documentation draft written as I do it on clean system._
 
 Build on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
@@ -152,24 +152,46 @@ Install build tools:
 * Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
     * Choose `Desktop development with C++` in installer.
 * Install [Qt and Qt Creator IDE](https://www.qt.io/download)
-    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version)
-    * Choose `Qt Installer Framework 3.0`
-    * Choose `MinGW 7.3.0 64-bit`
-    * **TODO: WebEngine (didn't notice the option)**
+    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version) or newer
+    * Choose `Qt > Qt 5.9.5 > QMSVC 2017 64-bit`
+    * Choose `Qt > Qt 5.9.5 > Qt WebEngine`
+    * Choose `Qt > Developer and Designer tools > Qt Creator`
+* Install `cmake`
+* Install `patch`
+
+Get MindForger [source code](https://github.com/dvorka/mindforger):
+
+```
+# 1. create and change to directory
+C: | cd \ | mkdir git | cd git
+# 2. clone MindForger repository
+git clone https://github.com/dvorka/mindforger.git
+# 3. update repository sub-modules
+cd mindforger
+git submodule init
+git submodule update
+```
 
 Install dependencies:
 
 * Install Zlib 1.2.3
     * Download [developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
-    * Download [DLLs](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
-
-Get source code:
-
-* https://github.com/dvorka/mindforger
+    * Unpack content to `C:\libs\zlib`
+    * Patch `C:\libs\zlib\include\zconf.h`
+        * **PROBLEM**
+        * For example: `git apply --unsafe-paths`
 
 Build dependencies:
 
-...
+* `cmark-gfm` build:
+
+```
+cd mindforger/deps/cmark-gfm
+mkdir build                                                                                                                                                                                                      
+cd build                                                                                                                                                                                                         
+cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
+cmake --build . --config Release -- /m
+```
 
 Build MindForger:
 
