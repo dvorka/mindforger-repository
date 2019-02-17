@@ -1,20 +1,22 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 615; read: 2018-09-23 14:46:39; revision: 615; modified: 2018-09-23 14:46:39; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 641; read: 2019-02-16 09:45:12; revision: 641; modified: 2019-02-16 09:45:12; importance: 3/5; urgency: 3/5; -->
 Install:
 
+* [Windows](#windows-)
 * [Ubuntu](#ubuntu-)
 * [Debian](#debian-)
 * [Fedora](#fedora-)
 * [Arch Linux](#arch-linux-)
 * [macOS](#macos-)
-* [Windows WSL](#wsl-)
+* [WSL](#wsl-)
 
 Build:
 
+* [build on Windows](#build-on-windows-)
 * [build on Ubuntu](#build-on-ubuntu-)
 * [build on Debian](#build-on-debian-)
 * [build on Fedora](#build-on-fedora-)
 * [build on macOS](#build-on-macos-)
-* [build on Windows Subsystem for Linux (WSL)](#build-on-wsl-)
+* [build on WSL](#build-on-wsl-)
 
 Docker:
 
@@ -25,9 +27,11 @@ Tarball:
 * [download tarball](https://github.com/dvorka/mindforger/releases)
 
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 39; read: 2018-09-23 13:45:38; revision: 18; modified: 2018-09-22 11:30:41; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 41; read: 2019-02-16 09:43:08; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
-## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 52; read: 2018-05-17 09:46:57; revision: 20; modified: 2018-05-17 09:46:57; -->
+## Windows <!-- Metadata: type: Note; tags: todo; created: 2019-02-16 09:43:18; reads: 4; read: 2019-02-16 09:43:24; revision: 2; modified: 2019-02-16 09:43:24; -->
+...
+## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 54; read: 2019-02-16 09:43:14; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -41,7 +45,7 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 33; read: 2018-09-23 14:27:25; revision: 16; modified: 2018-05-17 09:47:13; -->
+## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 35; read: 2019-02-16 09:43:09; revision: 16; modified: 2018-05-17 09:47:13; -->
 Install MindForger from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
@@ -61,7 +65,7 @@ sudo apt install mindforger
 ```
 
 See also http://www.mindforger.com/debian/
-## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 42; read: 2018-09-23 13:47:44; revision: 19; modified: 2018-05-17 09:47:19; -->
+## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 44; read: 2019-02-16 09:43:14; revision: 19; modified: 2018-05-17 09:47:19; -->
 Install MindForger on Fedora (tested on FC 27):
 
 * [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -122,7 +126,47 @@ DISPLAY=:0.0 mindforger
 ```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 55; read: 2018-09-23 13:46:02; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 103; read: 2018-09-23 14:27:23; revision: 44; modified: 2018-07-10 10:22:28; -->
+## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 74; read: 2019-02-16 09:45:12; revision: 44; modified: 2019-02-16 09:45:12; -->
+Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
+
+Install build tools:
+
+* Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
+    * Choose `Desktop development with C++` in installer.
+* Install [Qt and Qt Creator IDE](https://www.qt.io/download)
+    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version)
+    * Choose `Qt Installer Framework 3.0`
+    * Choose `MinGW 7.3.0 64-bit`
+    * **TODO: WebEngine (didn't notice the option)**
+
+**... TODO continue here...**
+
+Install dependencies > TODO no longer needed
+
+* Install Zlib 1.2.3
+    * Download [developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
+    * Download [DLLs](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+
+Get source code:
+
+* https://github.com/dvorka/mindforger
+
+Build dependencies:
+
+... cmark ...
+
+Build MindForger:
+
+...
+
+Install:
+
+...
+
+Run:
+
+...
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 111; read: 2019-02-16 09:44:42; revision: 44; modified: 2018-07-10 10:22:28; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
@@ -447,7 +491,7 @@ DISPLAY=:0.0 mindforger
 
 # Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 14; read: 2018-09-23 13:49:01; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 63; read: 2018-09-23 14:46:39; revision: 59; modified: 2018-09-23 14:46:39; -->
+## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 67; read: 2019-02-16 09:42:15; revision: 59; modified: 2018-09-23 14:46:39; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:

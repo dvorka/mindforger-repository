@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 177; read: 2019-02-16 09:22:50; revision: 177; modified: 2019-02-16 09:22:50; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 179; read: 2019-02-16 09:43:48; revision: 178; modified: 2019-02-16 09:43:48; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -99,7 +99,7 @@ Build cmake-gfm: It requires cmake on the path.
   * result exe is in the `app\release` folder
       
 
-#### Build from QtCreator and Debuging  <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 3; read: 2019-02-16 08:07:28; revision: 1; modified: 2019-02-06 08:26:14; -->
+#### Build from QtCreator and Debuging <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 3; read: 2019-02-16 08:07:28; revision: 1; modified: 2019-02-06 08:26:14; -->
 
   * Start Qt creator
   * Open project `$GIT\mindforger\mindforger.pro`
@@ -168,7 +168,7 @@ Alternatively, instead using of following above described manual steps, you can 
 Most important is the `env.bat`. It's called by others and sets up command line environment. Ammend this file to change paths based on your setup. Other scripts are self-explanatory. The `run-unit-tests.bat` can also take any argument. This is usefull for passing options to the _gtest_ framework. 
 
 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 11; read: 2019-02-06 08:25:19; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 13; read: 2019-02-16 09:43:36; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
 ## Build cmark on Linux <!-- Metadata: type: Note; created: 2019-02-16 08:08:14; reads: 18; read: 2019-02-16 09:22:50; revision: 17; modified: 2019-02-16 09:22:50; -->
 Build `cmake-gfm`: 
@@ -183,43 +183,3 @@ cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 # build
 cmake --build .
 ```
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 46; read: 2019-02-16 09:10:11; revision: 38; modified: 2019-02-16 08:09:26; -->
-_This is documentation draft written as I do it on clean system._
-
-Build on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
-
-Install build tools:
-
-* Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
-    * Choose `Desktop development with C++` in installer.
-* Install [Qt and Qt Creator IDE](https://www.qt.io/download)
-    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version)
-    * Choose `Qt Installer Framework 3.0`
-    * Choose `MinGW 7.3.0 64-bit`
-    * **TODO: WebEngine (didn't notice the option)**
-
-Install dependencies:
-
-* Install Zlib 1.2.3
-    * Download [developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
-    * Download [DLLs](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
-
-Get source code:
-
-* https://github.com/dvorka/mindforger
-
-Build dependencies:
-
-... cmark ...
-
-Build MindForger:
-
-...
-
-Install:
-
-...
-
-Run:
-
-...
