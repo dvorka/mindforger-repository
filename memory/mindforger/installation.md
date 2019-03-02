@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 771; read: 2019-03-02 17:02:11; revision: 771; modified: 2019-03-02 17:02:11; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 773; read: 2019-03-02 18:31:24; revision: 773; modified: 2019-03-02 18:31:24; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -29,7 +29,7 @@ Tarball:
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 41; read: 2019-02-16 09:43:08; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
-## Windows <!-- Metadata: type: Note; tags: todo; created: 2019-02-16 09:43:18; reads: 4; read: 2019-02-16 09:43:24; revision: 2; modified: 2019-02-16 09:43:24; -->
+## Windows <!-- Metadata: type: Note; tags: todo; created: 2019-02-16 09:43:18; reads: 6; read: 2019-03-02 18:30:39; revision: 2; modified: 2019-02-16 09:43:24; -->
 ...
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 54; read: 2019-02-16 09:43:14; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
@@ -126,7 +126,7 @@ DISPLAY=:0.0 mindforger
 ```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 55; read: 2018-09-23 13:46:02; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 111; read: 2019-03-02 17:02:11; revision: 109; modified: 2019-03-02 17:02:11; -->
+## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 113; read: 2019-03-02 18:31:24; revision: 110; modified: 2019-03-02 18:31:24; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
 Install build **tools**:
@@ -134,7 +134,7 @@ Install build **tools**:
 * Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
     * Choose `Desktop development with C++` in installer.
 * Install [Qt and Qt Creator IDE](https://www.qt.io/download)
-    * Qt version should be `Qt 5.9.5` (corresponds to Qt shipped with Ubuntu 18.04) or newer
+    * Qt version should be `Qt 5.9.5` or newer - choose **latest** Qt release to get the best performance
     * Choose `Qt > Qt 5.x.x > QMSVC 2017 64-bit`
     * Choose `Qt > Qt 5.x.x > Qt WebEngine`
     * Choose `Qt > Developer and Designer tools > Qt Creator`
