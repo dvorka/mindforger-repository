@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 179; read: 2019-02-16 09:43:48; revision: 178; modified: 2019-02-16 09:43:48; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 204; read: 2019-03-02 16:34:26; revision: 204; modified: 2019-03-02 16:34:26; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -9,14 +9,13 @@ Release checklist:
 * [ ] user doc: build
 * [ ] developer doc: polished developer doc w/ migration details and decisions
 
-# Plan '19/1 <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 24; read: 2019-02-03 08:02:18; revision: 18; modified: 2019-01-13 11:15:01; -->
-
+# Plan <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 35; read: 2019-03-02 16:31:33; revision: 21; modified: 2019-03-02 16:31:33; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
 * branch: https://github.com/dvorka/mindforger/tree/dev/1.49.0-win
 
-Plan:
+2019/1 plan to port MindForger on Windows:
 
 * [x] **development environment**:
     * document IDE, compiler and OS setup - QtCreator, LLVM (would be nice), Win10 (VM)
@@ -42,51 +41,52 @@ Plan:
     * keyboard shortcuts which follow Windows conventions
     * desktop integration which start associated app for opened attachments 
       (PDF, GIF, ...)
-## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 15; read: 2019-02-03 17:10:13; revision: 5; modified: 2019-01-13 09:21:35; -->
+
 Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 15; read: 2019-02-03 17:36:00; revision: 4; modified: 2019-02-02 12:38:40; -->
-...
-#### Install prerequisites: <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 3; read: 2019-02-16 08:07:22; revision: 1; modified: 2019-02-06 08:26:14; -->
+# Build <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 22; read: 2019-03-02 16:32:04; revision: 7; modified: 2019-03-02 16:32:04; -->
+Windows distribution build instructions and technical documentation.
+## Install prerequisites <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 11; read: 2019-03-02 16:32:27; revision: 3; modified: 2019-03-02 16:32:27; -->
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
     * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
 * Qt
     * Download [Qt for Windows](https://www.qt.io/download) - Open Source
     * During installation select:
-      * Qt->Qt 5.12.x->MSVC 2017 64-bit
-      * Qt-> Qt WebEngine
+        * Qt->Qt 5.12.x->MSVC 2017 64-bit
+        * Qt-> Qt WebEngine
 * [cmake](https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-win64-x64.msi)
     
    
- #### Prepare MindForger sources
+Prepare MindForger sources:
 
-  * Checkout Mindforger
+* Checkout Mindforger
     * `git clone https://github.com/dvorka/mindforger.git`
     * `cd mindforger`
     * `git checkout dev/1.49.0-win`
-  * Init dependencies  
+* Init dependencies  
     * `git submodule init`
     * `git supmodule update`
 
-#### Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 11; read: 2019-02-16 09:10:23; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 18; read: 2019-03-02 16:32:40; revision: 2; modified: 2019-03-02 16:32:40; -->
 Building dependecies is required only once, during initial building.
 
 Build cmake-gfm: It requires cmake on the path.
-  * Goto cmark-gfm
+
+* Goto cmark-gfm
     * `cd deps\cmark-gfm`
-  * Use build directory
+* Use build directory
     * `mkdir build`
     * `cd build`
-  * Generate build files
+* Generate build files
     * `cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..` 
-  * Build both release and debug profiles
+* Build both release and debug profiles
     * `cmake --build . --config Release -- /m`
     * `cmake --build . --config Debug -- /m`
 
-#### Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 7; read: 2019-02-16 08:08:18; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 13; read: 2019-03-02 16:32:43; revision: 1; modified: 2019-02-06 08:26:14; -->
   * Goto repo dir
     * `cd $GIT\mindforger`
   * Setup development environment in cmd line. Change path according to your MSVC 2017 and Qt installation
@@ -99,7 +99,7 @@ Build cmake-gfm: It requires cmake on the path.
   * result exe is in the `app\release` folder
       
 
-#### Build from QtCreator and Debuging <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 3; read: 2019-02-16 08:07:28; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Build from QtCreator and Debuging <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 9; read: 2019-03-02 16:32:50; revision: 1; modified: 2019-02-06 08:26:14; -->
 
   * Start Qt creator
   * Open project `$GIT\mindforger\mindforger.pro`
@@ -110,7 +110,7 @@ Build cmake-gfm: It requires cmake on the path.
     * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
 
   
-#### Running MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 1; read: 2019-02-06 08:26:14; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Running MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 5; read: 2019-03-02 16:32:54; revision: 1; modified: 2019-02-06 08:26:14; -->
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. Zlib binaries are located in `$GIT\mindforger\deps\zlib-win\ 
   * Qt files. Change path according to your setup
     * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -119,7 +119,7 @@ Build cmake-gfm: It requires cmake on the path.
   * Start MindForger
     * `app\release\mindforger.exe`
 
-#### Creating installer <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 1; read: 2019-02-06 08:26:14; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Creating installer <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 4; read: 2019-03-02 16:33:04; revision: 1; modified: 2019-02-06 08:26:14; -->
 * Install [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
 * Prepare development environment. Change path according to your Qt installation
   * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -130,23 +130,24 @@ Build cmake-gfm: It requires cmake on the path.
   * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.14.26405\vcredist_x64.exe" build\windows\installer\mindforger-setup.iss` 
 * the result is in the `app\release\installer` folder
 
-#### Building unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 1; read: 2019-02-06 08:26:14; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Building unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 4; read: 2019-03-02 16:33:19; revision: 2; modified: 2019-03-02 16:33:19; -->
 Unit tests are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
 
 Gtest is expected at `C:\Program Files\gtest-distribution` by default. If you have it somewhere else you have to update the `lib\test\src\src.pro` Qt project file to change path to gtest.
 
 Than:
-* Prepare development environment. Change path according to your Qt and MSVC 2017 installation
-  * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
-  * `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
-* Go to project file
-  * `cd $GIT\mindforger\lib\test`
-* Generate make files
-  * `qmake -r mindforger-lib-unit-tests.pro "CONFIG+=debug" "CONFIG+=mfdebug"` 
-* Build tests
-  * `nmake`
 
-#### Running unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 1; read: 2019-02-06 08:26:14; revision: 1; modified: 2019-02-06 08:26:14; -->
+* Prepare development environment. Change path according to your Qt and MSVC 2017 installation
+    * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
+    * `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+* Go to project file
+    * `cd $GIT\mindforger\lib\test`
+* Generate make files
+    * `qmake -r mindforger-lib-unit-tests.pro "CONFIG+=debug" "CONFIG+=mfdebug"` 
+* Build tests
+    * `nmake`
+
+## Running unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 5; read: 2019-03-02 16:33:21; revision: 1; modified: 2019-02-06 08:26:14; -->
 * Prepare environment
   * `set "PATH=%PATH%;$GIT\mindforger\deps\zlib-win"`
   * `set M8R_GIT_PATH=$GIT\mindforger`
@@ -155,23 +156,24 @@ Than:
   * `lib\test\src\debug\mindforger-lib-unit-tests.exe`
 
 
-#### Using scripts <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 1; read: 2019-02-06 08:26:14; revision: 1; modified: 2019-02-06 08:26:14; -->
+## Using scripts <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 4; read: 2019-03-02 16:33:54; revision: 2; modified: 2019-03-02 16:33:54; -->
 Alternatively, instead using of following above described manual steps, you can take advantage of batch files prepared for building and running MindForger, installer and unit tests. All the scripts are located in the ` $GIT\mindforger\build` folder:
-  * build-app.bat
-  * build-cmake.bat
-  * build-installer.bat
-  * build-unit-tests.bat
-  * env.bat
-  * run-app.bat
-  * run-unit-tests.bat
+
+* `build-app.bat`
+* `build-cmake.bat`
+* `build-installer.bat`
+* `build-unit-tests.bat`
+* `env.bat`
+* `run-app.bat`
+* `run-unit-tests.bat`
 
 Most important is the `env.bat`. It's called by others and sets up command line environment. Ammend this file to change paths based on your setup. Other scripts are self-explanatory. The `run-unit-tests.bat` can also take any argument. This is usefull for passing options to the _gtest_ framework. 
 
 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 13; read: 2019-02-16 09:43:36; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 15; read: 2019-03-02 16:34:02; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
-## Build cmark on Linux <!-- Metadata: type: Note; created: 2019-02-16 08:08:14; reads: 18; read: 2019-02-16 09:22:50; revision: 17; modified: 2019-02-16 09:22:50; -->
-Build `cmake-gfm`: 
+## Build cmark on Linux <!-- Metadata: type: Note; created: 2019-02-16 08:08:14; reads: 26; read: 2019-03-02 16:34:26; revision: 19; modified: 2019-03-02 16:34:26; -->
+Build `cmark-gfm` on Linux: 
 
 ```
 cd mindforger/deps/cmark-gfm`

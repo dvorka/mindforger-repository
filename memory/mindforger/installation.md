@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 641; read: 2019-02-16 09:45:12; revision: 641; modified: 2019-02-16 09:45:12; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 771; read: 2019-03-02 17:02:11; revision: 771; modified: 2019-03-02 17:02:11; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -93,7 +93,7 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 22; read: 2018-07-16 17:35:23; revision: 8; modified: 2018-07-16 17:35:23; -->
+## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 24; read: 2019-03-02 16:01:55; revision: 8; modified: 2018-07-16 17:35:23; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -126,47 +126,97 @@ DISPLAY=:0.0 mindforger
 ```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 55; read: 2018-09-23 13:46:02; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 74; read: 2019-02-16 09:45:12; revision: 44; modified: 2019-02-16 09:45:12; -->
+## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 111; read: 2019-03-02 17:02:11; revision: 109; modified: 2019-03-02 17:02:11; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
-Install build tools:
+Install build **tools**:
 
 * Install [Microsoft Visual Studio IDE Community](https://visualstudio.microsoft.com/downloads/) edition.
     * Choose `Desktop development with C++` in installer.
 * Install [Qt and Qt Creator IDE](https://www.qt.io/download)
-    * Choose `Qt 5.9.5` (corresponds to Ubuntu 18.04 Qt version)
-    * Choose `Qt Installer Framework 3.0`
-    * Choose `MinGW 7.3.0 64-bit`
-    * **TODO: WebEngine (didn't notice the option)**
+    * Qt version should be `Qt 5.9.5` (corresponds to Qt shipped with Ubuntu 18.04) or newer
+    * Choose `Qt > Qt 5.x.x > QMSVC 2017 64-bit`
+    * Choose `Qt > Qt 5.x.x > Qt WebEngine`
+    * Choose `Qt > Developer and Designer tools > Qt Creator`
+* Install `cmake`
+* Install `patch`
 
-**... TODO continue here...**
+Get MindForger **source code** [GitHub](https://github.com/dvorka/mindforger):
 
-Install dependencies > TODO no longer needed
+* Create directory where you want to build MindForger e.g.
+  `C:\Users\USER\mindforger-build`
+  
+```
+# create and change to build directory
+C: | cd %HOMEPATH% | mkdir mindforger-build | cd mindforger-build
+# clone MindForger repository
+git clone https://github.com/dvorka/mindforger.git
+# update repository sub-modules
+cd mindforger
+git submodule init
+git submodule update
+```
 
-* Install Zlib 1.2.3
-    * Download [developer files for Windows](http://gnuwin32.sourceforge.net/downlinks/zlib-lib-zip.php)
-    * Download [DLLs](http://www.winimage.com/zLibDll/zlib123dllx64.zip)
+* MindForger sources can be found in 
+  `C:\Users\USER\mindforger-build\mindforger`
 
-Get source code:
+Build **dependencies**:
 
-* https://github.com/dvorka/mindforger
+* build `cmark-gfm`: 
 
-Build dependencies:
+```
+cd deps\cmark-gfm
+mkdir build                                                                                                                                                                                                      
+cd build                                                                                                                                                                                                         
+cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
+cmake --build . --config Debug -- /m
+```
 
-... cmark ...
+Get default MindForger repository - **documentation and examples** (will be loaded on the first start):
 
-Build MindForger:
+```
+# change to home directory
+C: | cd %HOMEPATH%
+# clone MindForger documentation
+git clone https://github.com/dvorka/mindforger-repository.git
+```
 
-...
+**Build** MindForger in Qt Creator:
 
-Install:
+1. Start Qt Creator
+2. Open MindForger project:
+    * `Welcome/Open project`
+    * Choose `C:\Users\USER\mindforger-build\mindforger\mindforger.pro` as project file.
+3. Choose kit:
+    * `Desktop Qt 5.x.x MSVC2017 64bit`
+4. Set build directory:
+    * Set left toolbar's `Projects/Build Settings/Build directory` to `C:\Users\USER\mindforger-build\mindforger`
+5. Set build configuration:
+    * Set `Projects/Build Settings/Edit build configuration` choose `Debug`
+6. Build:
+    * Menu `Build/Build All`
 
-...
+**Run** MindForger form Qt Creator:
 
-Run:
+* Menu `Build\Run`
 
-...
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 111; read: 2019-02-16 09:44:42; revision: 44; modified: 2018-07-10 10:22:28; -->
+Create **installer**:
+
+* Install [JRSoftware](http://www.jrsoftware.org) [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
+* Prepare development environment. Change path according to your Qt installation
+    * Run `%QT_HOME%\5.x.x\msvc2017_64\bin\qtenv2.bat`
+* Gather dependencies
+    * `cd C:\Users\USER\mindforger-build\mindforger`
+    * `%QT_HOME%\5.x.x\msvc2017_64\bin\windeployqt app\debug\mindforger.exe  --dir app\debug\bin --no-compiler-runtime`
+* Build installer - **update** path to `vcredist_x64.exe` in the command below according to your setup:
+    * `cd C:\Users\USER\mindforger-build\mindforger`
+    * `"C:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.16.27012\vcredist_x64.exe" build\windows\installer\mindforger-setup-debug.iss` 
+* MindForger **installer** can be found in `app\debug\installer` folder.
+
+To create **release** version of MindForger and executable replace `debug` with `release` in commands and installer
+configuration.
+
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 115; read: 2019-03-02 16:00:13; revision: 44; modified: 2018-07-10 10:22:28; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
@@ -491,7 +541,7 @@ DISPLAY=:0.0 mindforger
 
 # Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 14; read: 2018-09-23 13:49:01; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 67; read: 2019-02-16 09:42:15; revision: 59; modified: 2018-09-23 14:46:39; -->
+## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 69; read: 2019-03-02 15:43:19; revision: 59; modified: 2018-09-23 14:46:39; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:
