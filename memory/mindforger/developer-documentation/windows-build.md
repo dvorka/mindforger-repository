@@ -1,4 +1,4 @@
-# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 252; read: 2019-02-08 00:16:08; revision: 252; modified: 2019-02-08 00:16:08; importance: 0/5; urgency: 0/5; -->
+# Windows Build and Distribution <!-- Metadata: type: Outline; tags: developer; created: 2019-01-13 08:57:31; reads: 278; read: 2019-02-08 08:51:37; revision: 278; modified: 2019-02-08 08:51:37; importance: 0/5; urgency: 0/5; -->
 MindForger IDE, build and distribution on Windows. 
 
 Release checklist:
@@ -42,12 +42,12 @@ Plan:
     * keyboard shortcuts which follow Windows conventions
     * desktop integration which start associated app for opened attachments 
       (PDF, GIF, ...)
-## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 25; read: 2019-02-07 23:18:43; revision: 5; modified: 2019-01-13 09:21:35; -->
+## User feedback <!-- Metadata: type: Note; created: 2019-01-13 09:21:14; reads: 27; read: 2019-02-08 08:40:29; revision: 5; modified: 2019-01-13 09:21:35; -->
 Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 45; read: 2019-02-08 00:12:50; revision: 6; modified: 2019-02-07 21:52:36; -->
+### Building <!-- Metadata: type: Note; created: 2019-01-13 11:15:01; reads: 55; read: 2019-02-08 08:50:32; revision: 6; modified: 2019-02-07 21:52:36; -->
 Install prerequisites:
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
@@ -140,9 +140,9 @@ Creating installer:
 * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp build\windows\installer\mindforger-setup.iss`
 * the result is in the `app\release\installer` folder
 
-# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 29; read: 2019-02-07 23:48:33; revision: 5; modified: 2019-02-03 17:11:44; -->
+# Installation <!-- Metadata: type: Note; created: 2019-02-03 17:11:28; reads: 33; read: 2019-02-08 08:19:36; revision: 5; modified: 2019-02-03 17:11:44; -->
 Installation documentation draft.
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 100; read: 2019-02-08 00:16:08; revision: 90; modified: 2019-02-08 00:16:08; -->
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 115; read: 2019-02-08 08:51:37; revision: 103; modified: 2019-02-08 08:51:37; -->
 _This is documentation draft written as I do it on clean system._
 
 Build on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
@@ -153,8 +153,8 @@ Install build tools:
     * Choose `Desktop development with C++` in installer.
 * Install [Qt and Qt Creator IDE](https://www.qt.io/download)
     * Qt version should be `Qt 5.9.5` (corresponds to Qt shipped with Ubuntu 18.04) or newer
-    * Choose `Qt > Qt 5.9.5 > QMSVC 2017 64-bit`
-    * Choose `Qt > Qt 5.9.5 > Qt WebEngine`
+    * Choose `Qt > Qt 5.x.x > QMSVC 2017 64-bit`
+    * Choose `Qt > Qt 5.x.x > Qt WebEngine`
     * Choose `Qt > Developer and Designer tools > Qt Creator`
 * Install `cmake`
 * Install `patch`
@@ -191,17 +191,33 @@ cd git/mindforger/deps/cmark-gfm
 mkdir build                                                                                                                                                                                                      
 cd build                                                                                                                                                                                                         
 cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
-cmake --build . --config Release -- /m
+cmake --build . --config Debug -- /m
 ```
 
-Build MindForger:
+Build MindForger in **Qt Creator**:
 
-...
+1. Start Qt Creator
+2. Open MindForger project:
+    * `Welcome/Open project`
+    * Choose `C:\git\mindforger\mindforger.pro` as project file.
+3. Choose kit:
+    * `Desktop Qt 5.x.x MSVC2017 64bit`
+4. Set build directory:
+    * Set `Projects/Build Settings/Build directory` to `C:\git\mindforger`
+5. Set build configuration:
+    * Set `Projects/Build Settings/Edit build configuration` choose `Debug`
 
-Install:
-
-...
+    
 
 Run:
 
 ...
+
+Debug:
+
+...
+
+Installer:
+
+...
+
