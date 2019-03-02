@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 773; read: 2019-03-02 18:31:24; revision: 773; modified: 2019-03-02 18:31:24; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 797; read: 2019-03-02 18:56:59; revision: 797; modified: 2019-03-02 18:56:59; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -29,9 +29,13 @@ Tarball:
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 41; read: 2019-02-16 09:43:08; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
-## Windows <!-- Metadata: type: Note; tags: todo; created: 2019-02-16 09:43:18; reads: 6; read: 2019-03-02 18:30:39; revision: 2; modified: 2019-02-16 09:43:24; -->
-...
-## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 54; read: 2019-02-16 09:43:14; revision: 20; modified: 2018-05-17 09:46:57; -->
+## Windows <!-- Metadata: type: Note; created: 2019-02-16 09:43:18; reads: 13; read: 2019-03-02 18:53:26; revision: 5; modified: 2019-03-02 18:53:26; -->
+Install MindForger using installer.
+
+* Download installer executable from https://github.com/dvorka/mindforger/releases
+* Run installer.
+
+## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 58; read: 2019-03-02 18:53:27; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -126,7 +130,7 @@ DISPLAY=:0.0 mindforger
 ```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 55; read: 2018-09-23 13:46:02; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on Windows <!-- Metadata: type: Note; tags: wip,todo; created: 2019-02-03 17:11:52; reads: 113; read: 2019-03-02 18:31:24; revision: 110; modified: 2019-03-02 18:31:24; -->
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 118; read: 2019-03-02 18:56:59; revision: 118; modified: 2019-03-02 18:56:59; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
 Install build **tools**:
@@ -169,7 +173,7 @@ cd deps\cmark-gfm
 mkdir build                                                                                                                                                                                                      
 cd build                                                                                                                                                                                                         
 cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
-cmake --build . --config Debug -- /m
+cmake --build . --config Release -- /m
 ```
 
 Get default MindForger repository - **documentation and examples** (will be loaded on the first start):
@@ -192,7 +196,7 @@ git clone https://github.com/dvorka/mindforger-repository.git
 4. Set build directory:
     * Set left toolbar's `Projects/Build Settings/Build directory` to `C:\Users\USER\mindforger-build\mindforger`
 5. Set build configuration:
-    * Set `Projects/Build Settings/Edit build configuration` choose `Debug`
+    * Set `Projects/Build Settings/Edit build configuration` choose `Release`
 6. Build:
     * Menu `Build/Build All`
 
@@ -207,16 +211,16 @@ Create **installer**:
     * Run `%QT_HOME%\5.x.x\msvc2017_64\bin\qtenv2.bat`
 * Gather dependencies
     * `cd C:\Users\USER\mindforger-build\mindforger`
-    * `%QT_HOME%\5.x.x\msvc2017_64\bin\windeployqt app\debug\mindforger.exe  --dir app\debug\bin --no-compiler-runtime`
+    * `%QT_HOME%\5.x.x\msvc2017_64\bin\windeployqt app\release\mindforger.exe  --dir app\release\bin --no-compiler-runtime`
 * Build installer - **update** path to `vcredist_x64.exe` in the command below according to your setup:
     * `cd C:\Users\USER\mindforger-build\mindforger`
-    * `"C:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.16.27012\vcredist_x64.exe" build\windows\installer\mindforger-setup-debug.iss` 
-* MindForger **installer** can be found in `app\debug\installer` folder.
+    * `"C:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.16.27012\vcredist_x64.exe" build\windows\installer\mindforger-setup.iss` 
+* MindForger **installer** can be found in `app\release\installer` folder.
 
-To create **release** version of MindForger and executable replace `debug` with `release` in commands and installer
-configuration.
+To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
+use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 115; read: 2019-03-02 16:00:13; revision: 44; modified: 2018-07-10 10:22:28; -->
+## Build on Ubuntu <!-- Metadata: type: Note; tags: todo,cmark-gfm; created: 2018-03-20 16:19:07; reads: 118; read: 2019-03-02 18:53:41; revision: 45; modified: 2019-03-02 18:53:41; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
