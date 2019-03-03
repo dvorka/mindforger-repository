@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 841; read: 2019-03-02 20:59:45; revision: 841; modified: 2019-03-02 20:59:45; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 853; read: 2019-03-03 08:11:56; revision: 853; modified: 2019-03-03 08:11:56; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -220,7 +220,7 @@ Create **installer**:
 To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
 use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 131; read: 2019-03-02 20:59:45; revision: 52; modified: 2019-03-02 20:59:45; -->
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 134; read: 2019-03-03 08:10:51; revision: 53; modified: 2019-03-03 08:10:51; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
@@ -249,7 +249,7 @@ mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 
-# build Discount
+# optionally build Discount
 cd mindforger/deps/discount
 ./configure.sh
 make
@@ -282,7 +282,7 @@ Run MindForger:
 mindforger
 ```
 
-## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 62; read: 2019-03-02 20:57:26; revision: 15; modified: 2019-03-02 20:57:26; -->
+## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 66; read: 2019-03-03 08:11:15; revision: 17; modified: 2019-03-03 08:11:15; -->
 Build MindForger on Debian Stretch or later.
 
 Install build tools:
@@ -310,7 +310,7 @@ mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 
-# build Discount
+# optionally build Discount
 cd mindforger/deps/discount
 ./configure.sh
 make
@@ -342,7 +342,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 55; read: 2019-03-02 20:58:27; revision: 16; modified: 2019-03-02 20:58:27; -->
+## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 60; read: 2019-03-03 08:11:18; revision: 17; modified: 2019-03-03 08:11:09; -->
 Build MindForger on Fedora.
 
 Install build tools:
@@ -370,7 +370,7 @@ mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 
-# build Discount
+# optionally build Discount
 cd mindforger/deps/discount
 ./configure.sh
 make
@@ -402,7 +402,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 67; read: 2019-03-02 20:58:07; revision: 51; modified: 2019-03-02 20:58:07; -->
+## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 71; read: 2019-03-03 08:11:56; revision: 52; modified: 2019-03-03 08:11:56; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
@@ -452,7 +452,7 @@ mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 
-# build Discount
+# optionally build Discount
 cd mindforger/deps/discount
 ./configure.sh
 make
@@ -500,7 +500,7 @@ Run MindForger either as application or using command line:
 
 Brew approach is simpler, faster and usually works - this is why it is used by default.
 
-## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 31; read: 2019-03-02 20:58:42; revision: 9; modified: 2019-03-02 20:58:42; -->
+## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 34; read: 2019-03-03 08:11:46; revision: 10; modified: 2019-03-03 08:11:46; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
@@ -540,7 +540,7 @@ mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 
-# build Discount
+# optionally build Discount
 cd mindforger/deps/discount
 ./configure.sh
 make
