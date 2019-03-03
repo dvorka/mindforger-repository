@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 853; read: 2019-03-03 08:11:56; revision: 853; modified: 2019-03-03 08:11:56; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 857; read: 2019-03-03 13:54:51; revision: 857; modified: 2019-03-03 13:54:51; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -402,7 +402,7 @@ Run MindForger:
 ```
 mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 71; read: 2019-03-03 08:11:56; revision: 52; modified: 2019-03-03 08:11:56; -->
+## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 73; read: 2019-03-03 13:54:51; revision: 54; modified: 2019-03-03 13:54:51; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
@@ -494,12 +494,12 @@ Run MindForger either as application or using command line:
 
 **IMPORTANT**: in case that there is a problem with HTML preview ~ **nothing** is shown for a note:
 
-* **uinstall** Qt installed using brew (`brew remove qt`)
-* **install** Qt from https://www.qt.io/download 
-* use `qmake` from the official distribution to **build** MindForger (as described above)
+* **Uinstall** Qt installed using Brew (`brew remove qt`).
+* **Install** Qt from https://www.qt.io/download - choose latest available `5.x.x` version to ensure
+  performance and stability.
+* Use `qmake` from the official distribution to **build** MindForger (as described above).
 
 Brew approach is simpler, faster and usually works - this is why it is used by default.
-
 ## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 34; read: 2019-03-03 08:11:46; revision: 10; modified: 2019-03-03 08:11:46; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
