@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 438; read: 2019-03-02 22:37:23; revision: 438; modified: 2019-03-02 22:37:23; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 451; read: 2019-03-10 15:50:10; revision: 451; modified: 2019-03-10 15:50:10; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -333,7 +333,31 @@ See also:
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
 ### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 42; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-04-26 09:31:14; -->
 ...
-# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 45; read: 2019-03-02 21:08:34; revision: 7; modified: 2018-05-04 07:01:30; -->
+# Release Automation <!-- Metadata: type: Note; tags: todo,urgent; created: 2019-03-10 15:44:53; reads: 7; read: 2019-03-10 15:50:10; revision: 7; modified: 2019-03-10 15:50:10; -->
+This is analysis of release automation making MindForger release much 
+faster and less time consuming.
+
+Release artifacts:
+* **PPA Launchpad**
+    * State: fully scripted
+    * Todo: 
+        * Load version number from a central place (env script)
+        * Call this script from central release script.
+        * Add section to generated report of main release script w/ URLs of Launchpad distros.
+* **PPA Debian (private)**
+    * State: text how to.
+    * Todo:
+        * Load version number.
+        * Write script which automates OLD version removal and new version add.
+        * Write script which will upload and replace PPA over FTS/SFTP/scp
+        * Add section to generated report of main release
+* **.deb**
+    * ...
+* **.rpm**
+    * ...
+* **tarball**
+    * ...
+# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 47; read: 2019-03-10 15:44:45; revision: 7; modified: 2018-05-04 07:01:30; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).
