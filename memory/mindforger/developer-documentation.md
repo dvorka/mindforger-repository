@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 453; read: 2019-03-10 15:51:00; revision: 453; modified: 2019-03-10 15:51:00; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 471; read: 2019-04-13 18:07:46; revision: 471; modified: 2019-04-13 18:07:46; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -313,19 +313,21 @@ This section gives a brief summary of MindForger technical architecture highligh
 ...
 ### Async UI Updates <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:53; reads: 37; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-07-10 10:06:37; -->
 ...
-### Localization <!-- Metadata: type: Note; tags: todo; created: 2018-05-10 08:21:10; reads: 46; read: 2019-03-02 21:08:34; revision: 32; modified: 2018-07-10 10:06:45; -->
+### Localization <!-- Metadata: type: Note; tags: todo; created: 2018-05-10 08:21:10; reads: 53; read: 2019-04-13 18:07:46; revision: 41; modified: 2019-04-13 18:07:46; -->
 Adding a new/updating existing MindForger l10n:
 
-* Add translation name to `app/app.pro`: `TRANSLATIONS += src/qt/translations/mindforger_en.ts`
+* Add translation name to `app/app.pro`: `TRANSLATIONS += resources/qt/translations/mindforger_en.ts`
 * Run `lupdate mindforger.pro` - it will parse source code
   and prepare empty file for translations (later update). This is where is new translation
   written.
     * If `lupdate` is not present on Ubuntu, then install `sudo apt-get install qttools5-dev-tools`
-* Edit translations using `linguist` tool.
+* Edit translations using `linguist` tool e.g. `linguist mindforger_cs.ts`
 * Run `lrelease app/app.pro` to release translations that might be used in build.
 * Add translation `.qm` resource to `app/mf-resources.qrs`
 * Build application.
-* Test it: `export LANGUAGE=cs_CZ && export LANG=cs_CZ.UTF-8 && ./mindforger`
+* Test it: 
+    * `export LANGUAGE=cs_CZ && export LANG=cs_CZ.UTF-8 && ./mindforger`
+    * `export LANGUAGE=pt_BR && export LANG=pt_BR.UTF-8 && ./mindforger`
 
 See also:
 
