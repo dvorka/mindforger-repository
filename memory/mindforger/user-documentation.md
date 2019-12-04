@@ -6,7 +6,7 @@ Table of contents:
 * [Repository](#repository)
 * [Configuration](#configuration)
 * [Markdown IDE](#markdown-ide)
-* [Searching](#searching)
+* [Search](#search)
 * [Thinking Notebook](#thinking-notebook)
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
 
