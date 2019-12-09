@@ -71,7 +71,7 @@ directoring using MindForger:
     * `git clone https://github.com/progit/progit && cd progit && mindforger .`
 * [JavaScript algorithms](https://github.com/trekhleb/javascript-algorithms)
     * `git clone https://github.com/trekhleb/javascript-algorithms && cd javascript-algorithms && mindforger .`
-* [Pure Bash bible](https://github.com/trekhleb/javascript-algorithms)
+* [Pure Bash bible](https://github.com/dylanaraps/pure-bash-bible)
     * `git clone https://github.com/dylanaraps/pure-bash-bible && cd pure-bash-bible && mindforger .`
 * [Awesome AI services](https://github.com/sekwiatkowski/awesome-ai-services)
     * `git clone https://github.com/sekwiatkowski/awesome-ai-services && cd awesome-ai-services && mindforger .`
