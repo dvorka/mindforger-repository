@@ -1,11 +1,11 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1169; read: 2018-11-12 23:28:37; revision: 1169; modified: 2018-11-12 23:28:37; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1183; read: 2020-01-15 08:47:26; revision: 1183; modified: 2020-01-15 08:47:26; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
 * [CLI and man](#cli-and-man)
 * [Repository](#repository)
 * [Configuration](#configuration)
-* [Markdown IDE](#markdown-ide)
+* [Markdown](#markdown)
 * [Searching](#searching)
 * [Thinking Notebook](#thinking-notebook)
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
@@ -106,7 +106,7 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Review `.mindforger.md` for configuration option details and descriptions.
-# Markdown IDE <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 31; read: 2018-10-10 13:39:43; revision: 3; modified: 2018-06-11 23:05:50; -->
+# Markdown <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 34; read: 2020-01-15 08:46:14; revision: 4; modified: 2020-01-15 08:46:14; -->
 This section provides a brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
 ## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 97; read: 2018-10-10 13:39:43; revision: 27; modified: 2018-07-10 07:22:52; -->
@@ -123,7 +123,7 @@ MindForger terminology:
 
 
 MindForger represents any Markdown as [follows](#markdown-outline)...
-### Markdown Outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 54; read: 2018-10-10 13:39:44; revision: 22; modified: 2018-07-10 07:25:11; -->
+### Markdown outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 57; read: 2020-01-15 08:47:04; revision: 23; modified: 2020-01-15 08:47:04; -->
 In order to enable quick **navigation** and **refactoring** 
 of Markdown documents, MindForger shows Markdown documents (**Notebooks**) 
 as an **outline** of Markdown sections (**Notes**) allowing
@@ -162,7 +162,7 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-### Markdown <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 72; read: 2018-10-10 13:39:44; revision: 15; modified: 2018-05-30 07:30:17; -->
+### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 75; read: 2020-01-15 08:46:50; revision: 16; modified: 2020-01-15 08:46:50; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
 format, easily rendered as HTML.
@@ -932,7 +932,7 @@ can specify:
 ![Image](user-documentation.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
-## Eisenhower Matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 43; read: 2018-10-10 13:39:48; revision: 10; modified: 2018-07-10 08:38:33; -->
+## Eisenhower matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 46; read: 2020-01-15 08:47:19; revision: 11; modified: 2020-01-15 08:47:19; -->
 ![Image](user-documentation.eisenhower-matrix.png)
 
 
@@ -961,7 +961,7 @@ See MindForger cheetsheet(s):
 * [Keyboard Shortcuts](#keyboard-shortcuts)
 ## MathJax cheatsheet <!-- Metadata: type: Note; created: 2018-09-26 09:38:26; reads: 13; read: 2018-10-10 13:39:47; revision: 3; modified: 2018-09-26 09:38:48; -->
 See [MathJax](#mathjax).
-## Keyboard Shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 46; read: 2018-10-10 13:39:47; revision: 13; modified: 2018-07-10 08:00:10; -->
+## Keyboard shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 48; read: 2020-01-15 08:47:26; revision: 14; modified: 2020-01-15 08:47:26; -->
 Prefer menu based keyboard shortcuts which are self-documented e.g.
 
 * <kbd>Alt+o n</kbd>       

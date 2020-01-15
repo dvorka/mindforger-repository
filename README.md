@@ -4,7 +4,7 @@
 
 This is initial repository image of
 [MindForger](https://github.com/dvorka/mindforger) - thinking notebook
-and Markdown IDE:
+and Markdown editor:
 
 * [documentation index](memory/mindforger/index.md)
 

@@ -1,6 +1,6 @@
-# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 216; read: 2018-07-10 07:12:15; revision: 216; modified: 2018-07-10 07:12:15; importance: 5/5; urgency: 3/5; -->
+# MindForger <!-- Metadata: type: Outline; tags: read-this-first; created: 2018-02-23 10:57:35; reads: 228; read: 2020-01-15 08:48:43; revision: 228; modified: 2020-01-15 08:48:43; importance: 5/5; urgency: 3/5; -->
 
-MindForger is **personal thinking notebook** and **Markdown IDE**:
+MindForger is **personal thinking notebook** and **Markdown editor**:
 
 * Check getting started and features walkthrough [YouTube video](https://t.co/ym1KKEny3y)
 
@@ -58,9 +58,9 @@ Clone, build, improve, research, tweak, contribute:
 
 * [Developer documentation](developer-documentation.md)
 
-# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 51; read: 2018-07-02 16:52:35; revision: 50; modified: 2018-07-02 16:52:35; -->
+# Markdown content and examples <!-- Metadata: type: Note; tags: example; created: 2018-05-01 22:28:00; reads: 59; read: 2020-01-15 08:45:25; revision: 52; modified: 2020-01-15 08:45:25; -->
 
-If you want to use MindForger as Markdown IDE/editor, then
+If you want to use MindForger as Markdown editor, then
 you may want to check examples of various documents (collections)
 below. 
 
