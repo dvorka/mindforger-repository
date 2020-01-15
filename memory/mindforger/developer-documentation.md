@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 438; read: 2019-03-02 22:37:23; revision: 438; modified: 2019-03-02 22:37:23; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 471; read: 2019-04-13 18:07:46; revision: 471; modified: 2019-04-13 18:07:46; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -313,19 +313,21 @@ This section gives a brief summary of MindForger technical architecture highligh
 ...
 ### Async UI Updates <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:53; reads: 37; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-07-10 10:06:37; -->
 ...
-### Localization <!-- Metadata: type: Note; tags: todo; created: 2018-05-10 08:21:10; reads: 46; read: 2019-03-02 21:08:34; revision: 32; modified: 2018-07-10 10:06:45; -->
+### Localization <!-- Metadata: type: Note; tags: todo; created: 2018-05-10 08:21:10; reads: 53; read: 2019-04-13 18:07:46; revision: 41; modified: 2019-04-13 18:07:46; -->
 Adding a new/updating existing MindForger l10n:
 
-* Add translation name to `app/app.pro`: `TRANSLATIONS += src/qt/translations/mindforger_en.ts`
+* Add translation name to `app/app.pro`: `TRANSLATIONS += resources/qt/translations/mindforger_en.ts`
 * Run `lupdate mindforger.pro` - it will parse source code
   and prepare empty file for translations (later update). This is where is new translation
   written.
     * If `lupdate` is not present on Ubuntu, then install `sudo apt-get install qttools5-dev-tools`
-* Edit translations using `linguist` tool.
+* Edit translations using `linguist` tool e.g. `linguist mindforger_cs.ts`
 * Run `lrelease app/app.pro` to release translations that might be used in build.
 * Add translation `.qm` resource to `app/mf-resources.qrs`
 * Build application.
-* Test it: `export LANGUAGE=cs_CZ && export LANG=cs_CZ.UTF-8 && ./mindforger`
+* Test it: 
+    * `export LANGUAGE=cs_CZ && export LANG=cs_CZ.UTF-8 && ./mindforger`
+    * `export LANGUAGE=pt_BR && export LANG=pt_BR.UTF-8 && ./mindforger`
 
 See also:
 
@@ -333,7 +335,34 @@ See also:
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
 ### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 42; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-04-26 09:31:14; -->
 ...
-# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 45; read: 2019-03-02 21:08:34; revision: 7; modified: 2018-05-04 07:01:30; -->
+# Release Automation <!-- Metadata: type: Note; tags: todo,urgent; created: 2019-03-10 15:44:53; reads: 9; read: 2019-03-10 15:51:00; revision: 8; modified: 2019-03-10 15:51:00; -->
+This is analysis of release automation making MindForger release much 
+faster and less time consuming.
+
+Release artifacts:
+* **PPA Launchpad**
+    * State: fully scripted
+    * Todo: 
+        * Load version number from a central place (env script)
+        * Call this script from central release script.
+        * Add section to generated report of main release script w/ URLs of Launchpad distros.
+* **PPA Debian (private)**
+    * State: text how to.
+    * Todo:
+        * Load version number.
+        * Write script which automates OLD version removal and new version add.
+        * Write script which will upload and replace PPA over FTS/SFTP/scp
+        * Add section to generated report of main release
+* **.deb**
+    * ...
+* **.rpm**
+    * ...
+* **tarball**
+    * ...
+
+TODO: employ CIs to build artifacts.
+TODO: flow diagram of how will MF be released.
+# Formats specification <!-- Metadata: type: Note; created: 2018-04-26 09:22:02; reads: 47; read: 2019-03-10 15:44:45; revision: 7; modified: 2018-05-04 07:01:30; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).

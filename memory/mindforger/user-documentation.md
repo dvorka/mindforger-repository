@@ -6,7 +6,7 @@ Table of contents:
 * [Repository](#repository)
 * [Configuration](#configuration)
 * [Markdown](#markdown)
-* [Searching](#searching)
+* [Search](#search)
 * [Thinking Notebook](#thinking-notebook)
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
 
@@ -964,13 +964,13 @@ See [MathJax](#mathjax).
 ## Keyboard shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 48; read: 2020-01-15 08:47:26; revision: 14; modified: 2020-01-15 08:47:26; -->
 Prefer menu based keyboard shortcuts which are self-documented e.g.
 
-* <kbd>Alt+o n</kbd>       
+* <kbd>Alt+o n</kbd>
     * create new notebook
-* <kbd>Alt+o e</kbd>       
+* <kbd>Alt+o e</kbd>
     * edit currently viewed notebook
-* <kbd>Alt+n n</kbd>       
+* <kbd>Alt+n n</kbd>
     * create new note
-* <kbd>Alt+n e</kbd>       
+* <kbd>Alt+n e</kbd>
     * edit currently viewed note
 * ... and many others...
 
