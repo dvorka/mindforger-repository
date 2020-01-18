@@ -33,7 +33,7 @@ Install MindForger using a package.
 ## Windows <!-- Metadata: type: Note; created: 2019-02-16 09:43:18; reads: 13; read: 2019-03-02 18:53:26; revision: 5; modified: 2019-03-02 18:53:26; -->
 Install MindForger using installer.
 
-* Download installer executable from https://github.com/dvorka/mindforger/releases (or try nightly build https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
+* Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 60; read: 2019-03-02 19:52:38; revision: 20; modified: 2018-05-17 09:46:57; -->
