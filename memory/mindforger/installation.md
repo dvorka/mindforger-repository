@@ -29,10 +29,11 @@ Tarball:
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 41; read: 2019-02-16 09:43:08; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
+
 ## Windows <!-- Metadata: type: Note; created: 2019-02-16 09:43:18; reads: 13; read: 2019-03-02 18:53:26; revision: 5; modified: 2019-03-02 18:53:26; -->
 Install MindForger using installer.
 
-* Download installer executable from https://github.com/dvorka/mindforger/releases
+* Download installer executable from https://github.com/dvorka/mindforger/releases (or try nightly build https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
 * Run installer.
 
 ## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 60; read: 2019-03-02 19:52:38; revision: 20; modified: 2018-05-17 09:46:57; -->
@@ -200,7 +201,7 @@ git clone https://github.com/dvorka/mindforger-repository.git
 6. Build:
     * Menu `Build/Build All`
 
-**Run** MindForger form Qt Creator:
+**Run** MindForger from Qt Creator:
 
 * Menu `Build\Run`
 
