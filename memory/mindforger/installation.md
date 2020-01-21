@@ -1,10 +1,11 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 857; read: 2019-03-03 13:54:51; revision: 857; modified: 2019-03-03 13:54:51; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 875; read: 2020-01-21 08:11:22; revision: 875; modified: 2020-01-21 08:11:22; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
 * [Ubuntu](#ubuntu-)
 * [Debian](#debian-)
 * [Fedora](#fedora-)
+* [openSUSE](#opensuse-)
 * [Arch Linux](#arch-linux-)
 * [macOS](#macos-)
 * [WSL](#wsl-)
@@ -50,8 +51,8 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 35; read: 2019-02-16 09:43:09; revision: 16; modified: 2018-05-17 09:47:13; -->
-Install MindForger from **PPA**.
+## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 38; read: 2020-01-21 08:09:15; revision: 17; modified: 2020-01-21 08:09:15; -->
+Install MindForger on [Debian](https://www.debian.org/) from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
 
@@ -70,8 +71,8 @@ sudo apt install mindforger
 ```
 
 See also http://www.mindforger.com/debian/
-## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 46; read: 2019-03-02 19:52:38; revision: 19; modified: 2018-05-17 09:47:19; -->
-Install MindForger on Fedora (tested on FC 27):
+## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 59; read: 2020-01-21 08:10:52; revision: 21; modified: 2020-01-21 08:10:52; -->
+Install MindForger on [Fedora](https://getfedora.org/):
 
 * [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
 
@@ -80,6 +81,15 @@ Install RPM:
 ```
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
+
+## openSUSE <!-- Metadata: type: Note; created: 2020-01-21 08:08:06; reads: 14; read: 2020-01-21 08:10:37; revision: 4; modified: 2020-01-21 08:10:37; -->
+Install MindForger on [openSUSE](https://www.opensuse.org/):
+
+```
+sudo zypper in opi
+opi mindforger
+```
+
 
 ## Arch Linux <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 18; read: 2018-09-23 14:27:27; revision: 7; modified: 2018-06-12 19:50:48; -->
 Install MindForger from Arch User Repository (AUR):
