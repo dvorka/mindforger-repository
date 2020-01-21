@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 471; read: 2019-04-13 18:07:46; revision: 471; modified: 2019-04-13 18:07:46; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 481; read: 2020-01-21 08:17:58; revision: 481; modified: 2020-01-21 08:17:58; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -65,7 +65,7 @@ Frontend library tests:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 65; read: 2019-03-02 21:08:16; revision: 7; modified: 2019-01-13 09:08:20; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 67; read: 2020-01-21 08:14:03; revision: 7; modified: 2019-01-13 09:08:20; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
@@ -74,9 +74,14 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 58; read: 2019-03-02 21:08:23; revision: 6; modified: 2019-01-13 09:08:21; -->
-[Continous builds](https://travis-ci.org/dvorka/mindforger) via Travis CI, see also `.travis.yml`.
-## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 42; read: 2019-03-02 21:08:26; revision: 3; modified: 2019-01-13 09:08:21; -->
+## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 68; read: 2020-01-21 08:17:58; revision: 11; modified: 2020-01-21 08:17:58; -->
+Continous builds:
+
+* [Travis CI](https://travis-ci.org/dvorka/mindforger)
+    * See also `.travis.yml`
+* [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
+    * See also `appveyor.yml`
+## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 46; read: 2020-01-21 08:14:11; revision: 3; modified: 2019-01-13 09:08:21; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -91,7 +96,7 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
-# Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 47; read: 2019-03-02 21:11:32; revision: 12; modified: 2019-03-02 21:07:47; -->
+# Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 51; read: 2020-01-21 08:14:10; revision: 12; modified: 2019-03-02 21:07:47; -->
 Perhaps you may find useful description of my development environment:
 
 * Source: GitHub
@@ -102,7 +107,7 @@ Perhaps you may find useful description of my development environment:
 * Unit tests: Google Test Framework 
 
 For more details see source code.
-## Plan for Windows Build and Distribution <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 66; read: 2019-03-02 22:37:10; revision: 24; modified: 2019-03-02 21:03:55; -->
+## Plan for Windows Build and Distribution <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 70; read: 2020-01-21 08:14:09; revision: 24; modified: 2019-03-02 21:03:55; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
@@ -139,7 +144,7 @@ Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-## Install prerequisites <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 25; read: 2019-03-02 22:37:09; revision: 5; modified: 2019-03-02 21:05:03; -->
+## Install prerequisites <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 29; read: 2020-01-21 08:14:09; revision: 5; modified: 2019-03-02 21:05:03; -->
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
     * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
@@ -161,7 +166,7 @@ Prepare MindForger sources:
     * `git submodule init`
     * `git supmodule update`
 
-## Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 32; read: 2019-03-02 22:37:06; revision: 4; modified: 2019-03-02 21:05:03; -->
+## Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 36; read: 2020-01-21 08:14:09; revision: 4; modified: 2019-03-02 21:05:03; -->
 Building dependecies is required only once, during initial building.
 
 Build cmake-gfm: It requires cmake on the path.
@@ -177,7 +182,7 @@ Build cmake-gfm: It requires cmake on the path.
     * `cmake --build . --config Release -- /m`
     * `cmake --build . --config Debug -- /m`
 
-## Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 33; read: 2019-03-02 22:36:58; revision: 3; modified: 2019-03-02 21:05:02; -->
+## Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 35; read: 2020-01-21 08:14:09; revision: 3; modified: 2019-03-02 21:05:02; -->
   * Goto repo dir
     * `cd $GIT\mindforger`
   * Setup development environment in cmd line. Change path according to your MSVC 2017 and Qt installation
