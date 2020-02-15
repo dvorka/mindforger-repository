@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1183; read: 2020-01-15 08:47:26; revision: 1183; modified: 2020-01-15 08:47:26; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1211; read: 2020-02-15 07:39:30; revision: 1207; modified: 2020-02-15 07:39:30; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -413,7 +413,7 @@ expression to image and include it in Markdown.
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu `Mind/Adapt/Markdown`
-##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 78; read: 2018-10-10 13:39:46; revision: 67; modified: 2018-09-08 07:16:04; -->
+##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 80; read: 2020-01-31 08:29:11; revision: 67; modified: 2018-09-08 07:16:04; -->
 MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
 
 * use `$` to inline expressions, and `$$` for blocks
@@ -451,40 +451,39 @@ Limit block:
 
 $$\lim_{x\to 0}$$
 
-#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 78; read: 2018-10-10 13:39:46; revision: 8; modified: 2018-07-10 07:35:27; -->
+#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 99; read: 2020-02-15 07:39:30; revision: 20; modified: 2020-02-15 07:39:30; -->
 Flowchart diagram:
 
-```mermaid
+``` mermaid
 graph TD;
     A-->B;
     A-->C;
     B-->D;
     C-->D;
 ```
-Sequence diagram:
 
-```mermaid
+Sequence diagram - note different Mermaid diagram markup encapsulation element which has different background rendering that code block:
+
+<div class="mermaid">
 sequenceDiagram
-    loop Daily query
-        Alice->>Bob: Hello Bob, how are you?
-        alt is sick
-            Bob->>Alice: Not so good :(
-        else is well
-            Bob->>Alice: Feeling fresh like a daisy
-        end
-
-        opt Extra response
-            Bob->>Alice: Thanks for asking
-        end
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
     end
-```
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</div>
 
 GANTT diagram:
 
-```mermaid
+``` mermaid
 gantt
         dateFormat  YYYY-MM-DD
-        title Adding GANTT diagram functionality to mermaid
+        title GANTT diagrams in MindForger
         section A section
         Completed task            :done,    des1, 2014-01-06,2014-01-08
         Active task               :active,  des2, 2014-01-09, 3d
