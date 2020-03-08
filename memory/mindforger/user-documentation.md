@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1213; read: 2020-03-08 12:47:01; revision: 1211; modified: 2020-03-08 12:47:01; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1303; read: 2020-03-08 16:45:24; revision: 1303; modified: 2020-03-08 16:45:24; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -11,7 +11,7 @@ Table of contents:
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
 
 This document _briefly_ describes key MindForger features.
-# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 40; read: 2018-10-10 13:39:39; revision: 11; modified: 2018-10-10 13:36:12; -->
+# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 42; read: 2020-03-08 16:40:51; revision: 11; modified: 2018-10-10 13:36:12; -->
 For information on MindForger command line options read the manual page:
 
 ```shell
@@ -35,13 +35,13 @@ Arguments:
   [<directory>|<file>]           MindForger repository or directory/file with
                                  Markdown file(s) to open
 ```
-# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 44; read: 2018-10-10 13:39:42; revision: 12; modified: 2018-05-29 22:59:20; -->
+# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 48; read: 2020-03-08 16:40:54; revision: 12; modified: 2018-05-29 22:59:20; -->
 MindForger can be used to:
 
 * manage knowledge in a [MindForger repository](#mindforger-repository)
 * edit single [Markdown file](#markdown-file)
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
-## MindForger repository <!-- Metadata: type: Note; created: 2018-04-10 10:51:20; reads: 51; read: 2018-10-10 13:39:42; revision: 13; modified: 2018-05-30 06:45:13; -->
+## MindForger repository <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:51:20; reads: 58; read: 2020-03-08 16:41:26; revision: 14; modified: 2020-03-08 16:41:01; -->
 MindForger repository is a directory with specific 
 [structure](developer-documentation.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
@@ -75,7 +75,7 @@ mindforger-repository/
     ├── notebooks
     └── notes
 ```
-## Markdown file <!-- Metadata: type: Note; created: 2018-04-10 10:50:58; reads: 39; read: 2018-10-10 13:39:42; revision: 5; modified: 2018-05-29 22:55:11; -->
+## Markdown file <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:50:58; reads: 50; read: 2020-03-08 16:41:27; revision: 6; modified: 2020-03-08 16:41:06; -->
 MindForger can be used to edit a **single** Markdown file:
 
 ```
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If the given file exists, then it's opened for editing, otherwise a
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; created: 2018-04-10 10:51:14; reads: 32; read: 2018-10-10 13:39:43; revision: 5; modified: 2018-06-11 23:03:27; -->
+## Markdown directory <!-- Metadata: type: Note; tags: source,mdi; created: 2018-04-10 10:51:14; reads: 42; read: 2020-03-08 16:41:27; revision: 7; modified: 2020-03-08 16:41:23; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editing:
@@ -96,7 +96,7 @@ $ mindforger a-git-repository-with-interesting-content
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily navigate it.
-# Configuration <!-- Metadata: type: Note; created: 2018-04-30 14:19:30; reads: 54; read: 2018-10-10 13:39:43; revision: 10; modified: 2018-07-10 07:18:22; -->
+# Configuration <!-- Metadata: type: Note; tags: config; created: 2018-04-30 14:19:30; reads: 59; read: 2020-03-08 16:41:35; revision: 11; modified: 2020-03-08 16:41:35; -->
 MindForger can be configured either from UI:
 
 * menu `Mind/Adapt`
@@ -106,10 +106,10 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Review `.mindforger.md` for configuration option details and descriptions.
-# Markdown <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 34; read: 2020-01-15 08:46:14; revision: 4; modified: 2020-01-15 08:46:14; -->
+# Markdown <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 36; read: 2020-03-08 16:41:35; revision: 4; modified: 2020-01-15 08:46:14; -->
 This section provides a brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 97; read: 2018-10-10 13:39:43; revision: 27; modified: 2018-07-10 07:22:52; -->
+## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 99; read: 2020-03-08 16:41:36; revision: 27; modified: 2018-07-10 07:22:52; -->
 MindForger can be used as a Markdown **editor**.
 
 It allows you to easily write [Markdown](#markdown) 
@@ -154,7 +154,7 @@ as a **tree** - called an **outline**:
 
 For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
 
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 51; read: 2018-10-10 13:39:44; revision: 13; modified: 2018-07-10 08:51:38; -->
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 53; read: 2020-03-08 16:30:20; revision: 13; modified: 2018-07-10 08:51:38; -->
 ![Image](user-documentation.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
@@ -162,6 +162,30 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
+### Link completion <!-- Metadata: type: Note; created: 2020-03-08 16:37:24; reads: 4; read: 2020-03-08 16:38:35; revision: 2; modified: 2020-03-08 16:38:35; -->
+While editing a Note or Notebook write prefix of
+a Notebook/Note name and use <kbd>Ctrl-/</kbd> to 
+get link completion. When you choose a link from completer,
+Markdown link to target Notebook/Note is automatically created.
+### DnD: Drag & Drop <!-- Metadata: type: Note; created: 2020-03-08 16:30:33; reads: 12; read: 2020-03-08 16:37:20; revision: 4; modified: 2020-03-08 16:36:10; -->
+Drag:
+
+* **file**
+    * ... for example `.pdf`, presentation or `.zip` archive
+* **image**
+    * ... `.png`, `.gif`, ... or any other image
+* **image data**
+    * ... screenshot or image selection from Gimp, Krita or any other graphics editor
+
+... and **drop** to Note/Notebook editor.
+
+DnD allows easy import of attachments/images to MindForger
+repository - either by value (choose `Copy` in attachment/image
+dialog) or by reference (path to the file on local file system
+is used).
+### Live Preview <!-- Metadata: type: Note; created: 2020-03-08 16:36:20; reads: 9; read: 2020-03-08 16:37:19; revision: 3; modified: 2020-03-08 16:36:57; -->
+Easily toggle live HTML preview of edited Markdown
+with shortcut or edit panel buttons.
 ### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 78; read: 2020-03-08 12:47:01; revision: 18; modified: 2020-03-08 12:47:01; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
@@ -651,7 +675,7 @@ can be found by:
 ---
 
 💡 see menu `Recall` for search options
-## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 54; read: 2018-10-10 13:39:46; revision: 7; modified: 2018-07-10 09:17:12; -->
+## Fulltext <!-- Metadata: type: Note; created: 2018-04-10 10:55:44; reads: 56; read: 2020-03-08 16:42:09; revision: 7; modified: 2018-07-10 09:17:12; -->
 Use menu `Recall/Full-text Search` to search for **notes**
 using full-text search. Result shows notes Markdown source
 with **highlighted** matches.
@@ -664,7 +688,7 @@ Search **scope**:
 * If you run full-text search when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 40; read: 2018-10-10 13:39:46; revision: 6; modified: 2018-07-10 09:17:26; -->
+## Name <!-- Metadata: type: Note; created: 2018-04-10 10:55:57; reads: 44; read: 2020-03-08 16:42:11; revision: 6; modified: 2018-07-10 09:17:26; -->
 Use menu `Recall/Recall Notebook by Name` / `Recall/Recall Note by Name`
 to search for **notebooks** / **notes** by name. Result shows as you
 write the name in the dialog.
@@ -677,7 +701,7 @@ Search **scope**:
 * If you run note search **by name** when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 36; read: 2018-10-10 13:39:46; revision: 4; modified: 2018-07-10 09:18:55; -->
+## Tag <!-- Metadata: type: Note; created: 2018-04-10 10:56:02; reads: 40; read: 2020-03-08 16:42:11; revision: 4; modified: 2018-07-10 09:18:55; -->
 Use menu `Recall/Recall Notebook by Tag` / `Recall/Recall Note by Tag`
 to search for **notebooks** / **notes** by tag(s). Result shows as you
 add/remove tags in the dialog.
@@ -690,13 +714,7 @@ Search **scope**:
 * If you run note search **by tag** when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Named-entity Recognition <!-- Metadata: type: Note; tags: wip; created: 2018-07-10 08:04:50; reads: 37; read: 2018-10-10 13:39:46; revision: 6; modified: 2018-09-26 09:32:44; -->
-![Image](user-documentation.ner.png)
-
-_This feature is being implemented._
-## Semantic Domain <!-- Metadata: type: Note; tags: todo; created: 2018-07-10 08:04:26; reads: 29; read: 2018-10-10 13:39:46; revision: 7; modified: 2018-07-10 09:53:59; -->
-_This feature is being implemented._
-# Thinking Notebook <!-- Metadata: type: Note; created: 2018-04-10 10:50:28; reads: 81; read: 2018-10-10 13:39:46; revision: 9; modified: 2018-07-10 09:37:44; -->
+# Thinking Notebook <!-- Metadata: type: Note; created: 2018-04-10 10:50:28; reads: 87; read: 2020-03-08 16:44:52; revision: 9; modified: 2018-07-10 09:37:44; -->
 MindForger aims to mimic human mind - **learning**, **recalling**, 
 **recognition**, **associations**, **forgetting** - in order to achieve 
 synergy with your mind to make your searching, reading and writing more 
@@ -707,7 +725,7 @@ productive:
 * **recognition**: MindForger is able to recognize people, organization, places, ... in your remarks
 * **associations**: MindForger suggests relevant notes as you browse, read and edit notebooks and notes
 * **forgetting**: MindForger handles the process of scoping and forgetting analogous to human mind
-## Thinking vs Sleeping mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 31; read: 2018-10-10 13:39:46; revision: 8; modified: 2018-07-10 09:44:42; -->
+## Thinking vs Sleep mode <!-- Metadata: type: Note; tags: important; created: 2018-07-10 08:12:30; reads: 44; read: 2020-03-08 16:44:52; revision: 9; modified: 2020-03-08 16:43:32; -->
 MindForger can be either in **thinking** or **sleeping** mode:
 
 * **Thinking** mode can be activated from menu `Mind/Think` and it's also
@@ -723,9 +741,9 @@ MindForger can be either in **thinking** or **sleeping** mode:
 
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
-## Think as you Search <!-- Metadata: type: Note; tags: todo; created: 2018-04-10 10:49:58; reads: 66; read: 2018-10-10 13:40:04; revision: 4; modified: 2018-07-10 08:11:44; -->
+## TAYS: Think as you Search <!-- Metadata: type: Note; tags: todo,think; created: 2018-04-10 10:49:58; reads: 88; read: 2020-03-08 16:44:52; revision: 6; modified: 2020-03-08 16:44:04; -->
 _This feature is being implemented._
-## Think as you Read <!-- Metadata: type: Note; created: 2018-04-10 10:50:11; reads: 61; read: 2018-10-10 13:39:50; revision: 12; modified: 2018-07-10 09:50:47; -->
+## TAYR: Think as you Read <!-- Metadata: type: Note; tags: think; created: 2018-04-10 10:50:11; reads: 83; read: 2020-03-08 16:44:52; revision: 14; modified: 2020-03-08 16:44:10; -->
 ![TAYR](user-documentation.tayr.png)
 
 MindForger is able to **suggest relevant notes** as you browse and
@@ -738,7 +756,7 @@ read:
 
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 note `My 3D Printer MK2S by Prusa RESEARCH`.
-## Think as you Write <!-- Metadata: type: Note; created: 2018-04-10 10:50:18; reads: 61; read: 2018-10-10 13:39:50; revision: 10; modified: 2018-07-10 09:53:28; -->
+## TAYW: Think as you Write <!-- Metadata: type: Note; tags: think; created: 2018-04-10 10:50:18; reads: 79; read: 2020-03-08 16:44:51; revision: 12; modified: 2020-03-08 16:44:17; -->
 ![TAYW](user-documentation.tayw.png)
 
 MindForger is able to **suggest relevant notes** as you write note
@@ -752,7 +770,28 @@ content in the editor:
 
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 word `graph` (notice cursor between letter `g` and `r` on the current line with light-gray background).
-## Autolinking <!-- Metadata: type: Note; tags: wip; created: 2018-10-10 13:28:57; reads: 25; read: 2018-10-10 13:40:54; revision: 9; modified: 2018-10-10 13:40:54; -->
+## TAYB: Think as you Browse - Knowledge Graph Navigator <!-- Metadata: type: Note; created: 2018-07-10 08:13:17; reads: 79; read: 2020-03-08 16:44:51; revision: 11; modified: 2020-03-08 16:44:26; -->
+![Navigator](user-documentation.knowledge-graph-navigator.png)
+
+**Knowledge graph navigator** allows you to browse notebooks, notes, tags and other resources
+in **visually**.
+
+Navigator can be either activated using toolbar or using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>k</kbd> keyboard
+shortcut. It is **scope sensitive** e.g. if you activate navigator while viewing note, then this note
+becomes central node of the visualization.
+
+Knowledge graph can be **zoomed**, **shuffled** and its edgest can be (globally) stretched/shrinked.
+## Recognize what matters <!-- Metadata: type: Note; created: 2020-03-08 16:44:44; reads: 6; read: 2020-03-08 16:44:51; revision: 2; modified: 2020-03-08 16:44:45; -->
+
+### Named-entity Recognition <!-- Metadata: type: Note; tags: wip,ml,nlp; created: 2018-07-10 08:04:50; reads: 54; read: 2020-03-08 16:44:51; revision: 10; modified: 2020-03-08 16:44:51; -->
+![Image](user-documentation.ner.png)
+
+_This feature is being implemented._
+### Semantic Search and Domain <!-- Metadata: type: Note; tags: todo,ml,nlp; created: 2018-07-10 08:04:26; reads: 44; read: 2020-03-08 16:45:24; revision: 12; modified: 2020-03-08 16:45:24; -->
+_This feature is being implemented._
+
+Word embeddings based search, associations and navigation.
+## Associate as you Read: Autolinking <!-- Metadata: type: Note; created: 2018-10-10 13:28:57; reads: 43; read: 2020-03-08 16:44:35; revision: 11; modified: 2020-03-08 16:42:52; -->
 ![Autolinking](autolinking.png)
 
 Autolinking discovers relevant notes in your MindForger repository and/or Markdown document
@@ -776,18 +815,7 @@ Tips and tricks:
       as it brings more matcheds.
 * Autolinking can be quickly toggled using menu.
      
-## Knowledge Graph Navigator <!-- Metadata: type: Note; created: 2018-07-10 08:13:17; reads: 61; read: 2018-10-10 13:39:48; revision: 9; modified: 2018-09-26 09:37:54; -->
-![Navigator](user-documentation.knowledge-graph-navigator.png)
-
-**Knowledge graph navigator** allows you to browse notebooks, notes, tags and other resources
-in **visually**.
-
-Navigator can be either activated using toolbar or using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>k</kbd> keyboard
-shortcut. It is **scope sensitive** e.g. if you activate navigator while viewing note, then this note
-becomes central node of the visualization.
-
-Knowledge graph can be **zoomed**, **shuffled** and its edgest can be (globally) stretched/shrinked.
-## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 42; read: 2018-10-10 13:39:48; revision: 17; modified: 2018-05-03 09:26:24; -->
+## Forgetting <!-- Metadata: type: Note; created: 2018-04-10 10:54:02; reads: 46; read: 2020-03-08 16:44:34; revision: 17; modified: 2018-05-03 09:26:24; -->
 > Motto: "Computers need to forget". -- [Viktor Mayer-Schönberger](http://blog.mindforger.com/2007/11/computers-need-to-forget.html)
 
 Before I deep dive to MindForger features let me formulate
@@ -827,7 +855,7 @@ forgetting does **NOT** mean deleting of information.
 MindForger maintains **all** the remarks you ever written
 (see [limbo](#limbo)), but works with/shows only with 
 a [scope](#time-scope) **configurable** by you.
-### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 81; read: 2018-10-10 13:39:48; revision: 47; modified: 2018-07-11 16:28:46; -->
+### Time Scope <!-- Metadata: type: Note; created: 2018-04-10 10:54:24; reads: 85; read: 2020-03-08 16:39:02; revision: 47; modified: 2018-07-11 16:28:46; -->
 Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **time** scope.
 
 ---
@@ -918,7 +946,7 @@ Therefore it enables you to...
 * helps you to decide what you do first and next using **Eisenhower matrix**
 * track **progress** in %
 * specify **deadlines** (for notes)
-## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 32; read: 2018-10-10 13:40:08; revision: 7; modified: 2018-07-10 08:30:44; -->
+## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 36; read: 2020-03-08 16:40:18; revision: 7; modified: 2018-07-10 08:30:44; -->
 ![Image](user-documentation.importance-urgency-edit.png)
 
 When creating (menu `Notebook/New`) or editing **notebook** (edit mode `More...` button) you
@@ -930,7 +958,7 @@ can specify:
 ![Image](user-documentation.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
-## Eisenhower matrix <!-- Metadata: type: Note; created: 2018-07-10 08:21:01; reads: 46; read: 2020-01-15 08:47:19; revision: 11; modified: 2020-01-15 08:47:19; -->
+## Eisenhower matrix <!-- Metadata: type: Note; tags: view; created: 2018-07-10 08:21:01; reads: 57; read: 2020-03-08 16:40:25; revision: 12; modified: 2020-03-08 16:40:25; -->
 ![Image](user-documentation.eisenhower-matrix.png)
 
 
@@ -946,13 +974,15 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-## Home notebook <!-- Metadata: type: Note; created: 2018-09-26 09:39:19; reads: 16; read: 2018-10-10 13:39:48; revision: 5; modified: 2018-09-26 09:41:38; -->
+## Home notebook <!-- Metadata: type: Note; created: 2018-09-26 09:39:19; reads: 25; read: 2020-03-08 16:40:38; revision: 6; modified: 2020-03-08 16:40:38; -->
 You can mark any notebook as **home** and it will be opened:
 
 * on MindForger start
 * using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>h</kbd> keyboard shortcut
 
 Home notebook can be **set**/unset using menu `Navigator/Make Home`.
+## Dashboard <!-- Metadata: type: Note; tags: view; created: 2020-03-08 16:39:20; reads: 12; read: 2020-03-08 16:40:44; revision: 5; modified: 2020-03-08 16:40:44; -->
+Open `Dashboard` view with <kbd>Ctrl-Shift-d</kbd>.
 # Cheatsheets <!-- Metadata: type: Note; created: 2018-04-10 10:53:18; reads: 29; read: 2018-10-10 13:39:48; revision: 2; modified: 2018-06-11 23:10:38; -->
 See MindForger cheetsheet(s):
 
