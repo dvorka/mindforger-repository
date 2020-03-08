@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1211; read: 2020-02-15 07:39:30; revision: 1207; modified: 2020-02-15 07:39:30; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1213; read: 2020-03-08 12:47:01; revision: 1211; modified: 2020-03-08 12:47:01; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -162,7 +162,7 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 75; read: 2020-01-15 08:46:50; revision: 16; modified: 2020-01-15 08:46:50; -->
+### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 78; read: 2020-03-08 12:47:01; revision: 18; modified: 2020-03-08 12:47:01; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
 format, easily rendered as HTML.
@@ -174,7 +174,6 @@ Markdown syntax documentation please refer to:
 * [John Gruber Markdown syntax](https://daringfireball.net/projects/markdown/syntax) documentation
 * [GitHub Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) documentation
 * [GitHub flavored Markdown](https://github.github.com/gfm/) specification
-* [Discount](https://www.pell.portland.or.us/~orc/Code/discount/) documentation
 * [Mermaid diagrams](https://mermaidjs.github.io/) documentation
 
 Sub-sections of this section provide Markdown syntax

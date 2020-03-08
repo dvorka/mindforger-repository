@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 875; read: 2020-01-21 08:11:22; revision: 875; modified: 2020-01-21 08:11:22; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 899; read: 2020-03-08 12:17:32; revision: 899; modified: 2020-03-08 12:17:32; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -28,16 +28,16 @@ Tarball:
 * [download tarball](https://github.com/dvorka/mindforger/releases)
 
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 41; read: 2019-02-16 09:43:08; revision: 18; modified: 2018-09-22 11:30:41; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 43; read: 2020-03-08 12:14:12; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
 
-## Windows <!-- Metadata: type: Note; created: 2019-02-16 09:43:18; reads: 13; read: 2019-03-02 18:53:26; revision: 5; modified: 2019-03-02 18:53:26; -->
+## Windows <!-- Metadata: type: Note; created: 2019-02-16 09:43:18; reads: 15; read: 2020-03-08 12:14:12; revision: 5; modified: 2019-03-02 18:53:26; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 60; read: 2019-03-02 19:52:38; revision: 20; modified: 2018-05-17 09:46:57; -->
+## Ubuntu <!-- Metadata: type: Note; created: 2018-04-23 20:47:41; reads: 62; read: 2020-03-08 12:14:12; revision: 20; modified: 2018-05-17 09:46:57; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -51,7 +51,7 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 38; read: 2020-01-21 08:09:15; revision: 17; modified: 2020-01-21 08:09:15; -->
+## Debian <!-- Metadata: type: Note; created: 2018-04-25 17:04:57; reads: 40; read: 2020-03-08 12:14:12; revision: 17; modified: 2020-01-21 08:09:15; -->
 Install MindForger on [Debian](https://www.debian.org/) from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
@@ -71,7 +71,7 @@ sudo apt install mindforger
 ```
 
 See also http://www.mindforger.com/debian/
-## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 59; read: 2020-01-21 08:10:52; revision: 21; modified: 2020-01-21 08:10:52; -->
+## Fedora <!-- Metadata: type: Note; created: 2018-04-25 19:50:19; reads: 61; read: 2020-03-08 12:14:12; revision: 21; modified: 2020-01-21 08:10:52; -->
 Install MindForger on [Fedora](https://getfedora.org/):
 
 * [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -82,7 +82,7 @@ Install RPM:
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
 
-## openSUSE <!-- Metadata: type: Note; created: 2020-01-21 08:08:06; reads: 14; read: 2020-01-21 08:10:37; revision: 4; modified: 2020-01-21 08:10:37; -->
+## openSUSE <!-- Metadata: type: Note; created: 2020-01-21 08:08:06; reads: 16; read: 2020-03-08 12:14:12; revision: 4; modified: 2020-01-21 08:10:37; -->
 Install MindForger on [openSUSE](https://www.opensuse.org/):
 
 ```
@@ -91,12 +91,12 @@ opi mindforger
 ```
 
 
-## Arch Linux <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 18; read: 2018-09-23 14:27:27; revision: 7; modified: 2018-06-12 19:50:48; -->
+## Arch Linux <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 20; read: 2020-03-08 12:14:12; revision: 7; modified: 2018-06-12 19:50:48; -->
 Install MindForger from Arch User Repository (AUR):
 
 * https://aur.archlinux.org/packages/mindforger/
 
-## macOS <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 18; read: 2018-06-12 19:50:48; revision: 7; modified: 2018-06-12 19:50:48; -->
+## macOS <!-- Metadata: type: Note; created: 2018-06-12 19:47:21; reads: 20; read: 2020-03-08 12:14:12; revision: 7; modified: 2018-06-12 19:50:48; -->
 Install MindForger on macOS (tested on `Sierra 10.12`):
 
 * [download .dmg](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -108,7 +108,7 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 24; read: 2019-03-02 16:01:55; revision: 8; modified: 2018-07-16 17:35:23; -->
+## WSL <!-- Metadata: type: Note; created: 2018-07-11 15:40:38; reads: 26; read: 2020-03-08 12:14:12; revision: 8; modified: 2018-07-16 17:35:23; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -139,9 +139,9 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 57; read: 2019-03-02 20:54:41; revision: 7; modified: 2018-09-22 11:30:51; -->
+# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 59; read: 2020-03-08 12:14:12; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 135; read: 2019-03-02 20:56:48; revision: 123; modified: 2019-03-02 20:03:07; -->
+## Build on Windows <!-- Metadata: type: Note; created: 2019-02-03 17:11:52; reads: 137; read: 2020-03-08 12:14:13; revision: 123; modified: 2019-03-02 20:03:07; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
 Install build **tools**:
@@ -231,7 +231,7 @@ Create **installer**:
 To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
 use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 134; read: 2019-03-03 08:10:51; revision: 53; modified: 2019-03-03 08:10:51; -->
+## Build on Ubuntu <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 141; read: 2020-03-08 12:16:01; revision: 57; modified: 2020-03-08 12:16:01; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
@@ -259,11 +259,6 @@ cd mindforger/deps/cmark-gfm
 mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
-
-# optionally build Discount
-cd mindforger/deps/discount
-./configure.sh
-make
 ```
 
 Compile and install from Git repository root directory:
@@ -290,10 +285,11 @@ ls mindforger-repository
 Run MindForger:
 
 ```
-mindforger
+./mindforger
 ```
 
-## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 66; read: 2019-03-03 08:11:15; revision: 17; modified: 2019-03-03 08:11:15; -->
+See also `mindforger/build/ubuntu/build-all-clean-system.sh`
+## Build on Debian <!-- Metadata: type: Note; created: 2018-04-25 17:18:23; reads: 73; read: 2020-03-08 12:16:20; revision: 19; modified: 2020-03-08 12:16:20; -->
 Build MindForger on Debian Stretch or later.
 
 Install build tools:
@@ -320,11 +316,6 @@ cd mindforger/deps/cmark-gfm
 mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
-
-# optionally build Discount
-cd mindforger/deps/discount
-./configure.sh
-make
 ```
 
 Compile and install from Git repository root directory:
@@ -351,9 +342,9 @@ ls mindforger-repository
 Run MindForger:
 
 ```
-mindforger
+./mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 60; read: 2019-03-03 08:11:18; revision: 17; modified: 2019-03-03 08:11:09; -->
+## Build on Fedora <!-- Metadata: type: Note; created: 2018-04-26 09:04:14; reads: 67; read: 2020-03-08 12:16:31; revision: 19; modified: 2020-03-08 12:16:31; -->
 Build MindForger on Fedora.
 
 Install build tools:
@@ -380,11 +371,6 @@ cd mindforger/deps/cmark-gfm
 mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
-
-# optionally build Discount
-cd mindforger/deps/discount
-./configure.sh
-make
 ```
 
 Compile and install from Git repository root directory:
@@ -411,9 +397,9 @@ ls mindforger-repository
 Run MindForger:
 
 ```
-mindforger
+./mindforger
 ```
-## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 73; read: 2019-03-03 13:54:51; revision: 54; modified: 2019-03-03 13:54:51; -->
+## Build on macOS <!-- Metadata: type: Note; created: 2018-06-04 21:07:57; reads: 81; read: 2020-03-08 12:17:16; revision: 56; modified: 2020-03-08 12:17:16; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install [Xcode](https://developer.apple.com/) command line tools:
@@ -462,11 +448,6 @@ cd mindforger/deps/cmark-gfm
 mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
-
-# optionally build Discount
-cd mindforger/deps/discount
-./configure.sh
-make
 ```
 
 Compile MindForger from Git repository root directory:
@@ -505,13 +486,13 @@ Run MindForger either as application or using command line:
 
 **IMPORTANT**: in case that there is a problem with HTML preview ~ **nothing** is shown for a note:
 
-* **Uinstall** Qt installed using Brew (`brew remove qt`).
+* **Uninstall** Qt installed using Brew (`brew remove qt`).
 * **Install** Qt from https://www.qt.io/download - choose latest available `5.x.x` version to ensure
   performance and stability.
 * Use `qmake` from the official distribution to **build** MindForger (as described above).
 
 Brew approach is simpler, faster and usually works - this is why it is used by default.
-## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 34; read: 2019-03-03 08:11:46; revision: 10; modified: 2019-03-03 08:11:46; -->
+## Build on WSL <!-- Metadata: type: Note; created: 2018-07-10 10:20:59; reads: 40; read: 2020-03-08 12:17:32; revision: 12; modified: 2020-03-08 12:17:32; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
@@ -550,11 +531,6 @@ cd mindforger/deps/cmark-gfm
 mkdir build && cd build
 cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
-
-# optionally build Discount
-cd mindforger/deps/discount
-./configure.sh
-make
 ```
 
 Compile and install from Git repository root directory:
@@ -581,12 +557,12 @@ ls mindforger-repository
 Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourceforge.net/projects/xming/))
 
 ```sh
-DISPLAY=:0.0 mindforger
+DISPLAY=:0.0 ./mindforger
 ```
 
-# Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 14; read: 2018-09-23 13:49:01; revision: 5; modified: 2018-09-23 13:49:01; -->
+# Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 18; read: 2020-03-08 12:15:39; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 71; read: 2019-03-02 20:58:44; revision: 59; modified: 2018-09-23 14:46:39; -->
+## Build and run in container <!-- Metadata: type: Note; created: 2018-09-23 13:46:37; reads: 73; read: 2020-03-08 12:15:38; revision: 59; modified: 2018-09-23 14:46:39; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:
