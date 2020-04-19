@@ -1,4 +1,4 @@
-# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 186; read: 2018-10-10 18:20:33; revision: 186; modified: 2018-10-10 18:20:33; importance: 1/5; urgency: 1/5; -->
+# History <!-- Metadata: type: Outline; created: 2018-02-23 10:56:27; reads: 188; read: 2020-04-19 20:25:18; revision: 188; modified: 2020-04-19 20:25:18; importance: 1/5; urgency: 1/5; -->
 [Donald Knuth](https://cs.wikipedia.org/wiki/Donald_Ervin_Knuth) implemented [TeX](https://en.wikipedia.org/wiki/TeX) because he was not satified with existing typesetting systems and he wanted to write beautiful research articles and books.
 
 [Linux Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) implemented [Git](https://en.wikipedia.org/wiki/Git) because he was not satisfied with existing version-control systems and he wanted to efficiently maintain
@@ -18,7 +18,7 @@ title screenshot has been based on Eddie character from [Venom](https://www.imdb
 tool. Therefore it has relatively long history - it is successor of
 [RDF Spiders](#rdf-spiders), [MindRaider](#mindraider) and [Coaching Notebook](#coaching-notebook). Actually it's a bit more 
 complicated...
-# RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 41; read: 2018-10-10 18:12:17; revision: 36; modified: 2018-05-10 12:48:36; -->
+# RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 43; read: 2020-04-19 20:24:29; revision: 36; modified: 2018-05-10 12:48:36; -->
 ![RDF Spiders](history.spiders.jpg)
 
 [RDF Spiders](http://mindraider.sourceforge.net/gallery/mindraider-incubator/index.html) was 
@@ -30,11 +30,11 @@ RDF runtime interoperable with other Semantic Web applications.
 It required good knowledge of RDF which limited 
 number of potential users. This is why I decided to implement more user friendly 
 [MindRaider](#mindraider).
-# MindRaider <!-- Metadata: type: Note; created: 2018-03-18 09:12:59; reads: 19; read: 2018-10-10 18:12:19; revision: 4; modified: 2018-04-24 17:18:33; -->
+# MindRaider <!-- Metadata: type: Note; created: 2018-03-18 09:12:59; reads: 21; read: 2020-04-19 20:25:18; revision: 5; modified: 2020-04-19 20:25:18; -->
 ![MindRaider](history.mr.jpg)
 
 [MindRaider](http://mindraider.sourceforge.net/) is a 90s Java-based 
-Semantic Web desktop application which is an outliner with RDF runtime. 
+Semantic Web desktop application ([video](https://www.youtube.com/watch?v=Q95ixrVCXEs)) which is an outliner with RDF runtime. 
 MindRaider was decently successful project with 100.000+ downloads. However 
 it became morally obsolete and I didn't want to invest my time to deliver new features 
 on top of dying UI and runtime technology. Therefore I decided to start a new project.
