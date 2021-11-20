@@ -1,4 +1,4 @@
-# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1303; read: 2020-03-08 16:45:24; revision: 1303; modified: 2020-03-08 16:45:24; importance: 2/5; urgency: 5/5; -->
+# MindForger User Documentation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-17 17:50:10; reads: 1316; read: 2021-11-20 06:23:46; revision: 1316; modified: 2021-11-20 06:23:46; importance: 2/5; urgency: 5/5; -->
 
 Table of contents:
 
@@ -11,7 +11,7 @@ Table of contents:
 * [Cheatsheet: Keyboard Shortcuts](#keyboard-shortcuts)
 
 This document _briefly_ describes key MindForger features.
-# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 42; read: 2020-03-08 16:40:51; revision: 11; modified: 2018-10-10 13:36:12; -->
+# CLI and man <!-- Metadata: type: Note; created: 2018-05-01 17:26:17; reads: 44; read: 2021-11-20 06:23:01; revision: 11; modified: 2018-10-10 13:36:12; -->
 For information on MindForger command line options read the manual page:
 
 ```shell
@@ -35,13 +35,13 @@ Arguments:
   [<directory>|<file>]           MindForger repository or directory/file with
                                  Markdown file(s) to open
 ```
-# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 48; read: 2020-03-08 16:40:54; revision: 12; modified: 2018-05-29 22:59:20; -->
+# Repository <!-- Metadata: type: Note; created: 2018-04-10 10:50:50; reads: 50; read: 2021-11-20 06:23:05; revision: 12; modified: 2018-05-29 22:59:20; -->
 MindForger can be used to:
 
 * manage knowledge in a [MindForger repository](#mindforger-repository)
 * edit single [Markdown file](#markdown-file)
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
-## MindForger repository <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:51:20; reads: 58; read: 2020-03-08 16:41:26; revision: 14; modified: 2020-03-08 16:41:01; -->
+## MindForger repository <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:51:20; reads: 60; read: 2021-11-20 06:23:06; revision: 14; modified: 2020-03-08 16:41:01; -->
 MindForger repository is a directory with specific 
 [structure](developer-documentation.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
@@ -75,7 +75,7 @@ mindforger-repository/
     ├── notebooks
     └── notes
 ```
-## Markdown file <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:50:58; reads: 50; read: 2020-03-08 16:41:27; revision: 6; modified: 2020-03-08 16:41:06; -->
+## Markdown file <!-- Metadata: type: Note; tags: source; created: 2018-04-10 10:50:58; reads: 52; read: 2021-11-20 06:23:08; revision: 6; modified: 2020-03-08 16:41:06; -->
 MindForger can be used to edit a **single** Markdown file:
 
 ```
@@ -84,7 +84,7 @@ mindforger analysis.md
 
 If the given file exists, then it's opened for editing, otherwise a
 new Markdown file with this name is **created** and opened.
-## Markdown directory <!-- Metadata: type: Note; tags: source,mdi; created: 2018-04-10 10:51:14; reads: 42; read: 2020-03-08 16:41:27; revision: 7; modified: 2020-03-08 16:41:23; -->
+## Markdown directory <!-- Metadata: type: Note; tags: source,mdi; created: 2018-04-10 10:51:14; reads: 44; read: 2021-11-20 06:23:08; revision: 7; modified: 2020-03-08 16:41:23; -->
 You can open **any** directory and MindForger will find
 all Markdown files within the directory and its sub-directories
 and open them for search, navigation and editing:
@@ -96,7 +96,7 @@ $ mindforger a-git-repository-with-interesting-content
 For example, you can find an [interesting Git repository](#markdown-content-and-examples)
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily navigate it.
-# Configuration <!-- Metadata: type: Note; tags: config; created: 2018-04-30 14:19:30; reads: 59; read: 2020-03-08 16:41:35; revision: 11; modified: 2020-03-08 16:41:35; -->
+# Configuration <!-- Metadata: type: Note; tags: config; created: 2018-04-30 14:19:30; reads: 61; read: 2021-11-20 06:23:09; revision: 11; modified: 2020-03-08 16:41:35; -->
 MindForger can be configured either from UI:
 
 * menu `Mind/Adapt`
@@ -106,10 +106,10 @@ MindForger can be configured either from UI:
 * `~/.mindforger.md`
 
 Review `.mindforger.md` for configuration option details and descriptions.
-# Markdown <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 36; read: 2020-03-08 16:41:35; revision: 4; modified: 2020-01-15 08:46:14; -->
+# Markdown <!-- Metadata: type: Note; created: 2018-04-26 08:47:53; reads: 38; read: 2021-11-20 06:23:12; revision: 4; modified: 2020-01-15 08:46:14; -->
 This section provides a brief overview of MindForger's 
 Markdown editor and Markdown IDE features.
-## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 99; read: 2020-03-08 16:41:36; revision: 27; modified: 2018-07-10 07:22:52; -->
+## Markdown editor <!-- Metadata: type: Note; created: 2018-04-10 10:52:02; reads: 101; read: 2021-11-20 06:23:15; revision: 27; modified: 2018-07-10 07:22:52; -->
 MindForger can be used as a Markdown **editor**.
 
 It allows you to easily write [Markdown](#markdown) 
@@ -123,7 +123,7 @@ MindForger terminology:
 
 
 MindForger represents any Markdown as [follows](#markdown-outline)...
-### Markdown outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 57; read: 2020-01-15 08:47:04; revision: 23; modified: 2020-01-15 08:47:04; -->
+### Markdown outline <!-- Metadata: type: Note; created: 2018-05-30 07:03:16; reads: 59; read: 2021-11-20 06:23:17; revision: 23; modified: 2020-01-15 08:47:04; -->
 In order to enable quick **navigation** and **refactoring** 
 of Markdown documents, MindForger shows Markdown documents (**Notebooks**) 
 as an **outline** of Markdown sections (**Notes**) allowing
@@ -154,7 +154,7 @@ as a **tree** - called an **outline**:
 
 For switching between section (pre)view and edit mode refer to the [next section](#view-vs-edit-mode).
 
-### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 53; read: 2020-03-08 16:30:20; revision: 13; modified: 2018-07-10 08:51:38; -->
+### View vs Edit mode <!-- Metadata: type: Note; tags: important; created: 2018-05-30 07:03:50; reads: 55; read: 2021-11-20 06:23:18; revision: 13; modified: 2018-07-10 08:51:38; -->
 ![Image](user-documentation.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
@@ -162,12 +162,12 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-### Link completion <!-- Metadata: type: Note; created: 2020-03-08 16:37:24; reads: 4; read: 2020-03-08 16:38:35; revision: 2; modified: 2020-03-08 16:38:35; -->
+### Link completion <!-- Metadata: type: Note; created: 2020-03-08 16:37:24; reads: 6; read: 2021-11-20 06:23:18; revision: 2; modified: 2020-03-08 16:38:35; -->
 While editing a Note or Notebook write prefix of
 a Notebook/Note name and use <kbd>Ctrl-/</kbd> to 
 get link completion. When you choose a link from completer,
 Markdown link to target Notebook/Note is automatically created.
-### DnD: Drag & Drop <!-- Metadata: type: Note; created: 2020-03-08 16:30:33; reads: 12; read: 2020-03-08 16:37:20; revision: 4; modified: 2020-03-08 16:36:10; -->
+### DnD: Drag & Drop <!-- Metadata: type: Note; created: 2020-03-08 16:30:33; reads: 14; read: 2021-11-20 06:23:19; revision: 4; modified: 2020-03-08 16:36:10; -->
 Drag:
 
 * **file**
@@ -183,10 +183,10 @@ DnD allows easy import of attachments/images to MindForger
 repository - either by value (choose `Copy` in attachment/image
 dialog) or by reference (path to the file on local file system
 is used).
-### Live Preview <!-- Metadata: type: Note; created: 2020-03-08 16:36:20; reads: 9; read: 2020-03-08 16:37:19; revision: 3; modified: 2020-03-08 16:36:57; -->
+### Live Preview <!-- Metadata: type: Note; created: 2020-03-08 16:36:20; reads: 11; read: 2021-11-20 06:23:19; revision: 3; modified: 2020-03-08 16:36:57; -->
 Easily toggle live HTML preview of edited Markdown
 with shortcut or edit panel buttons.
-### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 78; read: 2020-03-08 12:47:01; revision: 18; modified: 2020-03-08 12:47:01; -->
+### Markdown format <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 80; read: 2021-11-20 06:23:20; revision: 18; modified: 2020-03-08 12:47:01; -->
 [Markdown](https://daringfireball.net/projects/markdown/) is  a plain text formatting syntax introduced by John Gruber.
 Markdown allows you to write using an easy-to-read, easy-to-write plain text 
 format, easily rendered as HTML.
@@ -409,7 +409,7 @@ public static void main(string[] args) {
 ---
 
 💡 edit this Note to see the syntax
-#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 88; read: 2018-10-10 13:39:46; revision: 15; modified: 2018-07-10 07:34:34; -->
+#### Math <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 90; read: 2021-11-20 06:23:23; revision: 15; modified: 2018-07-10 07:34:34; -->
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
 
 
@@ -436,7 +436,7 @@ expression to image and include it in Markdown.
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu `Mind/Adapt/Markdown`
-##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 80; read: 2020-01-31 08:29:11; revision: 67; modified: 2018-09-08 07:16:04; -->
+##### MathJax <!-- Metadata: type: Note; tags: cheatsheet; created: 2018-09-08 06:45:50; reads: 82; read: 2021-11-20 06:23:24; revision: 67; modified: 2018-09-08 07:16:04; -->
 MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
 
 * use `$` to inline expressions, and `$$` for blocks
@@ -474,7 +474,7 @@ Limit block:
 
 $$\lim_{x\to 0}$$
 
-#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 99; read: 2020-02-15 07:39:30; revision: 20; modified: 2020-02-15 07:39:30; -->
+#### Diagrams <!-- Metadata: type: Note; created: 2018-04-15 18:26:48; reads: 101; read: 2021-11-20 06:23:25; revision: 20; modified: 2020-02-15 07:39:30; -->
 Flowchart diagram:
 
 ``` mermaid
@@ -525,7 +525,7 @@ gantt
 
 💡 edit this Note to see the syntax <br/>
 💡 if math expressions are **not** rendered, then you must **enable** them using menu `Mind/Adapt/Markdown`
-#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 48; read: 2018-10-10 13:39:46; revision: 10; modified: 2018-07-10 07:35:46; -->
+#### Comments <!-- Metadata: type: Note; created: 2018-05-04 06:48:59; reads: 50; read: 2021-11-20 06:23:25; revision: 10; modified: 2018-07-10 07:35:46; -->
 If you want **line** or **multi-line** comment that 
 is strictly for yourself (readers of the converted 
 document should not be able 
@@ -557,9 +557,9 @@ If you need **inline** comment, then use HTML comments:
 ---
 
 💡 edit this Note to see the syntax
-#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 38; read: 2018-10-10 13:39:46; revision: 4; modified: 2018-07-10 08:11:24; -->
+#### Drag & Drop Images and Files <!-- Metadata: type: Note; tags: todo; created: 2018-05-25 07:19:26; reads: 40; read: 2021-11-20 06:23:25; revision: 4; modified: 2018-07-10 08:11:24; -->
 _This feature is being implemented._
-### Custom HTML Preview CSS <!-- Metadata: type: Note; created: 2018-07-10 08:40:23; reads: 28; read: 2018-10-10 13:39:46; revision: 11; modified: 2018-07-10 08:46:57; -->
+### Custom HTML Preview CSS <!-- Metadata: type: Note; created: 2018-07-10 08:40:23; reads: 30; read: 2021-11-20 06:23:26; revision: 11; modified: 2018-07-10 08:46:57; -->
 If you want to change color, font size, rendering of HTML preview, then it can
 be done using **custom CSS**.
 
@@ -577,7 +577,7 @@ You can either use your custom CSS - there is no UI for such change:
 ```
 
 This will ensure that CSS from given path will be loaded by HTML preview since the next time MindForger is started.
-## Markdown IDE <!-- Metadata: type: Note; created: 2018-04-10 10:52:12; reads: 58; read: 2018-10-10 13:39:46; revision: 6; modified: 2018-07-10 07:36:08; -->
+## Markdown IDE <!-- Metadata: type: Note; created: 2018-04-10 10:52:12; reads: 60; read: 2021-11-20 06:23:26; revision: 6; modified: 2018-07-10 07:36:08; -->
 MindForger is more than just Markdown editor - it is integrated development environment (**IDE**) 
 for the development of Markdown document collections (repositories, documentation, books, etc.):
 
@@ -791,7 +791,7 @@ _This feature is being implemented._
 _This feature is being implemented._
 
 Word embeddings based search, associations and navigation.
-## Associate as you Read: Autolinking <!-- Metadata: type: Note; created: 2018-10-10 13:28:57; reads: 43; read: 2020-03-08 16:44:35; revision: 11; modified: 2020-03-08 16:42:52; -->
+## Autolinking: Associate as you Read <!-- Metadata: type: Note; created: 2018-10-10 13:28:57; reads: 47; read: 2021-11-20 06:23:46; revision: 12; modified: 2021-11-20 06:23:46; -->
 ![Autolinking](autolinking.png)
 
 Autolinking discovers relevant notes in your MindForger repository and/or Markdown document
@@ -946,7 +946,7 @@ Therefore it enables you to...
 * helps you to decide what you do first and next using **Eisenhower matrix**
 * track **progress** in %
 * specify **deadlines** (for notes)
-## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 36; read: 2020-03-08 16:40:18; revision: 7; modified: 2018-07-10 08:30:44; -->
+## Urgency and Importance <!-- Metadata: type: Note; created: 2018-07-10 08:20:52; reads: 38; read: 2021-11-20 06:22:41; revision: 7; modified: 2018-07-10 08:30:44; -->
 ![Image](user-documentation.importance-urgency-edit.png)
 
 When creating (menu `Notebook/New`) or editing **notebook** (edit mode `More...` button) you
@@ -958,7 +958,7 @@ can specify:
 ![Image](user-documentation.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
-## Eisenhower matrix <!-- Metadata: type: Note; tags: view; created: 2018-07-10 08:21:01; reads: 57; read: 2020-03-08 16:40:25; revision: 12; modified: 2020-03-08 16:40:25; -->
+## Eisenhower matrix <!-- Metadata: type: Note; tags: view; created: 2018-07-10 08:21:01; reads: 65; read: 2021-11-20 06:22:42; revision: 12; modified: 2020-03-08 16:40:25; -->
 ![Image](user-documentation.eisenhower-matrix.png)
 
 
@@ -974,7 +974,11 @@ Tasks in
 1. **Unimportant/Not Urgent quadrant** are dropped e.g. time wasters, pleasant activities, trivia.
 
 This method is said to have been used by U.S. President Dwight D. Eisenhower.
-## Home notebook <!-- Metadata: type: Note; created: 2018-09-26 09:39:19; reads: 25; read: 2020-03-08 16:40:38; revision: 6; modified: 2020-03-08 16:40:38; -->
+### Eisenhower matrix on tags <!-- Metadata: type: Note; tags: todo; created: 2021-11-20 06:22:35; reads: 8; read: 2021-11-20 06:22:44; revision: 3; modified: 2021-11-20 06:22:36; -->
+
+## Kanban on Tags <!-- Metadata: type: Note; tags: todo,view; created: 2021-11-20 06:22:09; reads: 9; read: 2021-11-20 06:22:37; revision: 3; modified: 2021-11-20 06:22:20; -->
+
+## Home notebook <!-- Metadata: type: Note; created: 2018-09-26 09:39:19; reads: 27; read: 2021-11-20 06:22:48; revision: 6; modified: 2020-03-08 16:40:38; -->
 You can mark any notebook as **home** and it will be opened:
 
 * on MindForger start
@@ -987,9 +991,9 @@ Open `Dashboard` view with <kbd>Ctrl-Shift-d</kbd>.
 See MindForger cheetsheet(s):
 
 * [Keyboard Shortcuts](#keyboard-shortcuts)
-## MathJax cheatsheet <!-- Metadata: type: Note; created: 2018-09-26 09:38:26; reads: 13; read: 2018-10-10 13:39:47; revision: 3; modified: 2018-09-26 09:38:48; -->
+## MathJax cheatsheet <!-- Metadata: type: Note; created: 2018-09-26 09:38:26; reads: 15; read: 2021-11-20 06:22:52; revision: 3; modified: 2018-09-26 09:38:48; -->
 See [MathJax](#mathjax).
-## Keyboard shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 48; read: 2020-01-15 08:47:26; revision: 14; modified: 2020-01-15 08:47:26; -->
+## Keyboard shortcuts <!-- Metadata: type: Note; created: 2018-03-17 17:50:10; reads: 50; read: 2021-11-20 06:22:53; revision: 14; modified: 2020-01-15 08:47:26; -->
 Prefer menu based keyboard shortcuts which are self-documented e.g.
 
 * <kbd>Alt+o n</kbd>

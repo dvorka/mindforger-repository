@@ -1,4 +1,4 @@
-# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 481; read: 2020-01-21 08:17:58; revision: 481; modified: 2020-01-21 08:17:58; importance: 0/5; urgency: 0/5; -->
+# MindForger Developer Documentation <!-- Metadata: type: Outline; tags: developer; created: 2018-02-23 10:56:27; reads: 548; read: 2021-11-20 06:35:02; revision: 548; modified: 2021-11-20 06:35:02; importance: 0/5; urgency: 0/5; -->
 
 Contribute:
 
@@ -14,7 +14,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Linux Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 151; read: 2019-03-02 21:08:14; revision: 76; modified: 2019-01-13 09:08:37; -->
+# Linux Development Environment <!-- Metadata: type: Note; created: 2018-03-18 08:58:55; reads: 155; read: 2021-11-20 06:31:50; revision: 76; modified: 2019-01-13 09:08:37; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -45,7 +45,18 @@ Perhaps you may find useful description of my development environment:
         * Alt-X compile > cd ../.. && make (make -k for keep going)
 
 For more details see source code.
-## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 78; read: 2019-03-02 21:08:15; revision: 15; modified: 2019-01-13 09:08:19; -->
+## Build <!-- Metadata: type: Note; created: 2021-11-20 06:24:48; reads: 21; read: 2021-11-20 06:30:47; revision: 9; modified: 2021-11-20 06:28:23; -->
+See [Build on Ubuntu](installation.md#build-on-ubuntu) for how to build MindForger.
+
+I order to set up development environment on Ubuntu build and install the following
+libraries:
+
+* [gtest](https://github.com/google/googletest): Google Test for C++ 
+
+---
+
+**Unit tests** are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
+## Tests <!-- Metadata: type: Note; created: 2018-03-31 08:32:08; reads: 86; read: 2021-11-20 06:28:25; revision: 15; modified: 2019-01-13 09:08:19; -->
 MindForger has:
 
 * library unit tests
@@ -65,7 +76,7 @@ Frontend library tests:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 67; read: 2020-01-21 08:14:03; revision: 7; modified: 2019-01-13 09:08:20; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2018-03-31 08:32:16; reads: 73; read: 2021-11-20 06:28:25; revision: 7; modified: 2019-01-13 09:08:20; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
@@ -74,14 +85,14 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 68; read: 2020-01-21 08:17:58; revision: 11; modified: 2020-01-21 08:17:58; -->
+## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2018-04-26 09:29:48; reads: 77; read: 2021-11-20 06:28:40; revision: 11; modified: 2020-01-21 08:17:58; -->
 Continous builds:
 
 * [Travis CI](https://travis-ci.org/dvorka/mindforger)
     * See also `.travis.yml`
 * [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
     * See also `appveyor.yml`
-## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 46; read: 2020-01-21 08:14:11; revision: 3; modified: 2019-01-13 09:08:21; -->
+## Packaging <!-- Metadata: type: Note; created: 2018-04-26 09:33:46; reads: 54; read: 2021-11-20 06:28:40; revision: 3; modified: 2019-01-13 09:08:21; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -96,7 +107,7 @@ Scripts used to created packages for Linux distributions can be found in:
 **Upstream tarball** is created in the same way as archive released via GitHub:
 
 * GitHub release: `build/github`
-# Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 51; read: 2020-01-21 08:14:10; revision: 12; modified: 2019-03-02 21:07:47; -->
+# Windows Development Environment <!-- Metadata: type: Note; created: 2019-01-13 08:59:11; reads: 57; read: 2021-11-20 06:28:41; revision: 12; modified: 2019-03-02 21:07:47; -->
 Perhaps you may find useful description of my development environment:
 
 * Source: GitHub
@@ -107,7 +118,7 @@ Perhaps you may find useful description of my development environment:
 * Unit tests: Google Test Framework 
 
 For more details see source code.
-## Plan for Windows Build and Distribution <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 70; read: 2020-01-21 08:14:09; revision: 24; modified: 2019-03-02 21:03:55; -->
+## Plan for Windows Build and Distribution <!-- Metadata: type: Note; created: 2019-01-13 09:10:13; reads: 76; read: 2021-11-20 06:28:41; revision: 24; modified: 2019-03-02 21:03:55; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
@@ -144,7 +155,7 @@ Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-## Install prerequisites <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 29; read: 2020-01-21 08:14:09; revision: 5; modified: 2019-03-02 21:05:03; -->
+## Install prerequisites <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 35; read: 2021-11-20 06:28:41; revision: 5; modified: 2019-03-02 21:05:03; -->
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
     * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
@@ -166,7 +177,7 @@ Prepare MindForger sources:
     * `git submodule init`
     * `git supmodule update`
 
-## Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 36; read: 2020-01-21 08:14:09; revision: 4; modified: 2019-03-02 21:05:03; -->
+## Build dependencies <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 42; read: 2021-11-20 06:28:41; revision: 4; modified: 2019-03-02 21:05:03; -->
 Building dependecies is required only once, during initial building.
 
 Build cmake-gfm: It requires cmake on the path.
@@ -182,7 +193,7 @@ Build cmake-gfm: It requires cmake on the path.
     * `cmake --build . --config Release -- /m`
     * `cmake --build . --config Debug -- /m`
 
-## Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 35; read: 2020-01-21 08:14:09; revision: 3; modified: 2019-03-02 21:05:02; -->
+## Build MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 41; read: 2021-11-20 06:28:41; revision: 3; modified: 2019-03-02 21:05:02; -->
   * Goto repo dir
     * `cd $GIT\mindforger`
   * Setup development environment in cmd line. Change path according to your MSVC 2017 and Qt installation
@@ -195,7 +206,7 @@ Build cmake-gfm: It requires cmake on the path.
   * result exe is in the `app\release` folder
       
 
-## QtCreator build <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 37; read: 2019-03-02 22:36:14; revision: 6; modified: 2019-03-02 22:36:04; -->
+## QtCreator build <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 43; read: 2021-11-20 06:28:41; revision: 6; modified: 2019-03-02 22:36:04; -->
 * Start Qt creator
 * Open project `%GIT%\mindforger\mindforger.pro`
     * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
@@ -206,14 +217,14 @@ Build cmake-gfm: It requires cmake on the path.
     * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
 
   
-### QtCreator debugging <!-- Metadata: type: Note; created: 2019-03-02 22:36:12; reads: 9; read: 2019-03-02 22:36:53; revision: 4; modified: 2019-03-02 22:36:53; -->
+### QtCreator debugging <!-- Metadata: type: Note; created: 2019-03-02 22:36:12; reads: 15; read: 2021-11-20 06:28:41; revision: 4; modified: 2019-03-02 22:36:53; -->
 * For setting debugger in QtCreator follow instructions in Qt 
   documention [Setting Up Debugger](https://doc.qt.io/qtcreator/creator-debugger-engines.html)
 * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. 
   Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
   and select `Debugging Tools for Windows` only. 
 
-## Running MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 27; read: 2019-03-02 22:37:16; revision: 3; modified: 2019-03-02 21:05:01; -->
+## Running MindForger <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 33; read: 2021-11-20 06:28:41; revision: 3; modified: 2019-03-02 21:05:01; -->
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. Zlib binaries are located in `$GIT\mindforger\deps\zlib-win\ 
   * Qt files. Change path according to your setup
     * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -222,7 +233,7 @@ Build cmake-gfm: It requires cmake on the path.
   * Start MindForger
     * `app\release\mindforger.exe`
 
-## Creating installer <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 31; read: 2019-03-02 22:37:18; revision: 3; modified: 2019-03-02 21:05:00; -->
+## Creating installer <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 37; read: 2021-11-20 06:28:41; revision: 3; modified: 2019-03-02 21:05:00; -->
 * Install [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
 * Prepare development environment. Change path according to your Qt installation
   * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -233,7 +244,7 @@ Build cmake-gfm: It requires cmake on the path.
   * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.14.26405\vcredist_x64.exe" build\windows\installer\mindforger-setup.iss` 
 * the result is in the `app\release\installer` folder
 
-## Building unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 32; read: 2019-03-02 22:37:20; revision: 4; modified: 2019-03-02 21:04:57; -->
+## Building unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 40; read: 2021-11-20 06:28:41; revision: 4; modified: 2019-03-02 21:04:57; -->
 Unit tests are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
 
 Gtest is expected at `C:\Program Files\gtest-distribution` by default. If you have it somewhere else you have to update the `lib\test\src\src.pro` Qt project file to change path to gtest.
@@ -250,7 +261,7 @@ Than:
 * Build tests
     * `nmake`
 
-### Running unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 25; read: 2019-03-02 22:37:23; revision: 4; modified: 2019-03-02 22:37:23; -->
+### Running unit tests <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 29; read: 2021-11-20 06:28:41; revision: 4; modified: 2019-03-02 22:37:23; -->
 * Prepare environment
   * `set "PATH=%PATH%;$GIT\mindforger\deps\zlib-win"`
   * `set M8R_GIT_PATH=$GIT\mindforger`
@@ -259,7 +270,7 @@ Than:
   * `lib\test\src\debug\mindforger-lib-unit-tests.exe`
 
 
-## Using scripts <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 14; read: 2019-03-02 21:08:47; revision: 4; modified: 2019-03-02 21:04:56; -->
+## Using scripts <!-- Metadata: type: Note; created: 2019-02-06 08:26:14; reads: 18; read: 2021-11-20 06:28:41; revision: 4; modified: 2019-03-02 21:04:56; -->
 Alternatively, instead using of following above described manual steps, you can take advantage of batch files prepared for building and running MindForger, installer and unit tests. All the scripts are located in the ` $GIT\mindforger\build` folder:
 
 * `build-app.bat`
@@ -273,11 +284,14 @@ Alternatively, instead using of following above described manual steps, you can 
 Most important is the `env.bat`. It's called by others and sets up command line environment. Ammend this file to change paths based on your setup. Other scripts are self-explanatory. The `run-unit-tests.bat` can also take any argument. This is usefull for passing options to the _gtest_ framework. 
 
 
-## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2019-03-02 21:08:56; reads: 7; read: 2019-03-02 21:09:05; revision: 3; modified: 2019-03-02 21:09:05; -->
-AppVeyor
-# Conventions and BPs <!-- Metadata: type: Note; created: 2019-01-13 09:01:08; reads: 23; read: 2019-03-02 21:08:33; revision: 4; modified: 2019-01-13 09:01:18; -->
+## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2019-03-02 21:08:56; reads: 14; read: 2021-11-20 06:29:11; revision: 4; modified: 2021-11-20 06:29:11; -->
+Continous Integration for Windows:
+
+* [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
+    * See also `appveyor.yml`
+# Conventions and BPs <!-- Metadata: type: Note; created: 2019-01-13 09:01:08; reads: 27; read: 2021-11-20 06:29:14; revision: 4; modified: 2019-01-13 09:01:18; -->
 Conventions and best practices.
-## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 32; read: 2019-03-02 21:08:33; revision: 9; modified: 2019-01-13 09:06:01; -->
+## Branching Conventions <!-- Metadata: type: Note; created: 2018-06-02 07:05:00; reads: 34; read: 2021-11-20 06:29:14; revision: 9; modified: 2019-01-13 09:06:01; -->
 Git branch naming convention:
 
 * `feature-<related issue id>/<feature-name>`
@@ -295,20 +309,50 @@ Git branch naming convention:
     * release development branch used **before** release (stable master)
 * `stabilization/<release version>`
     * stable brach used **after** release (patch releases)
-## Source documentation conventions <!-- Metadata: type: Note; created: 2019-02-02 12:39:19; reads: 12; read: 2019-03-02 21:08:34; revision: 3; modified: 2019-02-02 12:40:12; -->
+## Source documentation conventions <!-- Metadata: type: Note; created: 2019-02-02 12:39:19; reads: 14; read: 2021-11-20 06:29:30; revision: 3; modified: 2019-02-02 12:40:12; -->
 Source code documentation conventions:
 
 * Use Doxygen syntax in source code comments 
   https://www.cs.cmu.edu/~410/doc/doxygen.html
 # Technical Architecture <!-- Metadata: type: Note; created: 2018-03-18 08:55:16; reads: 49; read: 2019-03-02 21:08:34; revision: 7; modified: 2018-04-26 09:32:27; -->
 This section gives a brief summary of MindForger technical architecture highlights.
-## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 44; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-05-30 07:33:03; -->
+## Library <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:10; reads: 46; read: 2021-11-20 06:14:34; revision: 3; modified: 2018-05-30 07:33:03; -->
 ...
-### Markdown Recursive Descent Parser <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:58:00; reads: 45; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-05-30 07:32:40; -->
+### 3rd-party dependencies <!-- Metadata: type: Note; created: 2021-11-20 06:14:47; reads: 12; read: 2021-11-20 06:14:53; revision: 2; modified: 2021-11-20 06:14:47; -->
+
+#### cmark-gfm <!-- Metadata: type: Note; tags: dependency; created: 2021-11-20 06:14:59; reads: 19; read: 2021-11-20 06:35:02; revision: 19; modified: 2021-11-20 06:35:02; -->
+MindForger uses [cmark-gfm](https://github.com/github/cmark-gfm) for rendering 
+of Markdown documents to HTML:
+
+* cmark-gfm repository:
+  https://github.com/github/cmark-gfm
+* cmark-gfm repository clone:
+  https://github.com/dvorka/cmark
+
+Fixes to cmark-gfm:
+
+* https://github.com/dvorka/cmark/commit/bc97db117ec777c112055bc55918b63a89efbb65
+    - fix of MSVC 2017 build (Windows)
+* https://github.com/dvorka/cmark/commit/f06d944d8e19816cce322ce87140f8c8cf2db89e
+    - Removal of code blocks prefixing with language specification using
+      "language-" to fix Mermaid integration and allow class specification 
+      w/o prefix which is not desired.
+
+cmark-gfm versions used:
+
+* 1.53.0 - onwards
+    - 766f161ef6d61019acf3a69f5099489e7d14cd49
+      `0.29.0.gfm.2` (September 16, 2021)
+* ... - 1.52.0
+    - https://github.com/dvorka/cmark/commit/3785191c3afb6cabd56776f6d6c73c90f3131d5d
+      `0.28.3.gfm.20` (January 31, 2019) with aforementioned patches
+* 1.42.0 - ...
+    - MindForger used Discount for Markdown rendering priort cmark-gfm
+### Markdown Recursive Descent Parser <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:58:00; reads: 47; read: 2021-11-20 06:14:36; revision: 3; modified: 2018-05-30 07:32:40; -->
 ...
-### NLP: Stemmer, Lexicon, BoW <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:35; reads: 34; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-07-10 08:01:19; -->
+### NLP: Stemmer, Lexicon, BoW <!-- Metadata: type: Note; tags: todo; created: 2018-04-26 09:30:35; reads: 36; read: 2021-11-20 06:14:37; revision: 3; modified: 2018-07-10 08:01:19; -->
 ...
-### Neural Network <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:17; reads: 51; read: 2019-03-02 21:08:34; revision: 7; modified: 2018-04-26 09:40:00; -->
+### Neural Network <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:17; reads: 53; read: 2021-11-20 06:14:39; revision: 7; modified: 2018-04-26 09:40:00; -->
 ...
 ## GUI <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 08:57:27; reads: 48; read: 2019-03-02 21:08:34; revision: 4; modified: 2018-05-30 07:33:09; -->
 ...
@@ -340,7 +384,7 @@ See also:
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
 ### Force-driven Graph <!-- Metadata: type: Note; tags: todo; created: 2018-03-18 22:02:48; reads: 42; read: 2019-03-02 21:08:34; revision: 3; modified: 2018-04-26 09:31:14; -->
 ...
-# Release Automation <!-- Metadata: type: Note; tags: todo,urgent; created: 2019-03-10 15:44:53; reads: 9; read: 2019-03-10 15:51:00; revision: 8; modified: 2019-03-10 15:51:00; -->
+# Release Automation <!-- Metadata: type: Note; tags: todo,urgent; created: 2019-03-10 15:44:53; reads: 11; read: 2021-11-20 06:29:48; revision: 8; modified: 2019-03-10 15:51:00; -->
 This is analysis of release automation making MindForger release much 
 faster and less time consuming.
 
