@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1025; read: 2020-03-08 17:13:00; revision: 1025; modified: 2020-03-08 17:13:00; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1047; read: 2021-12-21 13:48:36; revision: 1047; modified: 2021-12-21 13:48:36; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -28,10 +28,10 @@ Tarball:
 * [download tarball](https://github.com/dvorka/mindforger/releases)
 
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 45; read: 2020-03-08 17:04:33; revision: 18; modified: 2018-09-22 11:30:41; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 49; read: 2021-12-21 13:46:24; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
 
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 49; read: 2020-03-08 17:04:33; revision: 10; modified: 2020-03-08 17:02:58; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 53; read: 2021-12-21 13:46:24; revision: 10; modified: 2020-03-08 17:02:58; -->
 Install MindForger on macOS:
 
 * [download .dmg](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -43,7 +43,7 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 22; read: 2020-03-08 17:04:33; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 24; read: 2021-12-21 13:46:23; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
@@ -343,13 +343,13 @@ Create **installer**:
 To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
 use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 53; read: 2020-03-08 17:04:35; revision: 13; modified: 2020-03-08 17:03:58; -->
+## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 59; read: 2021-12-21 13:46:55; revision: 15; modified: 2021-12-21 13:46:55; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
 
 ```sh
-sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+sudo apt-get install build-essential zlib1g-dev libhunspell-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
 Update `gcc` and `g++` to version 5 (at least):
@@ -411,13 +411,13 @@ Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourcefo
 DISPLAY=:0.0 ./mindforger
 ```
 
-## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 152; read: 2020-03-08 17:04:35; revision: 58; modified: 2020-03-08 17:03:34; -->
+## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 156; read: 2021-12-21 13:46:57; revision: 60; modified: 2021-12-17 23:31:25; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install build tools:
 
 ```sh
-sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+sudo apt-get install build-essential zlib1g-dev libhunspell-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
 Get [source code](https://github.com/dvorka/mindforger):
@@ -469,13 +469,13 @@ Run MindForger:
 ```
 
 See also `mindforger/build/ubuntu/build-all-clean-system.sh`
-## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 82; read: 2020-03-08 17:04:35; revision: 20; modified: 2020-03-08 17:03:39; -->
+## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 87; read: 2021-12-21 13:47:13; revision: 22; modified: 2021-12-21 13:47:08; -->
 Build MindForger on Debian Stretch or later.
 
 Install build tools:
 
 ```sh
-sudo apt-get install build-essential zlib1g-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
+sudo apt-get install build-essential zlib1g-dev libhunspell-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
 ```
 
 Get [source code](https://github.com/dvorka/mindforger):
@@ -524,13 +524,13 @@ Run MindForger:
 ```
 ./mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 76; read: 2020-03-08 17:04:35; revision: 20; modified: 2020-03-08 17:03:49; -->
+## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 80; read: 2021-12-21 13:48:36; revision: 25; modified: 2021-12-21 13:48:36; -->
 Build MindForger on Fedora.
 
 Install build tools:
 
 ```sh
-sudo dnf install zlib-devel qt-devel qt5-devel ccache
+sudo dnf install zlib-devel hunspell-devel qt-devel qt5-devel ccache
 ```
 
 Get source code:
