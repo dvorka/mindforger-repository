@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1109; read: 2021-12-22 22:41:24; revision: 1109; modified: 2021-12-22 22:41:24; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1123; read: 2021-12-23 07:57:32; revision: 1123; modified: 2021-12-23 07:57:32; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -641,7 +641,7 @@ hunspell -D
 ```
 * copy downloaded (`.dict` and `.aff`) vocabulary files to one of 
   the directories on Hunspell's search path e.g. `/usr/share/hunspell`
-## Spell check configuration on Windows <!-- Metadata: type: Note; created: 2021-12-22 20:07:15; reads: 11; read: 2021-12-22 22:41:24; revision: 7; modified: 2021-12-22 22:41:24; -->
+## Spell check configuration on Windows <!-- Metadata: type: Note; created: 2021-12-22 20:07:15; reads: 14; read: 2021-12-23 07:57:32; revision: 14; modified: 2021-12-23 07:57:32; -->
 [Hunspell](https://github.com/hunspell/hunspell) is included
 in MindForger executable, therefore it does not have to be installed.
 
@@ -652,10 +652,10 @@ Download **vocabulary** for your language from:
 **Install** vocabulary:
 
 * extract `.sox` archive downloaded from the URL above to get `.dict` and `.aff` files
-* determine Hunspell's vocabulary search path by running:
-```
-hunspell -D
-```
 * copy downloaded (`.dict` and `.aff`) vocabulary files to one of 
-  the directories on Hunspell's search path e.g. `/usr/share/hunspell`
-
+  the directories on Hunspell's search path:
+```
+C:\Users\<profile>\dictionaries
+C:\Users\<profile>\Local Settings\dictionaries
+C:\Users\<profile>\AppData\Local\dictionaries
+```
