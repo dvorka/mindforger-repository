@@ -32,9 +32,21 @@ Tarball:
 Install MindForger using a package.
 
 ## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 65; read: 2021-12-22 20:03:54; revision: 10; modified: 2020-03-08 17:02:58; -->
-Install MindForger on macOS:
+Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
-* [download .dmg](https://github.com/dvorka/mindforger/releases) from GitHub releases
+**Homebrew**
+
+Install MindForger using [Homebrew](https://brew.sh):
+
+```
+brew install mindforger
+```
+
+**Disk iMaGe**
+
+Install MindForger by downloading `.dmg`:
+
+* [download .dmg](https://github.com/dvorka/mindforger/releases) from [GitHub releases](https://github.com/dvorka/mindforger/releases)
 
 Install `.dmg`:
 
