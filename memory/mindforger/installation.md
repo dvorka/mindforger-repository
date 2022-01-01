@@ -44,7 +44,7 @@ brew install mindforger
 
 **Disk iMaGe**
 
-Install MindForger by using `.dmg`:
+Install MindForger using `.dmg`:
 
 * [download .dmg](https://github.com/dvorka/mindforger/releases) from [GitHub releases](https://github.com/dvorka/mindforger/releases)
 
