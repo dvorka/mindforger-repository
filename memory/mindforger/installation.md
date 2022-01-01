@@ -212,7 +212,7 @@ Add dependencies to `PATH`:
 
 ```sh
 # clang
-export PATH="/Users/username/Qt/5.14.1/clang_64/bin:${PATH}"
+export PATH="/Users/username/Qt/5.x.x/clang_64/bin:${PATH}"
 # cmake
 export PATH="${PATH}:/Users/username/Qt/Tools/CMake/CMake.app/Contents/bin"
 # installer
