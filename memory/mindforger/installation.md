@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1213; read: 2021-12-31 10:23:19; revision: 1213; modified: 2021-12-31 10:23:19; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1223; read: 2022-01-02 23:05:12; revision: 1223; modified: 2022-01-02 23:05:12; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -153,7 +153,7 @@ Install MindForger from Arch User Repository (AUR):
 
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 83; read: 2021-12-31 10:09:36; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 135; read: 2021-12-31 10:23:19; revision: 135; modified: 2021-12-31 10:23:19; -->
+## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 140; read: 2022-01-02 23:05:12; revision: 140; modified: 2022-01-02 23:05:12; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install/update [Xcode](https://developer.apple.com/) command line tools:
@@ -227,8 +227,15 @@ git submodule init
 git submodule update
 ```
 
-You don't have to build dependencies - like `cmark-gfm` or `hunspell` - as they are
-built by `qmake`.
+Build MindForger dependencies:
+
+```sh
+# build dependency: cmark-gfm
+cd mindforger/deps/cmark-gfm
+mkdir build && cd build
+cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
+cmake --build .
+```
 
 Compile MindForger from its Git repository **root** directory:
 
