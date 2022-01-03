@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1223; read: 2022-01-02 23:05:12; revision: 1223; modified: 2022-01-02 23:05:12; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1249; read: 2022-01-03 22:57:03; revision: 1249; modified: 2022-01-03 22:57:03; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Windows](#windows-)
@@ -153,7 +153,7 @@ Install MindForger from Arch User Repository (AUR):
 
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 83; read: 2021-12-31 10:09:36; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 140; read: 2022-01-02 23:05:12; revision: 140; modified: 2022-01-02 23:05:12; -->
+## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 150; read: 2022-01-03 20:57:25; revision: 145; modified: 2022-01-03 20:55:17; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install/update [Xcode](https://developer.apple.com/) command line tools:
@@ -227,7 +227,7 @@ git submodule init
 git submodule update
 ```
 
-Build MindForger dependencies:
+Build **dependencies**:
 
 ```sh
 # build dependency: cmark-gfm
@@ -237,7 +237,7 @@ cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 ```
 
-Compile MindForger from its Git repository **root** directory:
+Compile **sources** from repository **root** directory:
 
 ```sh
 qmake -r mindforger.pro
@@ -245,7 +245,7 @@ qmake -r mindforger.pro
 make
 ```
 
-Optionally install MindForger:
+Optionally **install** MindForger:
 
 ```sh
 cd app && cp -rvf mindforger.app /Applications
@@ -286,7 +286,7 @@ Build `.dmg` **distribution**:
 * change to `mindforger/build/macos`
 * run `build/macos/dmg-package-build.sh`
 * check `.dmg` distro created in `mindforger/app/mindforger.dmg`
-## Build on Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-03 17:11:52; reads: 152; read: 2021-12-22 20:04:22; revision: 124; modified: 2020-03-08 17:03:27; -->
+## Build on Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-03 17:11:52; reads: 160; read: 2022-01-03 20:57:26; revision: 125; modified: 2022-01-03 20:55:37; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
 Install build **tools**:
@@ -301,7 +301,7 @@ Install build **tools**:
 * Install `cmake`
 * Install `patch`
 
-Get MindForger **source code** [GitHub](https://github.com/dvorka/mindforger):
+Get **source code** from [GitHub](https://github.com/dvorka/mindforger):
 
 * Create directory where you want to build MindForger e.g.
   `C:\Users\USER\mindforger-build`
@@ -376,7 +376,7 @@ Create **installer**:
 To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
 use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 65; read: 2021-12-22 20:04:22; revision: 15; modified: 2021-12-21 13:46:55; -->
+## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 72; read: 2022-01-03 20:57:28; revision: 16; modified: 2022-01-03 20:54:01; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
@@ -407,7 +407,7 @@ git submodule init
 git submodule update
 ```
 
-Build dependencies:
+Build **dependencies**:
 
 ```sh
 # build cmark-gfm
@@ -444,10 +444,10 @@ Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourcefo
 DISPLAY=:0.0 ./mindforger
 ```
 
-## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 162; read: 2021-12-22 20:04:22; revision: 60; modified: 2021-12-17 23:31:25; -->
+## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 170; read: 2022-01-03 22:57:03; revision: 64; modified: 2022-01-03 22:57:03; -->
 Build MindForger on Ubuntu 16.04 or later.
 
-Install build tools:
+Install package dependencies:
 
 ```sh
 sudo apt-get install build-essential zlib1g-dev libhunspell-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
@@ -464,7 +464,7 @@ git submodule init
 git submodule update
 ```
 
-Build dependencies:
+Build **dependencies**:
 
 ```sh
 # build cmark-gfm
@@ -474,7 +474,7 @@ cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
 cmake --build .
 ```
 
-Compile and install from Git repository root directory:
+**Compile** sources and **install** MindForger from Git repository root directory:
 
 ```sh
 qmake -r mindforger.pro
@@ -502,10 +502,10 @@ Run MindForger:
 ```
 
 See also `mindforger/build/ubuntu/build-all-clean-system.sh`
-## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 93; read: 2021-12-22 20:04:22; revision: 22; modified: 2021-12-21 13:47:08; -->
+## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 96; read: 2022-01-03 20:57:04; revision: 23; modified: 2022-01-03 20:57:04; -->
 Build MindForger on Debian Stretch or later.
 
-Install build tools:
+Install package dependencies:
 
 ```sh
 sudo apt-get install build-essential zlib1g-dev libhunspell-dev libqt5webkit5-dev qttools5-dev-tools qt5-default ccache
@@ -557,10 +557,10 @@ Run MindForger:
 ```
 ./mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 86; read: 2021-12-22 20:04:22; revision: 25; modified: 2021-12-21 13:48:36; -->
+## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 89; read: 2022-01-03 20:57:20; revision: 26; modified: 2022-01-03 20:57:20; -->
 Build MindForger on Fedora.
 
-Install build tools:
+Install package dependencies:
 
 ```sh
 sudo dnf install zlib-devel hunspell-devel qt-devel qt5-devel ccache
