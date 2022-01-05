@@ -1,22 +1,23 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1249; read: 2022-01-03 22:57:03; revision: 1249; modified: 2022-01-03 22:57:03; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1261; read: 2022-01-05 07:40:04; revision: 1261; modified: 2022-01-05 07:40:04; importance: 3/5; urgency: 3/5; -->
 Install:
 
+* [macOS](#macos-)
 * [Windows](#windows-)
 * [Ubuntu](#ubuntu-)
 * [Debian](#debian-)
 * [Fedora](#fedora-)
 * [openSUSE](#opensuse-)
 * [Arch Linux](#arch-linux-)
-* [macOS](#macos-)
+* [NixOS](#nixos-)
 * [WSL](#wsl-)
 
 Build:
 
+* [build on macOS](#build-on-macos-)
 * [build on Windows](#build-on-windows-)
 * [build on Ubuntu](#build-on-ubuntu-)
 * [build on Debian](#build-on-debian-)
 * [build on Fedora](#build-on-fedora-)
-* [build on macOS](#build-on-macos-)
 * [build on WSL](#build-on-wsl-)
 
 Docker:
@@ -126,7 +127,7 @@ sudo apt install mindforger
 ```
 
 See also http://www.mindforger.com/debian/
-## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 100; read: 2021-12-31 10:09:36; revision: 22; modified: 2020-03-08 17:02:33; -->
+## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 102; read: 2022-01-05 07:38:15; revision: 22; modified: 2020-03-08 17:02:33; -->
 Install MindForger on [Fedora](https://getfedora.org/):
 
 * [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -137,7 +138,7 @@ Install RPM:
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
 
-## openSUSE <!-- Metadata: type: Note; tags: linux; created: 2020-01-21 08:08:06; reads: 55; read: 2021-12-31 10:09:36; revision: 5; modified: 2020-03-08 17:02:38; -->
+## openSUSE <!-- Metadata: type: Note; tags: linux; created: 2020-01-21 08:08:06; reads: 61; read: 2022-01-05 07:38:16; revision: 5; modified: 2020-03-08 17:02:38; -->
 Install MindForger on [openSUSE](https://www.opensuse.org/):
 
 ```
@@ -146,11 +147,17 @@ opi mindforger
 ```
 
 
-## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 57; read: 2021-12-31 10:09:36; revision: 8; modified: 2020-03-08 17:02:45; -->
+## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 69; read: 2022-01-05 07:38:16; revision: 8; modified: 2020-03-08 17:02:45; -->
 Install MindForger from Arch User Repository (AUR):
 
 * https://aur.archlinux.org/packages/mindforger/
 
+## NixOS <!-- Metadata: type: Note; tags: linux; created: 2022-01-05 07:36:42; reads: 13; read: 2022-01-05 07:38:17; revision: 3; modified: 2022-01-05 07:38:08; -->
+Install [MindForger package](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/editors/mindforger) on [NixOS](https://nixos.org/):
+
+```
+nix-env -i mindforger
+```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 83; read: 2021-12-31 10:09:36; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
 ## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 150; read: 2022-01-03 20:57:25; revision: 145; modified: 2022-01-03 20:55:17; -->
@@ -557,7 +564,7 @@ Run MindForger:
 ```
 ./mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 89; read: 2022-01-03 20:57:20; revision: 26; modified: 2022-01-03 20:57:20; -->
+## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 91; read: 2022-01-05 07:33:59; revision: 26; modified: 2022-01-03 20:57:20; -->
 Build MindForger on Fedora.
 
 Install package dependencies:
