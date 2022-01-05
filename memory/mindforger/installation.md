@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1261; read: 2022-01-05 07:40:04; revision: 1261; modified: 2022-01-05 07:40:04; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1304; read: 2022-01-05 07:58:17; revision: 1304; modified: 2022-01-05 07:58:17; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos-)
@@ -18,6 +18,8 @@ Build:
 * [build on Ubuntu](#build-on-ubuntu-)
 * [build on Debian](#build-on-debian-)
 * [build on Fedora](#build-on-fedora-)
+* [build on Gentoo](#build-on-gentoo-)
+* [build on NixOS](#build-on-nixos-)
 * [build on WSL](#build-on-wsl-)
 
 Docker:
@@ -29,10 +31,10 @@ Tarball:
 * [download tarball](https://github.com/dvorka/mindforger/releases)
 
 > _Unfortunately links above must have trailing '-' to workaround GitHub MD to HTML rendering bug. Therefore these links are broken in Markdown editors (including MF)._
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 57; read: 2021-12-31 10:08:23; revision: 18; modified: 2018-09-22 11:30:41; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 61; read: 2022-01-05 07:57:47; revision: 18; modified: 2018-09-22 11:30:41; -->
 Install MindForger using a package.
 
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 72; read: 2021-12-31 10:09:00; revision: 13; modified: 2021-12-31 10:09:00; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 76; read: 2022-01-05 07:57:47; revision: 13; modified: 2021-12-31 10:09:00; -->
 Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
 **Homebrew**
@@ -56,13 +58,13 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 44; read: 2021-12-31 10:09:35; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 48; read: 2022-01-05 07:57:46; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 69; read: 2021-12-31 10:09:35; revision: 9; modified: 2020-03-08 17:03:04; -->
+## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 75; read: 2022-01-05 07:57:45; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -93,7 +95,7 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 99; read: 2021-12-31 10:09:35; revision: 21; modified: 2020-03-08 17:02:23; -->
+## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 105; read: 2022-01-05 07:57:44; revision: 21; modified: 2020-03-08 17:02:23; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -107,7 +109,7 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 79; read: 2021-12-31 10:09:35; revision: 18; modified: 2020-03-08 17:02:28; -->
+## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 83; read: 2022-01-05 07:57:42; revision: 18; modified: 2020-03-08 17:02:28; -->
 Install MindForger on [Debian](https://www.debian.org/) from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
@@ -127,7 +129,7 @@ sudo apt install mindforger
 ```
 
 See also http://www.mindforger.com/debian/
-## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 102; read: 2022-01-05 07:38:15; revision: 22; modified: 2020-03-08 17:02:33; -->
+## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 106; read: 2022-01-05 07:57:42; revision: 22; modified: 2020-03-08 17:02:33; -->
 Install MindForger on [Fedora](https://getfedora.org/):
 
 * [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
@@ -138,7 +140,7 @@ Install RPM:
 sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
 ```
 
-## openSUSE <!-- Metadata: type: Note; tags: linux; created: 2020-01-21 08:08:06; reads: 61; read: 2022-01-05 07:38:16; revision: 5; modified: 2020-03-08 17:02:38; -->
+## openSUSE <!-- Metadata: type: Note; tags: linux; created: 2020-01-21 08:08:06; reads: 65; read: 2022-01-05 07:57:41; revision: 5; modified: 2020-03-08 17:02:38; -->
 Install MindForger on [openSUSE](https://www.opensuse.org/):
 
 ```
@@ -147,20 +149,20 @@ opi mindforger
 ```
 
 
-## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 69; read: 2022-01-05 07:38:16; revision: 8; modified: 2020-03-08 17:02:45; -->
+## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 73; read: 2022-01-05 07:57:40; revision: 8; modified: 2020-03-08 17:02:45; -->
 Install MindForger from Arch User Repository (AUR):
 
 * https://aur.archlinux.org/packages/mindforger/
 
-## NixOS <!-- Metadata: type: Note; tags: linux; created: 2022-01-05 07:36:42; reads: 13; read: 2022-01-05 07:38:17; revision: 3; modified: 2022-01-05 07:38:08; -->
+## NixOS <!-- Metadata: type: Note; tags: linux; created: 2022-01-05 07:36:42; reads: 17; read: 2022-01-05 07:57:40; revision: 3; modified: 2022-01-05 07:38:08; -->
 Install [MindForger package](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/editors/mindforger) on [NixOS](https://nixos.org/):
 
 ```
 nix-env -i mindforger
 ```
-# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 83; read: 2021-12-31 10:09:36; revision: 7; modified: 2018-09-22 11:30:51; -->
+# Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 87; read: 2022-01-05 07:57:39; revision: 7; modified: 2018-09-22 11:30:51; -->
 Build MindForger from source code.
-## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 150; read: 2022-01-03 20:57:25; revision: 145; modified: 2022-01-03 20:55:17; -->
+## Build on macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-04 21:07:57; reads: 157; read: 2022-01-05 07:57:39; revision: 146; modified: 2022-01-05 07:57:27; -->
 Build MindForger on macOS Sierra 10.12+.
 
 Open `Terminal` and install/update [Xcode](https://developer.apple.com/) command line tools:
@@ -264,10 +266,6 @@ Install [documentation and stencils](https://github.com/dvorka/mindforger-reposi
 # clone MindForger documentation repository to home directory - location and directory name matters
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
-
-# verify MindForger repository installation
-ls ~/mindforger-repository
-  limbo  memory  mind  stencils
 ```
 
 Run MindForger either as application or using command line:
@@ -293,7 +291,7 @@ Build `.dmg` **distribution**:
 * change to `mindforger/build/macos`
 * run `build/macos/dmg-package-build.sh`
 * check `.dmg` distro created in `mindforger/app/mindforger.dmg`
-## Build on Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-03 17:11:52; reads: 160; read: 2022-01-03 20:57:26; revision: 125; modified: 2022-01-03 20:55:37; -->
+## Build on Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-03 17:11:52; reads: 170; read: 2022-01-05 07:57:39; revision: 125; modified: 2022-01-03 20:55:37; -->
 Build MindForger on [Microsoft Windows](https://www.microsoft.com/en-us/windows).
 
 Install build **tools**:
@@ -383,7 +381,7 @@ Create **installer**:
 To create **debug** version of MindForger and executable replace `debug` with `release` in the steps above and 
 use `mindforger-setup-debug.iss` installer configuration.
 
-## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 72; read: 2022-01-03 20:57:28; revision: 16; modified: 2022-01-03 20:54:01; -->
+## Build on WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-10 10:20:59; reads: 81; read: 2022-01-05 07:57:39; revision: 16; modified: 2022-01-03 20:54:01; -->
 Build MindForger on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Install build tools:
@@ -451,7 +449,7 @@ Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourcefo
 DISPLAY=:0.0 ./mindforger
 ```
 
-## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 170; read: 2022-01-03 22:57:03; revision: 64; modified: 2022-01-03 22:57:03; -->
+## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 177; read: 2022-01-05 07:57:35; revision: 65; modified: 2022-01-05 07:57:11; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install package dependencies:
@@ -496,10 +494,6 @@ Install [documentation and stencils](https://github.com/dvorka/mindforger-reposi
 # clone MindForger documentation repository to home directory (location and directory name matters)
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
-
-# verify MindForger repository installation
-ls mindforger-repository
-  limbo  memory  mind  stencils
 ```
 
 Run MindForger:
@@ -509,7 +503,7 @@ Run MindForger:
 ```
 
 See also `mindforger/build/ubuntu/build-all-clean-system.sh`
-## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 96; read: 2022-01-03 20:57:04; revision: 23; modified: 2022-01-03 20:57:04; -->
+## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 101; read: 2022-01-05 07:57:06; revision: 24; modified: 2022-01-05 07:57:06; -->
 Build MindForger on Debian Stretch or later.
 
 Install package dependencies:
@@ -553,10 +547,6 @@ Install [documentation and stencils](https://github.com/dvorka/mindforger-reposi
 # clone MindForger documentation repository to home directory (location and directory name matters)
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
-
-# verify MindForger repository installation
-ls mindforger-repository
-  limbo  memory  mind  stencils
 ```
 
 Run MindForger:
@@ -564,7 +554,7 @@ Run MindForger:
 ```
 ./mindforger
 ```
-## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 91; read: 2022-01-05 07:33:59; revision: 26; modified: 2022-01-03 20:57:20; -->
+## Build on Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-26 09:04:14; reads: 109; read: 2022-01-05 07:57:02; revision: 27; modified: 2022-01-05 07:57:02; -->
 Build MindForger on Fedora.
 
 Install package dependencies:
@@ -608,10 +598,6 @@ Install [documentation and stencils](https://github.com/dvorka/mindforger-reposi
 # clone MindForger documentation repository to home directory (location and directory name matters)
 cd ~
 git clone https://github.com/dvorka/mindforger-repository.git
-
-# verify MindForger repository installation
-ls mindforger-repository
-  limbo  memory  mind  stencils
 ```
 
 Run MindForger:
@@ -619,9 +605,105 @@ Run MindForger:
 ```
 ./mindforger
 ```
-# Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 26; read: 2021-12-22 20:04:22; revision: 5; modified: 2018-09-23 13:49:01; -->
+## Build on Gentoo <!-- Metadata: type: Note; tags: linux; created: 2022-01-05 07:52:13; reads: 23; read: 2022-01-05 07:57:54; revision: 8; modified: 2022-01-05 07:56:55; -->
+Build MindForger on [Gentoo](https://www.gentoo.org/):
+
+Install package dependencies.
+
+Get source code:
+
+```sh
+# clone MindForger repository
+git clone https://github.com/dvorka/mindforger.git
+# update repository sub-modules                                            
+git submodule init
+git submodule update
+```
+
+Build dependencies:
+
+```sh
+# build cmark-gfm
+cd mindforger/deps/cmark-gfm
+mkdir build && cd build
+cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
+cmake --build .
+```
+
+Compile and install from Git repository root directory:
+
+```sh
+qmake CONFIG+=mfwebengine -r mindforger.pro
+# consider speeding up compilation by increasing the number of CPU cores to use e.g. make -j8
+make
+sudo make install
+```
+
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
+
+```
+# clone MindForger documentation repository to home directory (location and directory name matters)
+cd ~
+git clone https://github.com/dvorka/mindforger-repository.git
+```
+
+Run MindForger:
+
+```
+./mindforger
+```
+## Build on NixOS <!-- Metadata: type: Note; tags: linux; created: 2022-01-05 07:52:45; reads: 20; read: 2022-01-05 07:57:55; revision: 8; modified: 2022-01-05 07:56:49; -->
+Build MindForger on [Gentoo](https://www.gentoo.org/):
+
+Install package [dependencies](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/mindforger/default.nix).
+
+Get source code:
+
+```sh
+# clone MindForger repository
+git clone https://github.com/dvorka/mindforger.git
+# update repository sub-modules                                            
+git submodule init
+git submodule update
+```
+
+Build dependencies:
+
+```sh
+# build cmark-gfm
+cd mindforger/deps/cmark-gfm
+mkdir build && cd build
+cmake -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF ..
+cmake --build .
+```
+
+Compile and install from Git repository root directory:
+
+```sh
+qmake CONFIG+=mfwebengine -r mindforger.pro
+# consider speeding up compilation by increasing the number of CPU cores to use e.g. make -j8
+make
+sudo make install
+```
+
+Install [documentation and stencils](https://github.com/dvorka/mindforger-repository):
+
+```
+# clone MindForger documentation repository to home directory (location and directory name matters)
+cd ~
+git clone https://github.com/dvorka/mindforger-repository.git
+```
+
+Run MindForger:
+
+```
+./mindforger
+```
+
+
+# Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 30; read: 2022-01-05 07:52:03; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; tags: docker; created: 2018-09-23 13:46:37; reads: 79; read: 2021-12-22 20:04:22; revision: 60; modified: 2020-03-08 17:04:07; -->
+## Build and run in container <!-- Metadata: type: Note; tags: docker; created: 2018-09-23 13:46:37; reads: 83; read: 2022-01-05 07:52:03; revision: 60; modified: 2020-03-08 17:04:07; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:
@@ -659,7 +741,7 @@ docker start $(cat ~/.mindforger.docker)
 
 Check also https://github.com/dvorka/mindforger/tree/master/build/docker for handy scripts.
 
-# Spell check <!-- Metadata: type: Note; created: 2021-12-22 20:04:34; reads: 14; read: 2021-12-22 20:07:55; revision: 6; modified: 2021-12-22 20:07:55; -->
+# Spell check <!-- Metadata: type: Note; created: 2021-12-22 20:04:34; reads: 16; read: 2022-01-05 07:52:03; revision: 6; modified: 2021-12-22 20:07:55; -->
 MindForger's **spell check** implementation is based on [Hunspell](https://github.com/hunspell/hunspell).
 ## Spell check configuration on Linux <!-- Metadata: type: Note; created: 2021-12-22 20:07:03; reads: 21; read: 2021-12-22 20:16:07; revision: 18; modified: 2021-12-22 20:16:07; -->
 Install [Hunspell](https://github.com/hunspell/hunspell):
