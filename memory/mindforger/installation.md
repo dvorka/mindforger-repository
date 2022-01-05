@@ -9,8 +9,8 @@ Install:
 * [FreeBSD](#freebsd-)
 * [Arch Linux](#arch-linux-)
 * [NixOS](#nixos-)
-* [WSL](#wsl-)
 * [openSUSE](#opensuse-)
+* [WSL](#wsl-)
 
 Build:
 
