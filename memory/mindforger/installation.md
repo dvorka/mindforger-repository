@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1321; read: 2022-01-05 08:14:34; revision: 1321; modified: 2022-01-05 08:14:34; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; tags: basics; created: 2018-03-20 16:19:07; reads: 1331; read: 2022-01-14 00:02:12; revision: 1331; modified: 2022-01-14 00:02:12; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos-)
@@ -59,7 +59,7 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 50; read: 2022-01-05 08:10:04; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 52; read: 2022-01-14 00:00:29; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
@@ -110,7 +110,7 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 87; read: 2022-01-05 08:10:31; revision: 18; modified: 2020-03-08 17:02:28; -->
+## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 89; read: 2022-01-14 00:00:15; revision: 18; modified: 2020-03-08 17:02:28; -->
 Install MindForger on [Debian](https://www.debian.org/) from **PPA**.
 Add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and 
 install MindForger:
@@ -753,7 +753,7 @@ Check also https://github.com/dvorka/mindforger/tree/master/build/docker for han
 
 # Spell check <!-- Metadata: type: Note; created: 2021-12-22 20:04:34; reads: 16; read: 2022-01-05 07:52:03; revision: 6; modified: 2021-12-22 20:07:55; -->
 MindForger's **spell check** implementation is based on [Hunspell](https://github.com/hunspell/hunspell).
-## Spell check configuration on Linux <!-- Metadata: type: Note; created: 2021-12-22 20:07:03; reads: 21; read: 2021-12-22 20:16:07; revision: 18; modified: 2021-12-22 20:16:07; -->
+## Spell check configuration on Linux <!-- Metadata: type: Note; created: 2021-12-22 20:07:03; reads: 26; read: 2022-01-14 00:01:49; revision: 20; modified: 2022-01-14 00:01:49; -->
 Install [Hunspell](https://github.com/hunspell/hunspell):
 
 ```
@@ -766,14 +766,14 @@ Download **vocabulary** for your language from:
 
 **Install** vocabulary:
 
-* extract `.sox` archive downloaded from the URL above to get `.dict` and `.aff` files
+* extract `.oxt` archive downloaded from the URL above to get `.dict` and `.aff` files
 * determine Hunspell's vocabulary search path by running:
 ```
 hunspell -D
 ```
 * copy downloaded (`.dict` and `.aff`) vocabulary files to one of 
   the directories on Hunspell's search path e.g. `/usr/share/hunspell`
-## Spell check configuration on Windows <!-- Metadata: type: Note; created: 2021-12-22 20:07:15; reads: 14; read: 2021-12-23 07:57:32; revision: 14; modified: 2021-12-23 07:57:32; -->
+## Spell check configuration on Windows <!-- Metadata: type: Note; created: 2021-12-22 20:07:15; reads: 18; read: 2022-01-14 00:02:12; revision: 17; modified: 2022-01-14 00:02:12; -->
 [Hunspell](https://github.com/hunspell/hunspell) is included
 in MindForger executable, therefore it does not have to be installed.
 
@@ -783,7 +783,7 @@ Download **vocabulary** for your language from:
 
 **Install** vocabulary:
 
-* extract `.sox` archive downloaded from the URL above to get `.dict` and `.aff` files
+* extract `.oxt` archive downloaded from the URL above to get `.dict` and `.aff` files
 * copy downloaded (`.dict` and `.aff`) vocabulary files to one of 
   the directories on Hunspell's search path:
 ```
