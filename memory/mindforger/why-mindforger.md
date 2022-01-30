@@ -1,4 +1,4 @@
-# Why MindForger? <!-- Metadata: type: Outline; tags: cool; created: 2018-02-23 10:56:27; reads: 38; read: 2018-07-10 07:14:29; revision: 38; modified: 2018-07-10 07:14:29; importance: 5/5; urgency: 1/5; -->
+# Why MindForger? <!-- Metadata: type: Outline; tags: cool; created: 2018-02-23 10:56:27; reads: 110; read: 2022-01-30 17:44:05; revision: 110; modified: 2022-01-30 17:44:05; importance: 5/5; urgency: 1/5; -->
 
 This document describes driving principles and vision for MindForger.
 
@@ -6,54 +6,48 @@ Are you drowning in information, but starving for **knowledge**? Where do you
 keep your **private remarks** like ideas, personal plans, gift tips, how-tos, 
 dreams, business vision, finance strategy, auto  coaching notes? Loads of 
 documents, sketches and remarks spread around the file system, cloud, 
-web and Post-it notes? Are you affraid of your knowledge **privacy**? Are you 
+web and Post-it notes? Are you afraid of your knowledge **privacy**? Are you 
 able to **find** then once you create them? Do you know how are they mutually
 **related** when you read or write them? No?
 
-MindForger is **human mind** inspired **knowledge management tool** which
-aims to connect the tradition of outline editors with emerging technologies. 
-Its mission is to help you in organization of your knowledge and associated 
-local, web and real world resources in a way that enables quick navigation, 
-concise representation, automatic interconnections, associative completion 
-and inferencing.
-# Motivation <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 32; read: 2018-06-12 14:14:09; revision: 7; modified: 2018-06-12 14:14:09; -->
+MindForger is **human mind** inspired **knowledge management tool**
+which aims to connect the tradition of **outline editors** with 
+emerging technologies. Its mission is to help you in organization 
+of your knowledge and associated local, web and real world 
+resources in a way that enables quick navigation, concise
+representation, automatic interconnections, associative 
+completion and inferencing.
+# Unique <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 65; read: 2022-01-30 17:44:05; revision: 37; modified: 2022-01-30 17:44:05; -->
 MindForger is **human mind** inspired **personal** knowledge management tool:
 
-* **Personal**
-    * MindFoger enables you to **own your data** - it's meant to store your 
-      personal ideas, remarks, notes and plans in a secure way.
-	* MindForger enables **privacy** and **security** of your knowledge.
-    * MindForger doesn't compete with tools for sharing information like
-      Wikis - its purpose is to maintain your **private** data.
-
-* **Knowledge**
-    * MindForger focus is put on knowledge management - efficient storage and
-      lookup of your thoughts, ideas, how-tos, etc.
-
 * **Human mind**
-    * MindForger [human-mind Inspiration](#human-mind-inspiration) in order to 
-	  achieve **synergy** between your mind and MindForger whenever you use 
-	  it. MindForger aims to be your mind *extender* whenever you learn, search
-	  or managege knowledge.
-	  
-* **Unique**
-    * MindForger unique features start where editors and search engines end - it
-      **thinks** as you search > browse > edit.
-	* Once you **FIND** your remark, MindForger brings associations as you **READ**
-	  (hyperlinks and ideas suggestions).
-	* If you decide to **EDIT** your remarks, MindForger brings associations
-	  as you WRITE (auto-completion, links, suggestions).
-
+    * MindForger aims to mimic human mind - **learning**, **recalling**, 
+      **recognition**, **associations**, **forgetting** - in order to achieve
+      synergy with your mind to make your searching, reading and writing 
+      more productive.
+* **Personal**
+    * MindForger enables you to **own** your **personal** data - it's meant to 
+      store your personal ideas, remarks, notes and plans in a secure way while
+      it respects your privacy.
+    * MindForger does **not** compete with tools for sharing information like
+      Wikis - its primary purpose is to maintain your **private** data.
+* **Knowledge**
+    * MindForger seeks knowledge hidden in your remarks to enable its mining
+      and personal machine learning models creation.
+* **Management**	  
+    * MindForger starts where editors and search engines end. It thinks as 
+      you search, **browse**, read and write. Once you **find** a remark, MindForger
+      brings its associations. As you **browse** notes and **read** them it looks up
+      related relevant knowledge in your notebooks. If you **edit** a remark,
+      MindForger brings associations as you **write**. It reminds you about
+      existing content related to the text being written.
 * **Tool**
-    * MindForger is a desktop application running on Linux (Mac and Windows).
-
-
-
-# Human-mind Inspiration <!-- Metadata: type: Note; created: 2018-06-12 14:10:48; reads: 11; read: 2018-06-12 14:13:29; revision: 3; modified: 2018-06-12 14:13:29; -->
+    * MindForger is a **desktop** application which runs on Linux, macOS and Windows.
+# Human mind inspiration <!-- Metadata: type: Note; created: 2018-06-12 14:10:48; reads: 32; read: 2022-01-30 17:40:41; revision: 4; modified: 2022-01-30 17:39:55; -->
 MindForger is inspired by human mind. Check the following presentation for more details:
 
 * [MindForger - Thinking Notebook. Thinking?](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU)
-# Features <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 27; read: 2018-04-10 10:58:57; revision: 5; modified: 2018-04-10 10:58:57; -->
+# Open, free and fast <!-- Metadata: type: Note; created: 2018-02-23 10:56:27; reads: 40; read: 2022-01-30 17:40:38; revision: 6; modified: 2022-01-30 17:40:38; -->
 MindForger features:
 
 * **Open**
