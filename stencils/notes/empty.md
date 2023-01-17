@@ -1,2 +1,2 @@
-# New Note w/ List
+# Note
 
